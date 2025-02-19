@@ -1,7 +1,5 @@
-# Imperial College - EEE - Human Centered Robotics 2022
+# Shared Control of Assistive Robots Using Computer Vision
 
-This repository is intended for Imperial College students taking the Human Centered Robotics class with Pr. Demiris.
-You will find here everything you need to start working with the robots.
 
 # Prerequisites
 
