@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['id_113',['id',['../structSL__ObjectData.html#a820a1e16de5f14f2b81914b3bf4d4543',1,'SL_ObjectData::id()'],['../structSL__DeviceProperties.html#a14d76cbe6c9b46dd6fd5ad4bf8293ad8',1,'SL_DeviceProperties::id()'],['../structSL__InputType.html#a31719c8454ec30c15e771272cd8bbb70',1,'SL_InputType::id()'],['../structSL__ObjectsBatch.html#af9c19813faa3414ad4b395fd1b548b8b',1,'SL_ObjectsBatch::id()'],['../structSL__BodyData.html#a185d1ac15d44bbcf16bb0893fc0ad2e3',1,'SL_BodyData::id()']]],
+  ['id_5fretention_5ftime_114',['id_retention_time',['../structSL__BatchParameters.html#a9617c5285b67ca8d3168b31cbb134707',1,'SL_BatchParameters']]],
+  ['image_5fheight_5fratio_5fcutoff_115',['image_height_ratio_cutoff',['../structSL__RegionOfInterestParameters.html#ac09c36312c5334c651996ad0ed2a638c',1,'SL_RegionOfInterestParameters']]],
+  ['image_5fsize_116',['image_size',['../structSL__CameraParameters.html#a2444a9abcce9236edd6103f1062c0c78',1,'SL_CameraParameters']]],
+  ['image_5fsync_117',['image_sync',['../structSL__ObjectDetectionParameters.html#aa66d8788488735af2f86a32d59ae2073',1,'SL_ObjectDetectionParameters::image_sync()'],['../structSL__BodyTrackingParameters.html#a5a19ce4deae410f1a61f4bbde38ba3a9',1,'SL_BodyTrackingParameters::image_sync()']]],
+  ['image_5fsync_5ftrigger_118',['image_sync_trigger',['../structSL__SensorsData.html#a7211e8b518388bd216cdd11aa5a678e1',1,'SL_SensorsData']]],
+  ['imu_119',['imu',['../structSL__SensorsData.html#ac54f84680aa78699182dab60dfb553db',1,'SL_SensorsData']]],
+  ['imu_5ftemp_120',['imu_temp',['../structSL__TemperatureData.html#ae952cf4d0ce48946cb5a76f2a0896d7c',1,'SL_TemperatureData']]],
+  ['initial_5fworld_5fposition_121',['initial_world_position',['../structSL__PositionalTrackingParameters.html#acadd6ebaba050e7044bb04c33d45ef19',1,'SL_PositionalTrackingParameters']]],
+  ['initial_5fworld_5frotation_122',['initial_world_rotation',['../structSL__PositionalTrackingParameters.html#af3162f1f318e4f01ee1e07dedecd7884',1,'SL_PositionalTrackingParameters']]],
+  ['input_5ftype_123',['input_type',['../structSL__FusionConfiguration.html#a46bbc64180f23a5a9aba563a34181d9a',1,'SL_FusionConfiguration::input_type()'],['../structSL__InputType.html#adcf5146141393f1a4a6109ea8272efd3',1,'SL_InputType::input_type()'],['../structSL__DeviceProperties.html#a45202e8b5d39caaea8df4baa26854608',1,'SL_DeviceProperties::input_type()'],['../structSL__InitParameters.html#adacd1631615686bd9621ec2309cef1a8',1,'SL_InitParameters::input_type()'],['../structSL__CameraInformation.html#ad46bb340ab465187c9c4a31e2ee673c8',1,'SL_CameraInformation::input_type()']]],
+  ['instance_5fmodule_5fid_124',['instance_module_id',['../structSL__ObjectDetectionParameters.html#a80c158deb036da9068d89fbc6ff78ead',1,'SL_ObjectDetectionParameters::instance_module_id()'],['../structSL__BodyTrackingParameters.html#a230f45af3440562b79c9a3d00852a1c8',1,'SL_BodyTrackingParameters::instance_module_id()']]],
+  ['ip_125',['ip',['../structSL__StreamingProperties.html#ac44d94c9746d986315eb7e6f9e1ebbb2',1,'SL_StreamingProperties']]],
+  ['is_5favailable_126',['is_available',['../structSL__IMUData.html#a3ae9620e374cedf0e23cc84d46f054cf',1,'SL_IMUData::is_available()'],['../structSL__BarometerData.html#a2bc786c260c11a644fa94cf0dd67576f',1,'SL_BarometerData::is_available()'],['../structSL__MagnetometerData.html#ac3da07cbbcaa9ef43a84ac4457c74465',1,'SL_MagnetometerData::is_available()'],['../structSL__SensorParameters.html#a12bd28803ed61d6b2f7eaf4a37d651b9',1,'SL_SensorParameters::is_available()']]],
+  ['is_5fgrounded_127',['is_grounded',['../structSL__CustomBoxObjectData.html#aa67fd390de1b6bdc92e28e6619a764ad',1,'SL_CustomBoxObjectData']]],
+  ['is_5fnew_128',['is_new',['../structSL__Objects.html#abe9b745231c2bf031633cf6032f6277f',1,'SL_Objects::is_new()'],['../structSL__Bodies.html#a1508bca40217cea80ee0fdd42909a64e',1,'SL_Bodies::is_new()']]],
+  ['is_5fpaused_129',['is_paused',['../structSL__RecordingStatus.html#a92fc53e30c38669bdee369025d46d2c1',1,'SL_RecordingStatus']]],
+  ['is_5fpresent_130',['is_present',['../structSL__CameraMetrics.html#a9cb9ae4b15d810985cfcb2053af7e33f',1,'SL_CameraMetrics']]],
+  ['is_5frecording_131',['is_recording',['../structSL__RecordingStatus.html#a96117ef9446bc68ac9cf93b7a2419bab',1,'SL_RecordingStatus']]],
+  ['is_5ftracked_132',['is_tracked',['../structSL__Objects.html#a00a3f541271f194ae39b467f93eb16a2',1,'SL_Objects::is_tracked()'],['../structSL__Bodies.html#a271d7a66b67f2476a99aa33e91ab8e14',1,'SL_Bodies::is_tracked()']]],
+  ['ium_5fmagnetometer_5frotation_133',['ium_magnetometer_rotation',['../structSL__SensorsConfiguration.html#acd142e868ce5e2b4855d262ea26f0a37',1,'SL_SensorsConfiguration']]],
+  ['ium_5fmagnetometer_5ftranslation_134',['ium_magnetometer_translation',['../structSL__SensorsConfiguration.html#a202c33d60e772ed22233b85d38427f37',1,'SL_SensorsConfiguration']]]
+];

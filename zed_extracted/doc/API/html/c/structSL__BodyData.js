@@ -1,0 +1,25 @@
+var structSL__BodyData =
+[
+    [ "id", "structSL__BodyData.html#a185d1ac15d44bbcf16bb0893fc0ad2e3", null ],
+    [ "unique_object_id", "structSL__BodyData.html#a336826177ac6890d19d4a9f17869c9f0", null ],
+    [ "tracking_state", "structSL__BodyData.html#ae2502e171a565daae73f314b4e41d2cb", null ],
+    [ "action_state", "structSL__BodyData.html#a9d0d25dfe8610e08b1ffcd46eb5c48ef", null ],
+    [ "position", "structSL__BodyData.html#aa3ddd91077a9a4430440d8c6980bccc3", null ],
+    [ "velocity", "structSL__BodyData.html#a9dbce1ffb0612cdf2f4698e1ede34bc4", null ],
+    [ "position_covariance", "structSL__BodyData.html#a222539790b5ffd7213f1a7bbf68cdf7b", null ],
+    [ "confidence", "structSL__BodyData.html#a8eda0f619cb3228fb9ac7c4f6ca2feb7", null ],
+    [ "mask", "structSL__BodyData.html#a8d28e8c25b3e5df66b63244c928557e2", null ],
+    [ "bounding_box_2d", "structSL__BodyData.html#aaed82a5131a9dfd79fed1963a2cff113", null ],
+    [ "head_position", "structSL__BodyData.html#a911ad5a1b280a6ff7db4bccf171845e7", null ],
+    [ "dimensions", "structSL__BodyData.html#a8ad0a813c909f02e215a07d0a0c6f046", null ],
+    [ "bounding_box", "structSL__BodyData.html#a7e7a649f05612460238952a2684ff56b", null ],
+    [ "head_bounding_box", "structSL__BodyData.html#a99f55480685afbaf81935db01caeaa44", null ],
+    [ "head_bounding_box_2d", "structSL__BodyData.html#a53b87c3f6348d52b8bb2203fe84cc5ab", null ],
+    [ "keypoint_2d", "structSL__BodyData.html#ae09268f2df55a38adc98f1111c54e532", null ],
+    [ "keypoint", "structSL__BodyData.html#a68d10dc18b863c52612bd75e05d908ab", null ],
+    [ "keypoint_confidence", "structSL__BodyData.html#afa1f8b825b20999ded3ca4b7200486e9", null ],
+    [ "keypoint_covariances", "structSL__BodyData.html#ad3b8b214a348c839a92ed727de65b179", null ],
+    [ "local_position_per_joint", "structSL__BodyData.html#a18d5b5a221917906e8d9b24919c16eb5", null ],
+    [ "local_orientation_per_joint", "structSL__BodyData.html#a4a1aa1c8d35483fd689ad9a8c674abae", null ],
+    [ "global_root_orientation", "structSL__BodyData.html#afc6c502453db2a86fafa9e9e26439056", null ]
+];

@@ -1,0 +1,782 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Mesh Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1Mesh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1Mesh-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Mesh Class Reference<div class="ingroups"><a class="el" href="group__SpatialMapping__group.html">Spatial Mapping Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class representing a mesh and containing the geometric (and optionally texture) data of the scene captured by the spatial mapping module.  
+ <a href="classpyzed_1_1sl_1_1Mesh.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adc4a809cf75fb1da9254770ab56d2c73"><td class="memItemLeft" align="right" valign="top"><a id="adc4a809cf75fb1da9254770ab56d2c73"></a>
+list[<a class="el" href="classpyzed_1_1sl_1_1Chunk.html">Chunk</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a> (self)</td></tr>
+<tr class="memdesc:adc4a809cf75fb1da9254770ab56d2c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of chunks constituting the <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a>. <br /></td></tr>
+<tr class="separator:adc4a809cf75fb1da9254770ab56d2c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49faff75dd3e4e1faf0692652cb1104"><td class="memItemLeft" align="right" valign="top"><a id="ab49faff75dd3e4e1faf0692652cb1104"></a>
+<a class="el" href="classpyzed_1_1sl_1_1Chunk.html">Chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#ab49faff75dd3e4e1faf0692652cb1104">__getitem__</a> (self, x)</td></tr>
+<tr class="memdesc:ab49faff75dd3e4e1faf0692652cb1104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a chunk from <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a>. <br /></td></tr>
+<tr class="separator:ab49faff75dd3e4e1faf0692652cb1104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469c54fc99ebbb4bd87999a2325314c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a469c54fc99ebbb4bd87999a2325314c2">filter</a> (self, params=<a class="el" href="classpyzed_1_1sl_1_1MeshFilterParameters.html">MeshFilterParameters</a>(), update_chunk_only=False)</td></tr>
+<tr class="memdesc:a469c54fc99ebbb4bd87999a2325314c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters the mesh.  <a href="classpyzed_1_1sl_1_1Mesh.html#a469c54fc99ebbb4bd87999a2325314c2">More...</a><br /></td></tr>
+<tr class="separator:a469c54fc99ebbb4bd87999a2325314c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c36362ec52a5733136fa2f1ec4410d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a0c36362ec52a5733136fa2f1ec4410d7">apply_texture</a> (self, texture_format=MESH_TEXTURE_FORMAT.RGB)</td></tr>
+<tr class="memdesc:a0c36362ec52a5733136fa2f1ec4410d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a texture to the mesh.  <a href="classpyzed_1_1sl_1_1Mesh.html#a0c36362ec52a5733136fa2f1ec4410d7">More...</a><br /></td></tr>
+<tr class="separator:a0c36362ec52a5733136fa2f1ec4410d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ec056805eca2e957ba213f16b0632a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a34ec056805eca2e957ba213f16b0632a">save</a> (self, str filename, typeMesh=MESH_FILE_FORMAT.OBJ, id=[])</td></tr>
+<tr class="memdesc:a34ec056805eca2e957ba213f16b0632a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a> into a file.  <a href="classpyzed_1_1sl_1_1Mesh.html#a34ec056805eca2e957ba213f16b0632a">More...</a><br /></td></tr>
+<tr class="separator:a34ec056805eca2e957ba213f16b0632a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a3b60b2beb3e11fe6b4bc6446f52ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#ad6a3b60b2beb3e11fe6b4bc6446f52ec">load</a> (self, str filename, update_mesh=False)</td></tr>
+<tr class="memdesc:ad6a3b60b2beb3e11fe6b4bc6446f52ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the mesh from a file.  <a href="classpyzed_1_1sl_1_1Mesh.html#ad6a3b60b2beb3e11fe6b4bc6446f52ec">More...</a><br /></td></tr>
+<tr class="separator:ad6a3b60b2beb3e11fe6b4bc6446f52ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2c317a1231e6d32b3fc81a6413a907"><td class="memItemLeft" align="right" valign="top"><a id="a7f2c317a1231e6d32b3fc81a6413a907"></a>
+None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a7f2c317a1231e6d32b3fc81a6413a907">clear</a> (self)</td></tr>
+<tr class="memdesc:a7f2c317a1231e6d32b3fc81a6413a907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the data. <br /></td></tr>
+<tr class="separator:a7f2c317a1231e6d32b3fc81a6413a907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe82146c95d8130a3ec5d2c2ec19238e"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> (self)</td></tr>
+<tr class="memdesc:abe82146c95d8130a3ec5d2c2ec19238e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumPy array of vertices.  <a href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">More...</a><br /></td></tr>
+<tr class="separator:abe82146c95d8130a3ec5d2c2ec19238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e08e7d09d07f16f910e8abf918569a"><td class="memItemLeft" align="right" valign="top">np.array[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">triangles</a> (self)</td></tr>
+<tr class="memdesc:a39e08e7d09d07f16f910e8abf918569a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumPy array of triangles/faces.  <a href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">More...</a><br /></td></tr>
+<tr class="separator:a39e08e7d09d07f16f910e8abf918569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc545f89fd6281a18ffc87b5de3f16ff"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> (self)</td></tr>
+<tr class="memdesc:afc545f89fd6281a18ffc87b5de3f16ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumPy array of normals.  <a href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">More...</a><br /></td></tr>
+<tr class="separator:afc545f89fd6281a18ffc87b5de3f16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb1d1938bc913fe641640d09be1ab39"><td class="memItemLeft" align="right" valign="top">np.array[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a9cb1d1938bc913fe641640d09be1ab39">colors</a> (self)</td></tr>
+<tr class="memdesc:a9cb1d1938bc913fe641640d09be1ab39"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumPy array of colors.  <a href="classpyzed_1_1sl_1_1Mesh.html#a9cb1d1938bc913fe641640d09be1ab39">More...</a><br /></td></tr>
+<tr class="separator:a9cb1d1938bc913fe641640d09be1ab39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eea98eddcf70f32d0dfed324c30635"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">uv</a> (self)</td></tr>
+<tr class="memdesc:a96eea98eddcf70f32d0dfed324c30635"><td class="mdescLeft">&#160;</td><td class="mdescRight">UVs defines the 2D projection of each vertices onto the texture.  <a href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">More...</a><br /></td></tr>
+<tr class="separator:a96eea98eddcf70f32d0dfed324c30635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cec181fcdd3dc6784576e7a87dd387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#ac4cec181fcdd3dc6784576e7a87dd387">texture</a> (self)</td></tr>
+<tr class="memdesc:ac4cec181fcdd3dc6784576e7a87dd387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture of the <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a>.  <a href="classpyzed_1_1sl_1_1Mesh.html#ac4cec181fcdd3dc6784576e7a87dd387">More...</a><br /></td></tr>
+<tr class="separator:ac4cec181fcdd3dc6784576e7a87dd387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505e328059667a46ba885c652dd7ac04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a505e328059667a46ba885c652dd7ac04">get_number_of_triangles</a> (self)</td></tr>
+<tr class="memdesc:a505e328059667a46ba885c652dd7ac04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total number of triangles stored in all chunks.  <a href="classpyzed_1_1sl_1_1Mesh.html#a505e328059667a46ba885c652dd7ac04">More...</a><br /></td></tr>
+<tr class="separator:a505e328059667a46ba885c652dd7ac04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f60d32143aed4947e0938b66c9cf446"><td class="memItemLeft" align="right" valign="top">np.array[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a9f60d32143aed4947e0938b66c9cf446">get_boundaries</a> (self)</td></tr>
+<tr class="memdesc:a9f60d32143aed4947e0938b66c9cf446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the indices of boundary vertices.  <a href="classpyzed_1_1sl_1_1Mesh.html#a9f60d32143aed4947e0938b66c9cf446">More...</a><br /></td></tr>
+<tr class="separator:a9f60d32143aed4947e0938b66c9cf446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa3f9d2b482561d880fc287fc46b881"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#aefa3f9d2b482561d880fc287fc46b881">merge_chunks</a> (self, int faces_per_chunk)</td></tr>
+<tr class="memdesc:aefa3f9d2b482561d880fc287fc46b881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges current chunks.  <a href="classpyzed_1_1sl_1_1Mesh.html#aefa3f9d2b482561d880fc287fc46b881">More...</a><br /></td></tr>
+<tr class="separator:aefa3f9d2b482561d880fc287fc46b881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31222c082516560339ce8bfbeb500622"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a31222c082516560339ce8bfbeb500622">get_gravity_estimate</a> (self)</td></tr>
+<tr class="memdesc:a31222c082516560339ce8bfbeb500622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the gravity vector.  <a href="classpyzed_1_1sl_1_1Mesh.html#a31222c082516560339ce8bfbeb500622">More...</a><br /></td></tr>
+<tr class="separator:a31222c082516560339ce8bfbeb500622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac8b4b5c734020edbe81a0db7fdc075"><td class="memItemLeft" align="right" valign="top">list[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abac8b4b5c734020edbe81a0db7fdc075">get_visible_list</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> camera_pose)</td></tr>
+<tr class="memdesc:abac8b4b5c734020edbe81a0db7fdc075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the id list of visible chunks from a specific point of view.  <a href="classpyzed_1_1sl_1_1Mesh.html#abac8b4b5c734020edbe81a0db7fdc075">More...</a><br /></td></tr>
+<tr class="separator:abac8b4b5c734020edbe81a0db7fdc075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dd66a8db52f3b5083026d294f7ea47"><td class="memItemLeft" align="right" valign="top">list[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96dd66a8db52f3b5083026d294f7ea47">get_surrounding_list</a> (self, <a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a> camera_pose, float radius)</td></tr>
+<tr class="memdesc:a96dd66a8db52f3b5083026d294f7ea47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the id list of chunks close to a specific point of view.  <a href="classpyzed_1_1sl_1_1Mesh.html#a96dd66a8db52f3b5083026d294f7ea47">More...</a><br /></td></tr>
+<tr class="separator:a96dd66a8db52f3b5083026d294f7ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a12e45fabb6d5a74fcf875c6642ca7e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a0a12e45fabb6d5a74fcf875c6642ca7e">update_mesh_from_chunklist</a> (self, id=[])</td></tr>
+<tr class="memdesc:a0a12e45fabb6d5a74fcf875c6642ca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">triangles</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">uv</a> from chunk data pointed by the given list of id.  <a href="classpyzed_1_1sl_1_1Mesh.html#a0a12e45fabb6d5a74fcf875c6642ca7e">More...</a><br /></td></tr>
+<tr class="separator:a0a12e45fabb6d5a74fcf875c6642ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing a mesh and containing the geometric (and optionally texture) data of the scene captured by the spatial mapping module. </p>
+<p>By default the mesh is defined as a set of chunks. <br  />
+ This way we update only the data that has to be updated avoiding a time consuming remapping process every time a small part of the <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a> is updated. </p>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a469c54fc99ebbb4bd87999a2325314c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469c54fc99ebbb4bd87999a2325314c2">&#9670;&nbsp;</a></span>filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool filter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>params</em> = <code><a class="el" href="classpyzed_1_1sl_1_1MeshFilterParameters.html">MeshFilterParameters</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>update_chunk_only</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filters the mesh. </p>
+<p>The resulting mesh is smoothed, small holes are filled, and small blobs of non-connected triangles are deleted. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>: Filtering parameters. Default: a preset of <a class="el" href="classpyzed_1_1sl_1_1MeshFilterParameters.html" title="Class containing a set of parameters for the mesh filtration functionality.">sl.MeshFilterParameters</a>. </td></tr>
+    <tr><td class="paramname">update_chunk_only</td><td>: Whether to only update <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a> (and not <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">triangles</a>).<br  />
+ Default: False. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the mesh was successfully filtered, otherwise False.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The filtering is a costly operation. </dd>
+<dd>
+It is not recommended to call it every time you retrieve a mesh but only at the end of your spatial mapping process. </dd></dl>
+
+</div>
+</div>
+<a id="a0c36362ec52a5733136fa2f1ec4410d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c36362ec52a5733136fa2f1ec4410d7">&#9670;&nbsp;</a></span>apply_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool apply_texture </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>texture_format</em> = <code>MESH_TEXTURE_FORMAT.RGB</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a texture to the mesh. </p>
+<p>By using this method you will get access to <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">uv</a>, and <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#ac4cec181fcdd3dc6784576e7a87dd387">texture</a>. <br  />
+ The number of triangles in the mesh may slightly differ before and after calling this method due to missing texture information. <br  />
+ There is only one texture for the mesh, the uv of each chunk are expressed for it in its entirety. <br  />
+ NumPy arrays of <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> and <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">uv</a> have now the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_format</td><td>: Number of channels desired for the computed texture.<br  />
+ Default: <a class="el" href="classpyzed_1_1sl_1_1MESH__TEXTURE__FORMAT.html">sl.MESH_TEXTURE_FORMAT.RGB</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the mesh was successfully textured, otherwise False.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This method can be called as long as you do not start a new spatial mapping process (due to shared memory). </dd>
+<dd>
+This method can require a lot of computation time depending on the number of triangles in the mesh. </dd>
+<dd>
+It is recommended to call it once at the end of your spatial mapping process.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6" title="Whether to save the texture.">sl.SpatialMappingParameters.save_texture</a> parameter must be set to True when enabling the spatial mapping to be able to apply the textures. </dd>
+<dd>
+The mesh should be filtered before calling this method since <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a469c54fc99ebbb4bd87999a2325314c2">filter()</a> will erase the textures. </dd>
+<dd>
+The texturing is also significantly slower on non-filtered meshes. </dd></dl>
+
+</div>
+</div>
+<a id="a34ec056805eca2e957ba213f16b0632a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ec056805eca2e957ba213f16b0632a">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typeMesh</em> = <code>MESH_FILE_FORMAT.OBJ</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a> into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Path of the file to store the mesh in. </td></tr>
+    <tr><td class="paramname">typeMesh</td><td>: File extension type. Default: <a class="el" href="classpyzed_1_1sl_1_1MESH__FILE__FORMAT.html">sl.MESH_FILE_FORMAT.OBJ</a>. </td></tr>
+    <tr><td class="paramname">id</td><td>: Set of chunks to be saved. Default: (empty) (all chunks are saved) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully saved, otherwise False.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only <a class="el" href="classpyzed_1_1sl_1_1MESH__FILE__FORMAT.html">sl.MESH_FILE_FORMAT.OBJ</a> supports textures data. </dd>
+<dd>
+This method operates on the <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a> not on <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a>. </dd>
+<dd>
+This way you can save different parts of your <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a> by updating it with <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a0a12e45fabb6d5a74fcf875c6642ca7e">update_mesh_from_chunklist()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ad6a3b60b2beb3e11fe6b4bc6446f52ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a3b60b2beb3e11fe6b4bc6446f52ec">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>update_mesh</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the mesh from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Path of the file to load the mesh from. </td></tr>
+    <tr><td class="paramname">update_mesh</td><td>: Whether to only load data in <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a> (and not <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">triangles</a>).<br  />
+ Default: False. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the mesh was successfully loaded, otherwise False.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Updating a <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl::Mesh</a> is time consuming. Consider using only <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73">chunks</a> for better performances. </dd></dl>
+
+</div>
+</div>
+<a id="abe82146c95d8130a3ec5d2c2ec19238e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe82146c95d8130a3ec5d2c2ec19238e">&#9670;&nbsp;</a></span>vertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] vertices </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NumPy array of vertices. </p>
+<p>Vertices are defined by a 3D point <code>[x, y, z]</code>. </p>
+
+</div>
+</div>
+<a id="a39e08e7d09d07f16f910e8abf918569a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e08e7d09d07f16f910e8abf918569a">&#9670;&nbsp;</a></span>triangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[int] triangles </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NumPy array of triangles/faces. </p>
+<p>Triangle defined as a set of three vertices indexes <code>[v1, v2, v3]</code>. </p>
+
+</div>
+</div>
+<a id="afc545f89fd6281a18ffc87b5de3f16ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc545f89fd6281a18ffc87b5de3f16ff">&#9670;&nbsp;</a></span>normals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] normals </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NumPy array of normals. </p>
+<p>Normals are defined by three components <code>[nx, ny, nz]</code>. </p><dl class="section note"><dt>Note</dt><dd>A normal is defined for each vertex. </dd></dl>
+
+</div>
+</div>
+<a id="a9cb1d1938bc913fe641640d09be1ab39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb1d1938bc913fe641640d09be1ab39">&#9670;&nbsp;</a></span>colors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[int] colors </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NumPy array of colors. </p>
+<p>Colors are defined by three components <code>[r, g, b]</code>. </p><dl class="section note"><dt>Note</dt><dd>A color is defined for each vertex. </dd></dl>
+
+</div>
+</div>
+<a id="a96eea98eddcf70f32d0dfed324c30635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eea98eddcf70f32d0dfed324c30635">&#9670;&nbsp;</a></span>uv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] uv </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UVs defines the 2D projection of each vertices onto the texture. </p>
+<p>Values are normalized [0, 1] and start from the bottom left corner of the texture (as requested by OpenGL). In order to display a textured mesh you need to bind the texture and then draw each triangle by picking its uv values. </p><dl class="section note"><dt>Note</dt><dd>Contains data only if your mesh has textures (by loading it or calling <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a0c36362ec52a5733136fa2f1ec4410d7" title="Applies a texture to the mesh.">sl.Mesh.apply_texture()</a>). </dd></dl>
+
+</div>
+</div>
+<a id="ac4cec181fcdd3dc6784576e7a87dd387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cec181fcdd3dc6784576e7a87dd387">&#9670;&nbsp;</a></span>texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1Mat.html">Mat</a> texture </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Texture of the <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>Contains data only if your mesh has textures (by loading it or calling <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a0c36362ec52a5733136fa2f1ec4410d7" title="Applies a texture to the mesh.">sl.Mesh.apply_texture()</a>). </dd></dl>
+
+</div>
+</div>
+<a id="a505e328059667a46ba885c652dd7ac04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505e328059667a46ba885c652dd7ac04">&#9670;&nbsp;</a></span>get_number_of_triangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int get_number_of_triangles </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the total number of triangles stored in all chunks. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of triangles stored in all chunks. </dd></dl>
+
+</div>
+</div>
+<a id="a9f60d32143aed4947e0938b66c9cf446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f60d32143aed4947e0938b66c9cf446">&#9670;&nbsp;</a></span>get_boundaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[int] get_boundaries </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the indices of boundary vertices. </p>
+<dl class="section return"><dt>Returns</dt><dd>The indices of boundary vertices. </dd></dl>
+
+</div>
+</div>
+<a id="aefa3f9d2b482561d880fc287fc46b881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa3f9d2b482561d880fc287fc46b881">&#9670;&nbsp;</a></span>merge_chunks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None merge_chunks </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>faces_per_chunk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges current chunks. </p>
+<p>This method can be used to merge chunks into bigger sets to improve rendering process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faces_per_chunk</td><td>: Number of faces per chunk.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This method is useful for Unity, which does not handle chunks with more than 65K vertices. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This method should not be called during spatial mapping process since mesh updates will revert this changes. </dd></dl>
+
+</div>
+</div>
+<a id="a31222c082516560339ce8bfbeb500622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31222c082516560339ce8bfbeb500622">&#9670;&nbsp;</a></span>get_gravity_estimate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] get_gravity_estimate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimates the gravity vector. </p>
+<p>This method looks for a dominant plane in the whole mesh considering that it is the floor (or a horizontal plane). </p><dl class="section return"><dt>Returns</dt><dd>The estimated gravity vector (NumPy array).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This can be used to find the gravity to create realistic physical interactions. </dd></dl>
+
+</div>
+</div>
+<a id="abac8b4b5c734020edbe81a0db7fdc075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac8b4b5c734020edbe81a0db7fdc075">&#9670;&nbsp;</a></span>get_visible_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[int] get_visible_list </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>&#160;</td>
+          <td class="paramname"><em>camera_pose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the id list of visible chunks from a specific point of view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera_pose</td><td>: Point of view (given in the same reference as the vertices). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list of id of visible chunks. </dd></dl>
+
+</div>
+</div>
+<a id="a96dd66a8db52f3b5083026d294f7ea47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dd66a8db52f3b5083026d294f7ea47">&#9670;&nbsp;</a></span>get_surrounding_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[int] get_surrounding_list </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Transform.html">Transform</a>&#160;</td>
+          <td class="paramname"><em>camera_pose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the id list of chunks close to a specific point of view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera_pose</td><td>: Point of view (given in the same reference as the vertices). </td></tr>
+    <tr><td class="paramname">radius</td><td>: Radius determining closeness (given in the same unit as the mesh). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list of id of chunks close to the given point. </dd></dl>
+
+</div>
+</div>
+<a id="a0a12e45fabb6d5a74fcf875c6642ca7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a12e45fabb6d5a74fcf875c6642ca7e">&#9670;&nbsp;</a></span>update_mesh_from_chunklist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None update_mesh_from_chunklist </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e">vertices</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff">normals</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a">triangles</a> / <a class="el" href="classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635">uv</a> from chunk data pointed by the given list of id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>: Indices of chunks which will be concatenated. Default: (empty). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If the given list of id is empty, all chunks will be used to update the current <a class="el" href="classpyzed_1_1sl_1_1Mesh.html" title="Class representing a mesh and containing the geometric (and optionally texture) data of the scene cap...">sl.Mesh</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

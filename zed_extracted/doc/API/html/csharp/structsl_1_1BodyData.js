@@ -1,0 +1,25 @@
+var structsl_1_1BodyData =
+[
+    [ "id", "structsl_1_1BodyData.html#a7441ef0865bcb3db9b8064dd7375c1ea", null ],
+    [ "uniqueObjectId", "structsl_1_1BodyData.html#a9ef59aeb0d7e9c03230325b5ae092314", null ],
+    [ "trackingState", "structsl_1_1BodyData.html#ae359754ca5556fc57d69bed68f5963ce", null ],
+    [ "actionState", "structsl_1_1BodyData.html#a8138329b8e8ed60dd1ae92e2f6afa3ac", null ],
+    [ "position", "structsl_1_1BodyData.html#acfb76c74e507fea066625f69fbc8a146", null ],
+    [ "velocity", "structsl_1_1BodyData.html#a657f2be2faad1298aeefc486884ce193", null ],
+    [ "positionCovariance", "structsl_1_1BodyData.html#a15cc1913649303dcfbc4c57f3380188f", null ],
+    [ "confidence", "structsl_1_1BodyData.html#a058b8558da894ebfbef73d1a9b57deaa", null ],
+    [ "mask", "structsl_1_1BodyData.html#aeac1c3ad2dd5eec7c68d423161119721", null ],
+    [ "boundingBox2D", "structsl_1_1BodyData.html#a46b116c9727d3ab59e28027da0a6a1dc", null ],
+    [ "headPosition", "structsl_1_1BodyData.html#a07475e10fd38fde49480435b5ce2757f", null ],
+    [ "dimensions", "structsl_1_1BodyData.html#a07a6e07496c97c8495a99626261d4ffc", null ],
+    [ "boundingBox", "structsl_1_1BodyData.html#af7a9c33fcc2b58a49b7ff6d41f773b43", null ],
+    [ "headBoundingBox", "structsl_1_1BodyData.html#acbd2c80a57dd8d03747a3e2f55696625", null ],
+    [ "headBoundingBox2D", "structsl_1_1BodyData.html#a8e0bba1751263e6b2d1bbb0c217cb289", null ],
+    [ "keypoints2D", "structsl_1_1BodyData.html#a975f2f3189f5940fa85c3230fffae794", null ],
+    [ "keypoints", "structsl_1_1BodyData.html#a8d9d764bdae64416edae7201350bdc1f", null ],
+    [ "keypointConfidence", "structsl_1_1BodyData.html#ac7d21668ff3fdabd037887183c447f40", null ],
+    [ "keypointCovariances", "structsl_1_1BodyData.html#ae0b8ea04a9be8f66e07fc2546f727f9c", null ],
+    [ "localPositionPerJoint", "structsl_1_1BodyData.html#a2dd59ef32bcb8dcb1655a9854e74dc83", null ],
+    [ "localOrientationPerJoint", "structsl_1_1BodyData.html#acd5a59fce4529722ca68a15aef6e0e95", null ],
+    [ "globalRootOrientation", "structsl_1_1BodyData.html#a0d8b9e15fdc06fa09c0a2aa8b30e8540", null ]
+];

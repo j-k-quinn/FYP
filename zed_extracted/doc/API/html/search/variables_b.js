@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['magnetic_5ffield_5fcalibrated_1619',['magnetic_field_calibrated',['../structsl_1_1SensorsData_1_1MagnetometerData.html#adcd0052d1a91c80f2b4997d6c40dd091',1,'sl::SensorsData::MagnetometerData']]],
+  ['magnetic_5ffield_5funcalibrated_1620',['magnetic_field_uncalibrated',['../structsl_1_1SensorsData_1_1MagnetometerData.html#ad0fbfc03a3257aa1c86f1108ef752309',1,'sl::SensorsData::MagnetometerData']]],
+  ['magnetic_5fheading_1621',['magnetic_heading',['../structsl_1_1SensorsData_1_1MagnetometerData.html#af9f005f8eef7c5e575a0a244fd2a4ff2',1,'sl::SensorsData::MagnetometerData']]],
+  ['magnetic_5fheading_5faccuracy_1622',['magnetic_heading_accuracy',['../structsl_1_1SensorsData_1_1MagnetometerData.html#abfdda2c315d36e1bb576e70179bbd699',1,'sl::SensorsData::MagnetometerData']]],
+  ['magnetic_5fheading_5fstate_1623',['magnetic_heading_state',['../structsl_1_1SensorsData_1_1MagnetometerData.html#aee08993a7bc208eb98abb39dff92b174',1,'sl::SensorsData::MagnetometerData']]],
+  ['magnetometer_1624',['magnetometer',['../structsl_1_1SensorsData.html#a353ab85115aab489edd8743163103720',1,'sl::SensorsData']]],
+  ['magnetometer_5fparameters_1625',['magnetometer_parameters',['../structsl_1_1SensorsConfiguration.html#aa231dbbddbda64db52209a9c0bb49645',1,'sl::SensorsConfiguration']]],
+  ['map_5ftype_1626',['map_type',['../structsl_1_1SpatialMappingParameters.html#adbe31cf6ed45f0583a21cc113f87388b',1,'sl::SpatialMappingParameters::map_type()'],['../structsl_1_1SpatialMappingFusionParameters.html#a5964e664ff9114feef577dd37b853876',1,'sl::SpatialMappingFusionParameters::map_type()']]],
+  ['mask_1627',['mask',['../classsl_1_1ObjectData.html#a4c475a9ddaa98bf7cfcc8a5bdea7b0e2',1,'sl::ObjectData::mask()'],['../classsl_1_1BodyData.html#a4c475a9ddaa98bf7cfcc8a5bdea7b0e2',1,'sl::BodyData::mask()']]],
+  ['matrix_5fname_1628',['matrix_name',['../classsl_1_1Matrix3f.html#ae2ff67f0e4f1087845099b27b00281bb',1,'sl::Matrix3f::matrix_name()'],['../classsl_1_1Matrix4f.html#ae2ff67f0e4f1087845099b27b00281bb',1,'sl::Matrix4f::matrix_name()']]],
+  ['max_5fdistance_5fthreshold_1629',['max_distance_threshold',['../structsl_1_1PlaneDetectionParameters.html#a4249a7766315cdf8bddf94307e7129c5',1,'sl::PlaneDetectionParameters']]],
+  ['max_5fmemory_5fusage_1630',['max_memory_usage',['../structsl_1_1SpatialMappingParameters.html#a727e51d827dc5c64c3413097cf8db111',1,'sl::SpatialMappingParameters::max_memory_usage()'],['../structsl_1_1SpatialMappingFusionParameters.html#a727e51d827dc5c64c3413097cf8db111',1,'sl::SpatialMappingFusionParameters::max_memory_usage()']]],
+  ['max_5frange_1631',['max_range',['../structsl_1_1ObjectDetectionParameters.html#a539ecba1d7ca20797a31d7ca06eb3884',1,'sl::ObjectDetectionParameters::max_range()'],['../structsl_1_1BodyTrackingParameters.html#a539ecba1d7ca20797a31d7ca06eb3884',1,'sl::BodyTrackingParameters::max_range()']]],
+  ['mean_5fcamera_5ffused_1632',['mean_camera_fused',['../structsl_1_1FusionMetrics.html#ae2ee91011770b71227e16938898fb09e',1,'sl::FusionMetrics']]],
+  ['mean_5fstdev_5fbetween_5fcamera_1633',['mean_stdev_between_camera',['../structsl_1_1FusionMetrics.html#ac45f1fc414a1fa2dfb60e8efad917fe7',1,'sl::FusionMetrics']]],
+  ['measure3d_5freference_5fframe_1634',['measure3D_reference_frame',['../structsl_1_1RuntimeParameters.html#a95f5726cd4db955a263d913d310f38e4',1,'sl::RuntimeParameters']]],
+  ['minimum_5fkeypoints_5fthreshold_1635',['minimum_keypoints_threshold',['../structsl_1_1BodyTrackingRuntimeParameters.html#a056694626c89bd6593cdf7d52cba9f53',1,'sl::BodyTrackingRuntimeParameters']]],
+  ['mode_1636',['mode',['../structsl_1_1PositionalTrackingParameters.html#a6234fa8ca839b4bc2bbd754b3d7a7614',1,'sl::PositionalTrackingParameters']]]
+];

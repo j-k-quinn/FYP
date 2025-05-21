@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['sampling_5frate_1458',['sampling_rate',['../structsl_1_1SensorParameters.html#a8d632437c1878f0244e942c89b3b99f9',1,'sl::SensorParameters']]],
+  ['savetexture_1459',['saveTexture',['../classsl_1_1SpatialMappingParameters.html#aab2b6ae273ab111d886ceece0b758b7a',1,'sl::SpatialMappingParameters']]],
+  ['sdkgpuid_1460',['sdkGPUId',['../classsl_1_1InitParameters.html#afc0826f155e8c0adc04ae7d792aae5de',1,'sl::InitParameters']]],
+  ['sdkverbose_1461',['sdkVerbose',['../classsl_1_1InitParameters.html#aefbdb4eddaf8db4c503f341822392dbc',1,'sl::InitParameters']]],
+  ['sdkverboselogfile_1462',['sdkVerboseLogFile',['../classsl_1_1InitParameters.html#abd392fb45a8ec01c2fe77a645f22c396',1,'sl::InitParameters']]],
+  ['sensor_5funit_1463',['sensor_unit',['../structsl_1_1SensorParameters.html#a0957d61499e734e6fcda6bad2bbc188f',1,'sl::SensorParameters']]],
+  ['sensorsconfiguration_1464',['sensorsConfiguration',['../structsl_1_1CameraInformation.html#ac9f3acbc462bde48711e985a00433131',1,'sl::CameraInformation']]],
+  ['sensorsrequired_1465',['sensorsRequired',['../classsl_1_1InitParameters.html#aabb4b71355d450a885c1f0cb9579a20f',1,'sl::InitParameters']]],
+  ['serialnumber_1466',['serialnumber',['../structsl_1_1FusionConfiguration.html#a4a80e85eb1136bd29a0ee20e6918d57b',1,'sl::FusionConfiguration']]],
+  ['serialnumber_1467',['serialNumber',['../structsl_1_1CameraInformation.html#a05fc00d8adf0e717a0fa4a54c16b95b9',1,'sl.CameraInformation.serialNumber()'],['../structsl_1_1InputType.html#a05fc00d8adf0e717a0fa4a54c16b95b9',1,'sl.InputType.serialNumber()']]],
+  ['setasstatic_1468',['setAsStatic',['../classsl_1_1PositionalTrackingParameters.html#a684a15650f076aabed930eddb25406b6',1,'sl::PositionalTrackingParameters']]],
+  ['setfloorasorigin_1469',['setFloorAsOrigin',['../classsl_1_1PositionalTrackingParameters.html#ae14672c74025feead4569837c9388277',1,'sl::PositionalTrackingParameters']]],
+  ['setgravityasorigin_1470',['setGravityAsOrigin',['../classsl_1_1PositionalTrackingParameters.html#a3a1478d82aba4d36fcaa85a83b5292cb',1,'sl::PositionalTrackingParameters']]],
+  ['skeletonminimumallowedcameras_1471',['skeletonMinimumAllowedCameras',['../structsl_1_1BodyTrackingFusionRuntimeParameters.html#a01d4eaad9aef13a0fbabe95409e672f1',1,'sl::BodyTrackingFusionRuntimeParameters']]],
+  ['skeletonminimumallowedkeypoints_1472',['skeletonMinimumAllowedKeypoints',['../structsl_1_1BodyTrackingFusionRuntimeParameters.html#a2cdacf2ebb09eda68039c1f15a41dfae',1,'sl::BodyTrackingFusionRuntimeParameters']]],
+  ['skeletonsmoothing_1473',['skeletonSmoothing',['../structsl_1_1BodyTrackingRuntimeParameters.html#a25d8ca47a20d31d0dd4593cfed77afd1',1,'sl.BodyTrackingRuntimeParameters.skeletonSmoothing()'],['../structsl_1_1BodyTrackingFusionRuntimeParameters.html#a25d8ca47a20d31d0dd4593cfed77afd1',1,'sl.BodyTrackingFusionRuntimeParameters.skeletonSmoothing()']]],
+  ['sn_1474',['sn',['../structsl_1_1DeviceProperties.html#a677dbac339f5e37740f05fad4be91b2f',1,'sl.DeviceProperties.sn()'],['../structsl_1_1CameraIdentifier.html#a7ccb76b3153df67d2ba1b5dfbbb0d2db',1,'sl.CameraIdentifier.sn()']]],
+  ['stabilitycounter_1475',['stabilityCounter',['../classsl_1_1SpatialMappingParameters.html#a37b1f4189145823026038fb72cfc1860',1,'sl::SpatialMappingParameters']]],
+  ['status_1476',['status',['../structsl_1_1RecordingStatus.html#ad1f0bff7112206922c9d5a87adad6f2b',1,'sl::RecordingStatus']]],
+  ['streaminputip_1477',['streamInputIp',['../structsl_1_1InputType.html#a7f953919da7c55be4f0a706e9b8f007a',1,'sl::InputType']]],
+  ['streaminputport_1478',['streamInputPort',['../structsl_1_1InputType.html#af3dcbe3d3e325a5189a2ef5f45658bf5',1,'sl::InputType']]],
+  ['sublabel_1479',['sublabel',['../structsl_1_1ObjectData.html#a9d1a3df424d83c8545d8df23d76c38d6',1,'sl.ObjectData.sublabel()'],['../classsl_1_1ObjectsBatch.html#ab48f092704c5b9de0b3ed642aa1a40f6',1,'sl.ObjectsBatch.sublabel()']]],
+  ['svoinputfilename_1480',['svoInputFilename',['../structsl_1_1InputType.html#a365378d397b41a48e60620cc46594bfa',1,'sl::InputType']]],
+  ['svorealtimemode_1481',['svoRealTimeMode',['../classsl_1_1InitParameters.html#a5356d7568fa782734021155fe36b9af9',1,'sl::InitParameters']]],
+  ['syncedlatency_1482',['syncedLatency',['../structsl_1_1CameraMetrics.html#a0f2357728059c8287bc3551e28e892ed',1,'sl::CameraMetrics']]]
+];

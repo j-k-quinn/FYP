@@ -1,0 +1,373 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>RuntimeParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:16" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:16"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:16"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:16"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:16" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classsl_1_1RuntimeParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="classsl_1_1RuntimeParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">RuntimeParameters Class Reference<div class="ingroups"><a class="el" href="group__Depth__group.html">Depth Sensing Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class containing parameters that defines the behavior of <a class="el" href="classsl_1_1Camera.html#a26bcffd85cfb7416b904cdf4d1b13c97" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl.Camera.Grab()</a>.  
+ <a href="classsl_1_1RuntimeParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5eede3d8fb7abf43171e23ede77175ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#a5eede3d8fb7abf43171e23ede77175ae">RuntimeParameters</a> (<a class="el" href="group__PositionalTracking__group.html#ga7160d24146fdddd5a7e8f67fde1c4487">REFERENCE_FRAME</a> reframe=<a class="el" href="group__PositionalTracking__group.html#gga7160d24146fdddd5a7e8f67fde1c4487addf0d6b21537d984fea6544f58101fa8">REFERENCE_FRAME.CAMERA</a>, bool depth=true, int cnf_threshold=100, int txt_cnf_threshold=100, bool removeSaturatedAreas_=true, bool pEnableFillMode=false)</td></tr>
+<tr class="memdesc:a5eede3d8fb7abf43171e23ede77175ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classsl_1_1RuntimeParameters.html#a5eede3d8fb7abf43171e23ede77175ae">More...</a><br /></td></tr>
+<tr class="separator:a5eede3d8fb7abf43171e23ede77175ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a20bab46058205c6721a186dfbd2458cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__PositionalTracking__group.html#ga7160d24146fdddd5a7e8f67fde1c4487">sl.REFERENCE_FRAME</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb">measure3DReferenceFrame</a></td></tr>
+<tr class="memdesc:a20bab46058205c6721a186dfbd2458cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference frame in which to provides the 3D measures (point cloud, normals, etc.).  <a href="classsl_1_1RuntimeParameters.html#a20bab46058205c6721a186dfbd2458cb">More...</a><br /></td></tr>
+<tr class="separator:a20bab46058205c6721a186dfbd2458cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0c1a250060907ec651d2b2c236c63b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#a6a0c1a250060907ec651d2b2c236c63b">enableDepth</a></td></tr>
+<tr class="memdesc:a6a0c1a250060907ec651d2b2c236c63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the depth map should be computed.  <a href="classsl_1_1RuntimeParameters.html#a6a0c1a250060907ec651d2b2c236c63b">More...</a><br /></td></tr>
+<tr class="separator:a6a0c1a250060907ec651d2b2c236c63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97f5e0f2cbc41d75c76723650a794d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#ae97f5e0f2cbc41d75c76723650a794d3">enableFillMode</a></td></tr>
+<tr class="memdesc:ae97f5e0f2cbc41d75c76723650a794d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the depth map should be completed or not.  <a href="classsl_1_1RuntimeParameters.html#ae97f5e0f2cbc41d75c76723650a794d3">More...</a><br /></td></tr>
+<tr class="separator:ae97f5e0f2cbc41d75c76723650a794d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab248d1dafdb164fa53eb5638e5016469"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#ab248d1dafdb164fa53eb5638e5016469">confidenceThreshold</a></td></tr>
+<tr class="memdesc:ab248d1dafdb164fa53eb5638e5016469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold to reject depth values based on their confidence.  <a href="classsl_1_1RuntimeParameters.html#ab248d1dafdb164fa53eb5638e5016469">More...</a><br /></td></tr>
+<tr class="separator:ab248d1dafdb164fa53eb5638e5016469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a89798450450f92270fce42b3c057b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#a45a89798450450f92270fce42b3c057b">textureConfidenceThreshold</a></td></tr>
+<tr class="memdesc:a45a89798450450f92270fce42b3c057b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold to reject depth values based on their texture confidence.  <a href="classsl_1_1RuntimeParameters.html#a45a89798450450f92270fce42b3c057b">More...</a><br /></td></tr>
+<tr class="separator:a45a89798450450f92270fce42b3c057b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33969dcd2fe6d4bd8373f08d058d4014"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1RuntimeParameters.html#a33969dcd2fe6d4bd8373f08d058d4014">removeSaturatedAreas</a></td></tr>
+<tr class="memdesc:a33969dcd2fe6d4bd8373f08d058d4014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if the saturated area (luminance&gt;=255) must be removed from depth map estimation.  <a href="classsl_1_1RuntimeParameters.html#a33969dcd2fe6d4bd8373f08d058d4014">More...</a><br /></td></tr>
+<tr class="separator:a33969dcd2fe6d4bd8373f08d058d4014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class containing parameters that defines the behavior of <a class="el" href="classsl_1_1Camera.html#a26bcffd85cfb7416b904cdf4d1b13c97" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl.Camera.Grab()</a>. </p>
+<p>The default constructor sets all parameters to their default settings. </p><dl class="section note"><dt>Note</dt><dd>Parameters can be user-adjusted at runtime. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a5eede3d8fb7abf43171e23ede77175ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eede3d8fb7abf43171e23ede77175ae">&#9670;&nbsp;</a></span>RuntimeParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1RuntimeParameters.html">RuntimeParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__PositionalTracking__group.html#ga7160d24146fdddd5a7e8f67fde1c4487">REFERENCE_FRAME</a>&#160;</td>
+          <td class="paramname"><em>reframe</em> = <code><a class="el" href="group__PositionalTracking__group.html#gga7160d24146fdddd5a7e8f67fde1c4487addf0d6b21537d984fea6544f58101fa8">REFERENCE_FRAME.CAMERA</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnf_threshold</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>txt_cnf_threshold</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>removeSaturatedAreas_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pEnableFillMode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>All the parameters are set to their default values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a20bab46058205c6721a186dfbd2458cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bab46058205c6721a186dfbd2458cb">&#9670;&nbsp;</a></span>measure3DReferenceFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__PositionalTracking__group.html#ga7160d24146fdddd5a7e8f67fde1c4487">sl.REFERENCE_FRAME</a> measure3DReferenceFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference frame in which to provides the 3D measures (point cloud, normals, etc.). </p>
+<p>Default: <a class="el" href="group__PositionalTracking__group.html#gga7160d24146fdddd5a7e8f67fde1c4487addf0d6b21537d984fea6544f58101fa8" title="The transform of sl.Pose will contain the motion with reference to the previous camera frame (previou...">sl.REFERENCE_FRAME.CAMERA</a> </p>
+
+<p class="reference">Referenced by <a class="el" href="classsl_1_1RuntimeParameters.html#a5eede3d8fb7abf43171e23ede77175ae">RuntimeParameters.RuntimeParameters()</a>.</p>
+
+</div>
+</div>
+<a id="a6a0c1a250060907ec651d2b2c236c63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0c1a250060907ec651d2b2c236c63b">&#9670;&nbsp;</a></span>enableDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enableDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the depth map should be computed. </p>
+<p>Default: true </p><dl class="section note"><dt>Note</dt><dd>If set to false, only the images are available. </dd></dl>
+
+</div>
+</div>
+<a id="ae97f5e0f2cbc41d75c76723650a794d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97f5e0f2cbc41d75c76723650a794d3">&#9670;&nbsp;</a></span>enableFillMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enableFillMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the depth map should be completed or not. </p>
+<p>Default: false </p><dl class="section note"><dt>Note</dt><dd>It is similar to the removed sl.SENSING_MODE.FILL. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Enabling this will override the confidence values <a class="el" href="classsl_1_1RuntimeParameters.html#ab248d1dafdb164fa53eb5638e5016469">confidenceThreshold</a> and <a class="el" href="classsl_1_1RuntimeParameters.html#a45a89798450450f92270fce42b3c057b">textureConfidenceThreshold</a> as well as <a class="el" href="classsl_1_1RuntimeParameters.html#a33969dcd2fe6d4bd8373f08d058d4014">removeSaturatedAreas</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ab248d1dafdb164fa53eb5638e5016469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab248d1dafdb164fa53eb5638e5016469">&#9670;&nbsp;</a></span>confidenceThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int confidenceThreshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threshold to reject depth values based on their confidence. </p>
+<p>Each depth pixel has a corresponding confidence <a class="el" href="group__Depth__group.html#gga798a8eed10c573d759ef7e5a5bcd545da87f1ba15677264359d67e2a5b34a4b68" title="Certainty/confidence of the depth map. Each pixel contains 1 float.   Type: sl.MAT_TYPE....">sl.MEASURE.CONFIDENCE</a> in the range [1, 100]. <br  />
+ Decreasing this value will remove depth data from both objects edges and low textured areas, to keep only confident depth estimation data. <br  />
+ Default: 100 (no depth pixel will be rejected) </p><dl class="section note"><dt>Note</dt><dd>Pixels with a value close to 100 are not to be trusted. Accurate depth pixels tends to be closer to lower values. </dd>
+<dd>
+It can be seen as a probability of error, scaled to 100. </dd></dl>
+
+</div>
+</div>
+<a id="a45a89798450450f92270fce42b3c057b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a89798450450f92270fce42b3c057b">&#9670;&nbsp;</a></span>textureConfidenceThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int textureConfidenceThreshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threshold to reject depth values based on their texture confidence. </p>
+<p>The texture confidence range is [1, 100]. <br  />
+ Decreasing this value will remove depth data from image areas which are uniform. <br  />
+ Default: 100 (no depth pixel will be rejected) </p><dl class="section note"><dt>Note</dt><dd>Pixels with a value close to 100 are not to be trusted. Accurate depth pixels tends to be closer to lower values. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classsl_1_1Camera.html#a4914054f957dd906f183a277a038ecca">Camera.GetRuntimeParameters()</a>.</p>
+
+</div>
+</div>
+<a id="a33969dcd2fe6d4bd8373f08d058d4014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33969dcd2fe6d4bd8373f08d058d4014">&#9670;&nbsp;</a></span>removeSaturatedAreas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool removeSaturatedAreas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if the saturated area (luminance&gt;=255) must be removed from depth map estimation. </p>
+<p>Default: true </p><dl class="section note"><dt>Note</dt><dd>It is recommended to keep this parameter at true because saturated area can create false detection. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

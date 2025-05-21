@@ -1,0 +1,353 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>SpatialMappingFusionParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1SpatialMappingFusionParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1SpatialMappingFusionParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">SpatialMappingFusionParameters Class Reference<div class="ingroups"><a class="el" href="group__Fusion__group.html">Fusion Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sets the spatial mapping parameters.  
+ <a href="structsl_1_1SpatialMappingFusionParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9838e598b4254ce8bb4a18a8aa89242e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#a9838e598b4254ce8bb4a18a8aa89242e">set</a> (<a class="el" href="group__SpatialMapping__group.html#ga3155f0333317e8cfd79ecccbff77077e">SpatialMappingParameters::MAPPING_RESOLUTION</a> mapping_resolution=<a class="el" href="structsl_1_1SpatialMappingParameters.html#ga3155f0333317e8cfd79ecccbff77077eac87f3be66ffc3c0d4249f1c2cc5f3cce">SpatialMappingParameters::MAPPING_RESOLUTION::MEDIUM</a>)</td></tr>
+<tr class="memdesc:a9838e598b4254ce8bb4a18a8aa89242e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resolution corresponding to the given MAPPING_RESOLUTION preset.  <a href="structsl_1_1SpatialMappingFusionParameters.html#a9838e598b4254ce8bb4a18a8aa89242e">More...</a><br /></td></tr>
+<tr class="separator:a9838e598b4254ce8bb4a18a8aa89242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f333f57c55b52acb37d81d760f5b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#ab5f333f57c55b52acb37d81d760f5b72">set</a> (<a class="el" href="group__SpatialMapping__group.html#ga9b385192e8e881f046b9de8dd899f107">SpatialMappingParameters::MAPPING_RANGE</a> mapping_range=<a class="el" href="structsl_1_1SpatialMappingParameters.html#ga9b385192e8e881f046b9de8dd899f107ac87f3be66ffc3c0d4249f1c2cc5f3cce">SpatialMappingParameters::MAPPING_RANGE::MEDIUM</a>)</td></tr>
+<tr class="memdesc:ab5f333f57c55b52acb37d81d760f5b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum value of the depth corresponding to the given MAPPING_RANGE preset.  <a href="structsl_1_1SpatialMappingFusionParameters.html#ab5f333f57c55b52acb37d81d760f5b72">More...</a><br /></td></tr>
+<tr class="separator:ab5f333f57c55b52acb37d81d760f5b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a25bef5bd7d6f0c201bccdc73bb6680fa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#a25bef5bd7d6f0c201bccdc73bb6680fa">resolution_meter</a> = 0.05f</td></tr>
+<tr class="memdesc:a25bef5bd7d6f0c201bccdc73bb6680fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial mapping resolution in meters. Should fit allowed_resolution.  <a href="structsl_1_1SpatialMappingFusionParameters.html#a25bef5bd7d6f0c201bccdc73bb6680fa">More...</a><br /></td></tr>
+<tr class="separator:a25bef5bd7d6f0c201bccdc73bb6680fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad655867d422699a2dbc9a3231b847fde"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#ad655867d422699a2dbc9a3231b847fde">range_meter</a> = 0.f</td></tr>
+<tr class="memdesc:ad655867d422699a2dbc9a3231b847fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth range in meters. Can be different from the value set by <a class="el" href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c">sl::InitParameters::depth_maximum_distance</a>. <br  />
+ Set to 0 by default. In this case, the range is computed from resolution_meter and from the current internal parameters to fit your application.  <a href="structsl_1_1SpatialMappingFusionParameters.html#ad655867d422699a2dbc9a3231b847fde">More...</a><br /></td></tr>
+<tr class="separator:ad655867d422699a2dbc9a3231b847fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a34f0628ac8519d83287c01f34ee0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#a41a34f0628ac8519d83287c01f34ee0f">use_chunk_only</a> = false</td></tr>
+<tr class="memdesc:a41a34f0628ac8519d83287c01f34ee0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to false if you want to ensure consistency between the mesh and its inner chunk data.  <a href="structsl_1_1SpatialMappingFusionParameters.html#a41a34f0628ac8519d83287c01f34ee0f">More...</a><br /></td></tr>
+<tr class="separator:a41a34f0628ac8519d83287c01f34ee0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727e51d827dc5c64c3413097cf8db111"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#a727e51d827dc5c64c3413097cf8db111">max_memory_usage</a> = 2048</td></tr>
+<tr class="memdesc:a727e51d827dc5c64c3413097cf8db111"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum CPU memory (in MB) allocated for the meshing process.  <a href="structsl_1_1SpatialMappingFusionParameters.html#a727e51d827dc5c64c3413097cf8db111">More...</a><br /></td></tr>
+<tr class="separator:a727e51d827dc5c64c3413097cf8db111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1c32cc28522d7dded8a9f2ef55c159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#add1c32cc28522d7dded8a9f2ef55c159">stability_counter</a> = 0</td></tr>
+<tr class="memdesc:add1c32cc28522d7dded8a9f2ef55c159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the integration rate of the current depth into the mapping process. This parameter controls how many times a stable 3D points should be seen before it is integrated into the spatial mapping. Default value is 0, this will define the stability counter based on the mesh resolution, the higher the resolution, the higher the stability counter.  <a href="structsl_1_1SpatialMappingFusionParameters.html#add1c32cc28522d7dded8a9f2ef55c159">More...</a><br /></td></tr>
+<tr class="separator:add1c32cc28522d7dded8a9f2ef55c159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5964e664ff9114feef577dd37b853876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SpatialMapping__group.html#ga3891995bfc75dc464dc1d310a7eb7a71">SpatialMappingParameters::SPATIAL_MAP_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1SpatialMappingFusionParameters.html#a5964e664ff9114feef577dd37b853876">map_type</a> = <a class="el" href="structsl_1_1SpatialMappingParameters.html#ga3891995bfc75dc464dc1d310a7eb7a71a5b65fe46c5dd90ebcec69c472c3be1d9">SpatialMappingParameters::SPATIAL_MAP_TYPE::MESH</a></td></tr>
+<tr class="memdesc:a5964e664ff9114feef577dd37b853876"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of spatial map to be created. This dictates the format that will be used for the mapping(e.g. mesh, point cloud). See SPATIAL_MAP_TYPE.  <a href="structsl_1_1SpatialMappingFusionParameters.html#a5964e664ff9114feef577dd37b853876">More...</a><br /></td></tr>
+<tr class="separator:a5964e664ff9114feef577dd37b853876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sets the spatial mapping parameters. </p>
+<p>Instantiating with the default constructor will set all parameters to their default values. <br  />
+ You can customize these values to fit your application, and then save them to a preset to be loaded in future executions.</p>
+<dl class="section note"><dt>Note</dt><dd>Users can adjust these parameters as they see fit. </dd></dl>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a9838e598b4254ce8bb4a18a8aa89242e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9838e598b4254ce8bb4a18a8aa89242e">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SpatialMapping__group.html#ga3155f0333317e8cfd79ecccbff77077e">SpatialMappingParameters::MAPPING_RESOLUTION</a>&#160;</td>
+          <td class="paramname"><em>mapping_resolution</em> = <code><a class="el" href="structsl_1_1SpatialMappingParameters.html#ga3155f0333317e8cfd79ecccbff77077eac87f3be66ffc3c0d4249f1c2cc5f3cce">SpatialMappingParameters::MAPPING_RESOLUTION::MEDIUM</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the resolution corresponding to the given MAPPING_RESOLUTION preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapping_resolution</td><td>The desired MAPPING_RESOLUTION. Default: MAPPING_RESOLUTION::MEDIUM. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5f333f57c55b52acb37d81d760f5b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f333f57c55b52acb37d81d760f5b72">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SpatialMapping__group.html#ga9b385192e8e881f046b9de8dd899f107">SpatialMappingParameters::MAPPING_RANGE</a>&#160;</td>
+          <td class="paramname"><em>mapping_range</em> = <code><a class="el" href="structsl_1_1SpatialMappingParameters.html#ga9b385192e8e881f046b9de8dd899f107ac87f3be66ffc3c0d4249f1c2cc5f3cce">SpatialMappingParameters::MAPPING_RANGE::MEDIUM</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the maximum value of the depth corresponding to the given MAPPING_RANGE preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapping_range</td><td>The desired MAPPING_RANGE. Default: MAPPING_RANGE::MEDIUM. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a25bef5bd7d6f0c201bccdc73bb6680fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bef5bd7d6f0c201bccdc73bb6680fa">&#9670;&nbsp;</a></span>resolution_meter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float resolution_meter = 0.05f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spatial mapping resolution in meters. Should fit allowed_resolution. </p>
+
+</div>
+</div>
+<a id="ad655867d422699a2dbc9a3231b847fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad655867d422699a2dbc9a3231b847fde">&#9670;&nbsp;</a></span>range_meter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float range_meter = 0.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Depth range in meters. Can be different from the value set by <a class="el" href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c">sl::InitParameters::depth_maximum_distance</a>. <br  />
+ Set to 0 by default. In this case, the range is computed from resolution_meter and from the current internal parameters to fit your application. </p>
+
+</div>
+</div>
+<a id="a41a34f0628ac8519d83287c01f34ee0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a34f0628ac8519d83287c01f34ee0f">&#9670;&nbsp;</a></span>use_chunk_only</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool use_chunk_only = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to false if you want to ensure consistency between the mesh and its inner chunk data. </p>
+<dl class="section note"><dt>Note</dt><dd>Updating the mesh is time-consuming. Setting this to true results in better performance. </dd></dl>
+
+</div>
+</div>
+<a id="a727e51d827dc5c64c3413097cf8db111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727e51d827dc5c64c3413097cf8db111">&#9670;&nbsp;</a></span>max_memory_usage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max_memory_usage = 2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum CPU memory (in MB) allocated for the meshing process. </p>
+
+</div>
+</div>
+<a id="add1c32cc28522d7dded8a9f2ef55c159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1c32cc28522d7dded8a9f2ef55c159">&#9670;&nbsp;</a></span>stability_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stability_counter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control the integration rate of the current depth into the mapping process. This parameter controls how many times a stable 3D points should be seen before it is integrated into the spatial mapping. Default value is 0, this will define the stability counter based on the mesh resolution, the higher the resolution, the higher the stability counter. </p>
+
+</div>
+</div>
+<a id="a5964e664ff9114feef577dd37b853876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5964e664ff9114feef577dd37b853876">&#9670;&nbsp;</a></span>map_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SpatialMapping__group.html#ga3891995bfc75dc464dc1d310a7eb7a71">SpatialMappingParameters::SPATIAL_MAP_TYPE</a> map_type = <a class="el" href="structsl_1_1SpatialMappingParameters.html#ga3891995bfc75dc464dc1d310a7eb7a71a5b65fe46c5dd90ebcec69c472c3be1d9">SpatialMappingParameters::SPATIAL_MAP_TYPE::MESH</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type of spatial map to be created. This dictates the format that will be used for the mapping(e.g. mesh, point cloud). See SPATIAL_MAP_TYPE. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

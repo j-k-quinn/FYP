@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['target_5fframerate_1477',['target_framerate',['../structSL__StreamingParameters.html#ac0c0f6fbd2e389fb1507b0ca547874de',1,'SL_StreamingParameters::target_framerate()'],['../structSL__RecordingParameters.html#a6cf437ad56e7ba6cc9053e755aad185d',1,'SL_RecordingParameters::target_framerate()']]],
+  ['target_5ftranslation_5funcertainty_1478',['target_translation_uncertainty',['../structSL__GNSSCalibrationParameters.html#a12b9f46baf56db4cb4dea59b14833a4a',1,'SL_GNSSCalibrationParameters']]],
+  ['target_5fyaw_5funcertainty_1479',['target_yaw_uncertainty',['../structSL__GNSSCalibrationParameters.html#a97e02166f3cb72091cc78656044c51c2',1,'SL_GNSSCalibrationParameters']]],
+  ['temperature_1480',['temperature',['../structSL__SensorsData.html#a4ed81e3a86488ba2733e9978688d4540',1,'SL_SensorsData']]],
+  ['texture_5fconfidence_5fthreshold_1481',['texture_confidence_threshold',['../structSL__RuntimeParameters.html#acb152b5765aa35193d5cfb972decb2ea',1,'SL_RuntimeParameters']]],
+  ['timeout_5fperiod_5fnumber_1482',['timeout_period_number',['../structSL__InitFusionParameters.html#aa0b2c483ffa283617160eaef825429ec',1,'SL_InitFusionParameters']]],
+  ['timestamp_1483',['timestamp',['../structSL__PoseData.html#a00e815a8d3109f9626d782e51c3a5d19',1,'SL_PoseData::timestamp()'],['../structSL__Objects.html#a1e0b635fa5fdbd666d5a605d3675cc46',1,'SL_Objects::timestamp()'],['../structSL__Bodies.html#abb970c67c7fcf4a6bfcc5736a9b9b413',1,'SL_Bodies::timestamp()'],['../structSL__GeoPose.html#a1ec2678fc0851493e042a93ade7f215c',1,'SL_GeoPose::timestamp()']]],
+  ['timestamp_5fns_1484',['timestamp_ns',['../structSL__MagnetometerData.html#ad7f08cc174126cc29a504e0b25775711',1,'SL_MagnetometerData::timestamp_ns()'],['../structSL__BarometerData.html#ac9abba3df01f306710b73225fc4d12b4',1,'SL_BarometerData::timestamp_ns()'],['../structSL__IMUData.html#a41be433733d61414833db78fcea7d20a',1,'SL_IMUData::timestamp_ns()']]],
+  ['timestamps_1485',['timestamps',['../structSL__ObjectsBatch.html#a568f45ae47b9befcc64201246e63b6b1',1,'SL_ObjectsBatch']]],
+  ['tracking_5fstate_1486',['tracking_state',['../structSL__ObjectData.html#ab7ccdecbbbf814a6ec714aaf9bd99cf3',1,'SL_ObjectData::tracking_state()'],['../structSL__BodyData.html#ae2502e171a565daae73f314b4e41d2cb',1,'SL_BodyData::tracking_state()'],['../structSL__ObjectsBatch.html#a76c6d42546d8337fb46b91c814d8496f',1,'SL_ObjectsBatch::tracking_state()']]],
+  ['transcode_5fstreaming_5finput_1487',['transcode_streaming_input',['../structSL__RecordingParameters.html#ab8052d7cc861fa1d16a8a8b02d052412',1,'SL_RecordingParameters']]],
+  ['translation_1488',['translation',['../structSL__PoseData.html#a7efbd44f69fee247d6c26fd31c998196',1,'SL_PoseData::translation()'],['../structSL__CalibrationParameters.html#aef771c463e5a80f388a504f415edf4b1',1,'SL_CalibrationParameters::translation()'],['../structSL__GeoPose.html#a04f957023ca60115bc919761a792a3cc',1,'SL_GeoPose::translation()']]],
+  ['ts_1489',['ts',['../structSL__GNSSData.html#af064cd7c8803994151c3ec2d73e6d40b',1,'SL_GNSSData']]],
+  ['twist_1490',['twist',['../structSL__PoseData.html#a44ec01828f247f046df926d373c7fb50',1,'SL_PoseData']]],
+  ['twist_5fcovariance_1491',['twist_covariance',['../structSL__PoseData.html#a44dca66cf00b6b5b4677ede70be67cc3',1,'SL_PoseData']]],
+  ['type_1492',['type',['../structSL__PlaneData.html#aa6c4de4c6d1463b52df6287f47b1b8ec',1,'SL_PlaneData::type()'],['../structSL__SensorParameters.html#a21db43ce292e5ba9b3f2ec2f579e15fa',1,'SL_SensorParameters::type()']]]
+];

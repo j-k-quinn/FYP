@@ -1,0 +1,559 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>BodyTrackingParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1BodyTrackingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1BodyTrackingParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">BodyTrackingParameters Class Reference<div class="ingroups"><a class="el" href="group__Body__group.html">Body Tracking Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class containing a set of parameters for the body tracking module.  
+ <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a17bec225ef3c7b461077e1f11f489ae3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a17bec225ef3c7b461077e1f11f489ae3">__cinit__</a> (self, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a2249527dbc2b696bad1706f1c2c72e77">image_sync</a>=True, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa9da03eeec17c28a2185b25311717d13">enable_tracking</a>=True, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a10b6e551a268b9be6b00ed5930289289">enable_segmentation</a>=True, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#af3fdf7ab0f9e672d424f0410f96b9a4f">detection_model</a>=BODY_TRACKING_MODEL.HUMAN_BODY_ACCURATE, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa2030c038765c5df343b0440a431aa88">enable_body_fitting</a>=False, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#acd0cacfcfaa3955605afb328c71c53d4">max_range</a>=-1.0, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a033f1743ef0a0670fa07e140aa4657af">body_format</a>=BODY_FORMAT.BODY_18, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a7905017b797e4a8a4ec3fac233225c2e">body_selection</a>=BODY_KEYPOINTS_SELECTION.FULL, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a06d3fc50f34cf34f4a464a078913dd10">prediction_timeout_s</a>=0.2, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#abd46be77bf9081c1ff153199e6b1febc">allow_reduced_precision_inference</a>=False, <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a8e450f7b1f594356bb47de116caade41">instance_module_id</a>=0)</td></tr>
+<tr class="memdesc:a17bec225ef3c7b461077e1f11f489ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a17bec225ef3c7b461077e1f11f489ae3">More...</a><br /></td></tr>
+<tr class="separator:a17bec225ef3c7b461077e1f11f489ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2249527dbc2b696bad1706f1c2c72e77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a2249527dbc2b696bad1706f1c2c72e77">image_sync</a> (self)</td></tr>
+<tr class="memdesc:a2249527dbc2b696bad1706f1c2c72e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body tracking is synchronized to the image or runs in a separate thread.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a2249527dbc2b696bad1706f1c2c72e77">More...</a><br /></td></tr>
+<tr class="separator:a2249527dbc2b696bad1706f1c2c72e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9da03eeec17c28a2185b25311717d13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa9da03eeec17c28a2185b25311717d13">enable_tracking</a> (self)</td></tr>
+<tr class="memdesc:aa9da03eeec17c28a2185b25311717d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body tracking system includes body/person tracking capabilities across a sequence of images.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa9da03eeec17c28a2185b25311717d13">More...</a><br /></td></tr>
+<tr class="separator:aa9da03eeec17c28a2185b25311717d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b6e551a268b9be6b00ed5930289289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a10b6e551a268b9be6b00ed5930289289">enable_segmentation</a> (self)</td></tr>
+<tr class="memdesc:a10b6e551a268b9be6b00ed5930289289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body/person masks will be computed.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a10b6e551a268b9be6b00ed5930289289">More...</a><br /></td></tr>
+<tr class="separator:a10b6e551a268b9be6b00ed5930289289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fdf7ab0f9e672d424f0410f96b9a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1BODY__TRACKING__MODEL.html">BODY_TRACKING_MODEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#af3fdf7ab0f9e672d424f0410f96b9a4f">detection_model</a> (self)</td></tr>
+<tr class="memdesc:af3fdf7ab0f9e672d424f0410f96b9a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpyzed_1_1sl_1_1BODY__TRACKING__MODEL.html" title="Lists available models for the body tracking module.">sl.BODY_TRACKING_MODEL</a> to use.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#af3fdf7ab0f9e672d424f0410f96b9a4f">More...</a><br /></td></tr>
+<tr class="separator:af3fdf7ab0f9e672d424f0410f96b9a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f1743ef0a0670fa07e140aa4657af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">BODY_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a033f1743ef0a0670fa07e140aa4657af">body_format</a> (self)</td></tr>
+<tr class="memdesc:a033f1743ef0a0670fa07e140aa4657af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Body format to be outputted by the ZED SDK with <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2537971c805494fad7016d1a9a5f4fa5" title="Retrieves body tracking data from the body tracking module.">sl.Camera.retrieve_bodies()</a>.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a033f1743ef0a0670fa07e140aa4657af">More...</a><br /></td></tr>
+<tr class="separator:a033f1743ef0a0670fa07e140aa4657af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7905017b797e4a8a4ec3fac233225c2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1BODY__KEYPOINTS__SELECTION.html">BODY_KEYPOINTS_SELECTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a7905017b797e4a8a4ec3fac233225c2e">body_selection</a> (self)</td></tr>
+<tr class="memdesc:a7905017b797e4a8a4ec3fac233225c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selection of keypoints to be outputted by the ZED SDK with <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2537971c805494fad7016d1a9a5f4fa5" title="Retrieves body tracking data from the body tracking module.">sl.Camera.retrieve_bodies()</a>.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a7905017b797e4a8a4ec3fac233225c2e">More...</a><br /></td></tr>
+<tr class="separator:a7905017b797e4a8a4ec3fac233225c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2030c038765c5df343b0440a431aa88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa2030c038765c5df343b0440a431aa88">enable_body_fitting</a> (self)</td></tr>
+<tr class="memdesc:aa2030c038765c5df343b0440a431aa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to apply the body fitting.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa2030c038765c5df343b0440a431aa88">More...</a><br /></td></tr>
+<tr class="separator:aa2030c038765c5df343b0440a431aa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0cacfcfaa3955605afb328c71c53d4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#acd0cacfcfaa3955605afb328c71c53d4">max_range</a> (self)</td></tr>
+<tr class="memdesc:acd0cacfcfaa3955605afb328c71c53d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper depth range for detections.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#acd0cacfcfaa3955605afb328c71c53d4">More...</a><br /></td></tr>
+<tr class="separator:acd0cacfcfaa3955605afb328c71c53d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d3fc50f34cf34f4a464a078913dd10"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a06d3fc50f34cf34f4a464a078913dd10">prediction_timeout_s</a> (self)</td></tr>
+<tr class="memdesc:a06d3fc50f34cf34f4a464a078913dd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prediction duration of the ZED SDK when an object is not detected anymore before switching its state to <a class="el" href="classpyzed_1_1sl_1_1OBJECT__TRACKING__STATE.html">sl.OBJECT_TRACKING_STATE.SEARCHING</a>.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a06d3fc50f34cf34f4a464a078913dd10">More...</a><br /></td></tr>
+<tr class="separator:a06d3fc50f34cf34f4a464a078913dd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd46be77bf9081c1ff153199e6b1febc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#abd46be77bf9081c1ff153199e6b1febc">allow_reduced_precision_inference</a> (self)</td></tr>
+<tr class="memdesc:abd46be77bf9081c1ff153199e6b1febc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to allow inference to run at a lower precision to improve runtime and memory usage.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#abd46be77bf9081c1ff153199e6b1febc">More...</a><br /></td></tr>
+<tr class="separator:abd46be77bf9081c1ff153199e6b1febc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e450f7b1f594356bb47de116caade41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a8e450f7b1f594356bb47de116caade41">instance_module_id</a> (self)</td></tr>
+<tr class="memdesc:a8e450f7b1f594356bb47de116caade41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the module instance.  <a href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a8e450f7b1f594356bb47de116caade41">More...</a><br /></td></tr>
+<tr class="separator:a8e450f7b1f594356bb47de116caade41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class containing a set of parameters for the body tracking module. </p>
+<p>The default constructor sets all parameters to their default settings. </p><dl class="section note"><dt>Note</dt><dd>Parameters can be adjusted by the user. </dd></dl>
+</div><h2 class="groupheader">Functions</h2>
+<a id="a17bec225ef3c7b461077e1f11f489ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bec225ef3c7b461077e1f11f489ae3">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>image_sync</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_tracking</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_segmentation</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>detection_model</em> = <code>BODY_TRACKING_MODEL.HUMAN_BODY_ACCURATE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>enable_body_fitting</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_range</em> = <code>-1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>body_format</em> = <code>BODY_FORMAT.BODY_18</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>body_selection</em> = <code>BODY_KEYPOINTS_SELECTION.FULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>prediction_timeout_s</em> = <code>0.2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>allow_reduced_precision_inference</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>instance_module_id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>All the parameters are set to their default values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_sync</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a2249527dbc2b696bad1706f1c2c72e77">image_sync</a> </td></tr>
+    <tr><td class="paramname">enable_tracking</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa9da03eeec17c28a2185b25311717d13">enable_tracking</a> </td></tr>
+    <tr><td class="paramname">enable_segmentation</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a10b6e551a268b9be6b00ed5930289289">enable_segmentation</a> </td></tr>
+    <tr><td class="paramname">detection_model</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#af3fdf7ab0f9e672d424f0410f96b9a4f">detection_model</a> </td></tr>
+    <tr><td class="paramname">enable_body_fitting</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#aa2030c038765c5df343b0440a431aa88">enable_body_fitting</a> </td></tr>
+    <tr><td class="paramname">max_range</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#acd0cacfcfaa3955605afb328c71c53d4">max_range</a> </td></tr>
+    <tr><td class="paramname">body_format</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a033f1743ef0a0670fa07e140aa4657af">body_format</a> </td></tr>
+    <tr><td class="paramname">body_selection</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a7905017b797e4a8a4ec3fac233225c2e">body_selection</a> </td></tr>
+    <tr><td class="paramname">prediction_timeout_s</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a06d3fc50f34cf34f4a464a078913dd10">prediction_timeout_s</a> </td></tr>
+    <tr><td class="paramname">allow_reduced_precision_inference</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#abd46be77bf9081c1ff153199e6b1febc">allow_reduced_precision_inference</a> </td></tr>
+    <tr><td class="paramname">instance_module_id</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a8e450f7b1f594356bb47de116caade41">instance_module_id</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2249527dbc2b696bad1706f1c2c72e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2249527dbc2b696bad1706f1c2c72e77">&#9670;&nbsp;</a></span>image_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool image_sync </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body tracking is synchronized to the image or runs in a separate thread. </p>
+<p>If set to true, the detection is run on every <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a9ee94c7480518ab1a95ce94b23dbaca1" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl.Camera.grab()</a>. <br  />
+ Otherwise, the thread runs at its own speed, which can lead to new detection once in a while. <br  />
+ Default: True </p>
+
+</div>
+</div>
+<a id="aa9da03eeec17c28a2185b25311717d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9da03eeec17c28a2185b25311717d13">&#9670;&nbsp;</a></span>enable_tracking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool enable_tracking </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body tracking system includes body/person tracking capabilities across a sequence of images. </p>
+<p>Default: True </p>
+
+</div>
+</div>
+<a id="a10b6e551a268b9be6b00ed5930289289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b6e551a268b9be6b00ed5930289289">&#9670;&nbsp;</a></span>enable_segmentation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool enable_segmentation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body/person masks will be computed. </p>
+<p>Default: False </p>
+
+</div>
+</div>
+<a id="af3fdf7ab0f9e672d424f0410f96b9a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fdf7ab0f9e672d424f0410f96b9a4f">&#9670;&nbsp;</a></span>detection_model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1BODY__TRACKING__MODEL.html">BODY_TRACKING_MODEL</a> detection_model </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classpyzed_1_1sl_1_1BODY__TRACKING__MODEL.html" title="Lists available models for the body tracking module.">sl.BODY_TRACKING_MODEL</a> to use. </p>
+<p>Default: <a class="el" href="classpyzed_1_1sl_1_1BODY__TRACKING__MODEL.html">sl.BODY_TRACKING_MODEL.HUMAN_BODY_ACCURATE</a> </p>
+
+</div>
+</div>
+<a id="a033f1743ef0a0670fa07e140aa4657af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033f1743ef0a0670fa07e140aa4657af">&#9670;&nbsp;</a></span>body_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">BODY_FORMAT</a> body_format </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Body format to be outputted by the ZED SDK with <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2537971c805494fad7016d1a9a5f4fa5" title="Retrieves body tracking data from the body tracking module.">sl.Camera.retrieve_bodies()</a>. </p>
+<p>Default: <a class="el" href="classpyzed_1_1sl_1_1BODY__FORMAT.html">sl.BODY_FORMAT.BODY_18</a> </p>
+
+</div>
+</div>
+<a id="a7905017b797e4a8a4ec3fac233225c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7905017b797e4a8a4ec3fac233225c2e">&#9670;&nbsp;</a></span>body_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1BODY__KEYPOINTS__SELECTION.html">BODY_KEYPOINTS_SELECTION</a> body_selection </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selection of keypoints to be outputted by the ZED SDK with <a class="el" href="classpyzed_1_1sl_1_1Camera.html#a2537971c805494fad7016d1a9a5f4fa5" title="Retrieves body tracking data from the body tracking module.">sl.Camera.retrieve_bodies()</a>. </p>
+<p>Default: <a class="el" href="classpyzed_1_1sl_1_1BODY__KEYPOINTS__SELECTION.html">sl.BODY_KEYPOINTS_SELECTION.FULL</a> </p>
+
+</div>
+</div>
+<a id="aa2030c038765c5df343b0440a431aa88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2030c038765c5df343b0440a431aa88">&#9670;&nbsp;</a></span>enable_body_fitting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool enable_body_fitting </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to apply the body fitting. </p>
+<p>Default: False </p>
+
+</div>
+</div>
+<a id="acd0cacfcfaa3955605afb328c71c53d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0cacfcfaa3955605afb328c71c53d4">&#9670;&nbsp;</a></span>max_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float max_range </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Upper depth range for detections. </p>
+<p>Default: -1 (value set in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7e4187448be7073690d3d0577ecfb5aa" title="Maximum depth distance to be returned, measured in the sl.UNIT defined in coordinate_units.">sl.InitParameters.depth_maximum_distance</a>) </p><dl class="section note"><dt>Note</dt><dd>The value cannot be greater than <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7e4187448be7073690d3d0577ecfb5aa" title="Maximum depth distance to be returned, measured in the sl.UNIT defined in coordinate_units.">sl.InitParameters.depth_maximum_distance</a> and its unit is defined in <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a59b4de42de6f091613c01daa1c82e37b" title="Unit of spatial data (depth, point cloud, tracking, mesh, etc.) for retrieval.">sl.InitParameters.coordinate_units</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a06d3fc50f34cf34f4a464a078913dd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d3fc50f34cf34f4a464a078913dd10">&#9670;&nbsp;</a></span>prediction_timeout_s()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float prediction_timeout_s </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prediction duration of the ZED SDK when an object is not detected anymore before switching its state to <a class="el" href="classpyzed_1_1sl_1_1OBJECT__TRACKING__STATE.html">sl.OBJECT_TRACKING_STATE.SEARCHING</a>. </p>
+<p>It prevents the jittering of the object state when there is a short misdetection. <br  />
+ The user can define their own prediction time duration. <br  />
+ Default: 0.2 </p><dl class="section note"><dt>Note</dt><dd>During this time, the object will have <a class="el" href="classpyzed_1_1sl_1_1OBJECT__TRACKING__STATE.html">sl.OBJECT_TRACKING_STATE.OK</a> state even if it is not detected. </dd>
+<dd>
+The duration is expressed in seconds. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="classpyzed_1_1sl_1_1BodyTrackingParameters.html#a06d3fc50f34cf34f4a464a078913dd10">prediction_timeout_s</a> will be clamped to 1 second as the prediction is getting worse with time. </dd>
+<dd>
+Setting this parameter to 0 disables the ZED SDK predictions. </dd></dl>
+
+</div>
+</div>
+<a id="abd46be77bf9081c1ff153199e6b1febc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd46be77bf9081c1ff153199e6b1febc">&#9670;&nbsp;</a></span>allow_reduced_precision_inference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool allow_reduced_precision_inference </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to allow inference to run at a lower precision to improve runtime and memory usage. </p>
+<p>It might increase the initial optimization time and could include downloading calibration data or calibration cache and slightly reduce the accuracy. </p><dl class="section note"><dt>Note</dt><dd>The fp16 is automatically enabled if the GPU is compatible and provides a speed up of almost x2 and reduce memory usage by almost half, no precision loss. </dd>
+<dd>
+This setting allow int8 precision which can speed up by another x2 factor (compared to fp16, or x4 compared to fp32) and half the fp16 memory usage, however some accuracy could be lost. </dd>
+<dd>
+The accuracy loss should not exceed 1-2% on the compatible models. </dd>
+<dd>
+The current compatible models are all <a class="el" href="classpyzed_1_1sl_1_1AI__MODELS.html">sl.AI_MODELS.HUMAN_BODY_XXXX</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a8e450f7b1f594356bb47de116caade41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e450f7b1f594356bb47de116caade41">&#9670;&nbsp;</a></span>instance_module_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int instance_module_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Id of the module instance. </p>
+<p>This is used to identify which body tracking module instance is used. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
