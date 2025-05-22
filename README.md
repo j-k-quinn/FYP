@@ -3,24 +3,6 @@
 
 # Prerequisites
 
-## Theory
-Some basic notions of Docker and ROS would be really helpful to get you started. You will learn more about those tools during the class, but you should try to get a basic understanding of the following notions before continuing:
-- Linux
-  - Environment variables
-
-- Docker
-  - Container
-  - Image
-  - Volumes
-  - `docker build`, `docker run`, `docker exec` commands
-
-- ROS
-  - Workspace
-  - Package
-  - Node
-  - Topic
-  - `roscore`, `roslaunch`, `rosrun`
-
 ## Software
 From a technical standpoint, you need to install the following on your (Linux) computer: [docker](https://docs.docker.com/engine/install/), [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -39,7 +21,6 @@ All P3-ATs have beem checked by the GTAs, so you robot should be working. All yo
  - **Check that you are plugged in the right serial port** - the one near the motors, reset, etc buttons (see picture below)
  - Check that the other end of your serial to USB adaptor is **plugged in your computer**
 
-![](doc/serial_adapter.jpg)
 
 # Workspace architecture
 
@@ -95,10 +76,6 @@ ArRobotConnector: Connecting to MTX sonar (if neccesary)...
 [ INFO] [1638375582.822727512]: rosaria: Setup complete
 ```
 
-Once the driver is running, you can use ROS' default keyboard teleop to move the robot (in a new terminal):
-```bash
-# Install with `sudo apt install ros-noetic-teleop-twist-keyboard` if necessary
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/RosAria/cmd_vel
-```
+
 You are now ready to use the robot; check out [ROSARIA's documentation](http://wiki.ros.org/ROSARIA) to learn more about the different types of data you can access through topics.
 
