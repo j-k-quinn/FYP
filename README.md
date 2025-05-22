@@ -21,11 +21,6 @@ All P3-ATs have beem checked by the GTAs, so you robot should be working. All yo
  - **Check that you are plugged in the right serial port** - the one near the motors, reset, etc buttons (see picture below)
  - Check that the other end of your serial to USB adaptor is **plugged in your computer**
 
-
-# Workspace architecture
-
-> TODO: add figure
-
 # Getting started
 
 > **NB**: since docker requires sudo access, you will have to use `sudo XXX` and enter your password quite often. If you want to avoid this, simply type `sudo usermod -aG docker [YOUR_USERNAME]`, and then reboot your computer. If you choose to do this, you can then replace `sudo make XXX` by `make XXX` in all the following.
