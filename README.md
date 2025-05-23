@@ -3,28 +3,8 @@
 
 # Prerequisites
 
-## Theory
-Some basic notions of Docker and ROS would be really helpful to get you started. You will learn more about those tools during the class, but you should try to get a basic understanding of the following notions before continuing:
-- Linux
-  - Environment variables
-
-- Docker
-  - Container
-  - Image
-  - Volumes
-  - `docker build`, `docker run`, `docker exec` commands
-
-- ROS
-  - Workspace
-  - Package
-  - Node
-  - Topic
-  - `roscore`, `roslaunch`, `rosrun`
-
 ## Software
 From a technical standpoint, you need to install the following on your (Linux) computer: [docker](https://docs.docker.com/engine/install/), [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
-You also need to [know your IP](https://opensource.com/article/18/5/how-find-ip-address-linux).
 
 Here is a short installation example on Ubuntu:
 
@@ -34,10 +14,10 @@ curl https://get.docker.com | sh && sudo systemctl --now enable docker
 ```
 
 ## Hardware
-All P3-ATs have beem checked by the GTAs, so you robot should be working. All you need to do is:
+All you need to do is:
  - **Make sure the batteries are charged** - check the 12V output on each battery
- - **Check that you are plugged in the right serial port** - the one near the motors, reset, etc buttons (see picture below)
- - Check that the other end of your serial to USB adaptor is **plugged in your computer**
+ - **Check that you are plugged in the right serial port** - the one near the motors, reset, etc buttons (The PeopleBot should be connected to /dev/ttyUSB0 and /dev/ttyUSB1, and the rplidar should be /dev/ttyUSB2).
+ - Check that the Anker Solix power bank is on
 
 
 # Getting started
