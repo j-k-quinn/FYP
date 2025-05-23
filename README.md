@@ -39,37 +39,32 @@ All P3-ATs have beem checked by the GTAs, so you robot should be working. All yo
  - **Check that you are plugged in the right serial port** - the one near the motors, reset, etc buttons (see picture below)
  - Check that the other end of your serial to USB adaptor is **plugged in your computer**
 
-![](doc/serial_adapter.jpg)
-
-# Workspace architecture
-
-> TODO: add figure
 
 # Getting started
 
-> **NB**: since docker requires sudo access, you will have to use `sudo XXX` and enter your password quite often. If you want to avoid this, simply type `sudo usermod -aG docker [YOUR_USERNAME]`, and then reboot your computer. If you choose to do this, you can then replace `sudo make XXX` by `make XXX` in all the following.
+> **NB**: Docker requires sudo access, so you will have to use `sudo XXX` and enter your password often. To avoid this, type `sudo usermod -aG docker [YOUR_USERNAME]`, and then reboot your computer. You can then replace `sudo make XXX` by `make XXX` in all the following.
 ```bash
 # Clone the repo
 git clone git@github.com:ImperialCollegeLondon/hcr_docker.git
 
-cd hcr_docker
-
-# Create your own .env file based on the example
-cp .env.example .env
-
-##### IMPORTANT ######
-# You need to edit .env and replace the default values with your setup: your IP...
-vim .env
-######################
+cd FYP
 
 # Build the Docker image containing the driver
 sudo make build
 ```
-Once the image is built, open a new terminal and start `roscore`.
-Then, come back to the first terminal and run:
-```bash
-# Run the driver
+# Run the Docker image
 sudo make run
+```
+Once in the image enter `source devel/setup.bash` and then start `roscore`.
+
+In all new terminals run:
+```docker exec -it p3at_ros_driver bash
+# Then initialise ROS
+source devel/setup.bash
+```
+
+To connect to the PeopleBot run:
+```rosrun rosaria RosAria
 ```
 
 If everything goes well, you should see something like:
