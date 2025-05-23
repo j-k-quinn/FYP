@@ -45,26 +45,29 @@ All P3-ATs have beem checked by the GTAs, so you robot should be working. All yo
 > **NB**: Docker requires sudo access, so you will have to use `sudo XXX` and enter your password often. To avoid this, type `sudo usermod -aG docker [YOUR_USERNAME]`, and then reboot your computer. You can then replace `sudo make XXX` by `make XXX` in all the following.
 ```bash
 # Clone the repo
-git clone git@github.com:ImperialCollegeLondon/hcr_docker.git
+git clone -b jetson-object-detection --single-branch https://github.com/j-k-quinn/FYP.git
 
 cd FYP
 
 # Build the Docker image containing the driver
 sudo make build
-```
-# Run the Docker image
+
+#Run the Docker image
 sudo make run
 ```
 Once in the image enter `source devel/setup.bash` and then start `roscore`.
 
 In all new terminals run:
-```docker exec -it p3at_ros_driver bash
+```bash
+docker exec -it p3at_ros_driver bash
+
 # Then initialise ROS
 source devel/setup.bash
 ```
 
 To connect to the PeopleBot run:
-```rosrun rosaria RosAria
+```bash
+rosrun rosaria RosAria
 ```
 
 If everything goes well, you should see something like:
@@ -90,10 +93,12 @@ ArRobotConnector: Connecting to MTX sonar (if neccesary)...
 [ INFO] [1638375582.822727512]: rosaria: Setup complete
 ```
 
-Once the driver is running, you can use ROS' default keyboard teleop to move the robot (in a new terminal):
+To launch the sensors and controller run:
 ```bash
-# Install with `sudo apt install ros-noetic-teleop-twist-keyboard` if necessary
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/RosAria/cmd_vel
+roslaunch full_system full_system.launch
 ```
-You are now ready to use the robot; check out [ROSARIA's documentation](http://wiki.ros.org/ROSARIA) to learn more about the different types of data you can access through topics.
 
+To run the object detection script run:
+```bash
+roslaunch full_system full_system.launch
+```
