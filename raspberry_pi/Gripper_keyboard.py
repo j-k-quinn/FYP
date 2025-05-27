@@ -1,6 +1,5 @@
 import RPi.GPIO as GPIO
 import time
-import keyboard  # Requires: pip3 install keyboard
 
 # GPIO pin setup
 IN1, IN2, ENA = 17, 27, 18  # Lift
@@ -44,35 +43,42 @@ def stop_gripper():
     GPIO.output(IN4, GPIO.LOW)
     pwm_grip.ChangeDutyCycle(0)
 
-print("Controls:")
-print("W/S = Lift Up/Down")
-print("A/D = Gripper Open/Close")
-print("Q = Stop Lift, E = Stop Gripper")
-print("X = Exit")
+print("\nGripper Control via SSH")
+print("Commands:")
+print("w = Lift Up")
+print("s = Lift Down")
+print("a = Gripper Open")
+print("d = Gripper Close")
+print("q = Stop Lift")
+print("e = Stop Gripper")
+print("x = Exit\n")
 
 try:
     while True:
-        if keyboard.is_pressed('w'):
+        key = input("Enter command: ").lower().strip()
+
+        if key == 'w':
             move_up()
-        elif keyboard.is_pressed('s'):
+        elif key == 's':
             move_down()
-        elif keyboard.is_pressed('a'):
+        elif key == 'a':
             open_gripper()
-        elif keyboard.is_pressed('d'):
+        elif key == 'd':
             close_gripper()
-        elif keyboard.is_pressed('q'):
+        elif key == 'q':
             stop_lift()
-        elif keyboard.is_pressed('e'):
+        elif key == 'e':
             stop_gripper()
-        elif keyboard.is_pressed('x'):
+        elif key == 'x':
             print("Exiting...")
             break
         else:
-            # Optional: stop motors if no key is pressed
-            stop_lift()
-            stop_gripper()
-
-        time.sleep(0.1)
+            print("Invalid command.")
+        
+        # Wait briefly to allow movement before stopping
+        time.sleep(0.5)
+        stop_lift()
+        stop_gripper()
 
 except KeyboardInterrupt:
     pass
