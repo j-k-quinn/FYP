@@ -2,6 +2,9 @@
 import rospy
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Joy
+from std_msgs.msg import Bool
+
+emergency_stop= False
  
 # Scaling factors for linear and angular movement
 l_scale = 1.0  # Linear speed scaling factor
@@ -9,15 +12,31 @@ a_scale = 1.0  # Angular speed scaling factor
  
 # Joystick subscriber callback
 def joy_callback(data):
-    # Create Twist message to publish
+    global emergency_stop
+
+    # Emergency stop toggle (example: button 6 = Back)
+    if data.buttons[1] == 1:  # Button pressed
+        emergency_stop = True
+    else:
+        emergency_stop = False
+
     twist = Twist()
  
-    # Axis mappings: joystick stick movements
-    twist.linear.x = l_scale * data.buttons[1]  # Left stick vertical for linear movement (forward/backward)
-    twist.angular.z = a_scale * data.buttons[0]  # Left stick horizontal for angular movement (turning)
- 
-    # Publish the velocity command based on joystick input
-    rospy.loginfo("Publishing twist: linear.x = %f, angular.z = %f", twist.linear.x, twist.angular.z)
+    if emergency_stop:
+        twist.linear.x = 0
+        twist.linear.y = 0
+        twist.angular.z = 0
+        rospy.logwarn_throttle(1, "Emergency STOP active!")
+
+    else:
+        # Use axes for analog stick values
+        # axes[7]: up/down → forward/backward
+        # axes[6]: left/right → left/right turn
+    
+        twist.linear.x = l_scale * data.axes[7]
+        twist.angular.z = a_scale * data.axes[6]  # Negative for right-positive angular direction
+
+    rospy.loginfo("Twist command: linear.x = %.2f, angular.z = %.2f", twist.linear.x, twist.angular.z)
     pub.publish(twist)
  
 def start():

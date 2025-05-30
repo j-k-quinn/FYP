@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['barometer_5fparameters_791',['barometer_parameters',['../classpyzed_1_1sl_1_1SensorsConfiguration.html#a40b71751ec9c0522f4e845916b6b6e46',1,'pyzed::sl::SensorsConfiguration']]],
+  ['barycenter_792',['barycenter',['../classpyzed_1_1sl_1_1PointCloudChunk.html#a0337b966a4605242667fc8c95366fc9f',1,'pyzed.sl.PointCloudChunk.barycenter()'],['../classpyzed_1_1sl_1_1Chunk.html#a0337b966a4605242667fc8c95366fc9f',1,'pyzed.sl.Chunk.barycenter()']]],
+  ['batch_5fparameters_793',['batch_parameters',['../classpyzed_1_1sl_1_1ObjectDetectionParameters.html#acd66753d779011f857dee244292e9a98',1,'pyzed::sl::ObjectDetectionParameters']]],
+  ['bitrate_794',['bitrate',['../classpyzed_1_1sl_1_1StreamingParameters.html#a1a030723b4c1b7f2771204599e2f0c2f',1,'pyzed.sl.StreamingParameters.bitrate()'],['../classpyzed_1_1sl_1_1RecordingParameters.html#a1a030723b4c1b7f2771204599e2f0c2f',1,'pyzed.sl.RecordingParameters.bitrate()']]],
+  ['body_5fformat_795',['body_format',['../classpyzed_1_1sl_1_1Bodies.html#a033f1743ef0a0670fa07e140aa4657af',1,'pyzed.sl.Bodies.body_format()'],['../classpyzed_1_1sl_1_1BodyTrackingParameters.html#a033f1743ef0a0670fa07e140aa4657af',1,'pyzed.sl.BodyTrackingParameters.body_format()']]],
+  ['body_5flist_796',['body_list',['../classpyzed_1_1sl_1_1Bodies.html#ab24a55aee5fa1bb61321602049963c74',1,'pyzed::sl::Bodies']]],
+  ['body_5fselection_797',['body_selection',['../classpyzed_1_1sl_1_1BodyTrackingParameters.html#a7905017b797e4a8a4ec3fac233225c2e',1,'pyzed::sl::BodyTrackingParameters']]],
+  ['bounding_5fbox_798',['bounding_box',['../classpyzed_1_1sl_1_1ObjectData.html#ade3ce642f85c05a0c10e66297427b9d4',1,'pyzed.sl.ObjectData.bounding_box()'],['../classpyzed_1_1sl_1_1BodyData.html#ade3ce642f85c05a0c10e66297427b9d4',1,'pyzed.sl.BodyData.bounding_box()']]],
+  ['bounding_5fbox_5f2d_799',['bounding_box_2d',['../classpyzed_1_1sl_1_1ObjectData.html#a7fdaae6a7b7fe2bdbb33139ecd2f0018',1,'pyzed.sl.ObjectData.bounding_box_2d()'],['../classpyzed_1_1sl_1_1BodyData.html#a7fdaae6a7b7fe2bdbb33139ecd2f0018',1,'pyzed.sl.BodyData.bounding_box_2d()'],['../classpyzed_1_1sl_1_1CustomBoxObjectData.html#a7fdaae6a7b7fe2bdbb33139ecd2f0018',1,'pyzed.sl.CustomBoxObjectData.bounding_box_2d()']]],
+  ['bounding_5fboxes_800',['bounding_boxes',['../classpyzed_1_1sl_1_1ObjectsBatch.html#a92d2fe6faffbb33da3f9c19853b6161e',1,'pyzed.sl.ObjectsBatch.bounding_boxes()'],['../classpyzed_1_1sl_1_1BodiesBatch.html#a92d2fe6faffbb33da3f9c19853b6161e',1,'pyzed.sl.BodiesBatch.bounding_boxes()']]],
+  ['bounding_5fboxes_5f2d_801',['bounding_boxes_2d',['../classpyzed_1_1sl_1_1ObjectsBatch.html#a0697f6eddb7c77f6736afcae09ddc9a1',1,'pyzed.sl.ObjectsBatch.bounding_boxes_2d()'],['../classpyzed_1_1sl_1_1BodiesBatch.html#a0697f6eddb7c77f6736afcae09ddc9a1',1,'pyzed.sl.BodiesBatch.bounding_boxes_2d()']]]
+];

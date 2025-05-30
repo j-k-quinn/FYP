@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['accelerometer_5fparameters_1458',['accelerometer_parameters',['../structsl_1_1SensorsConfiguration.html#a25c97e320817b31eb3b3e3b9cac9f120',1,'sl::SensorsConfiguration']]],
+  ['action_5fstate_1459',['action_state',['../classsl_1_1ObjectData.html#a0eca67aecfc7cb4fd57fb131d6236763',1,'sl::ObjectData::action_state()'],['../classsl_1_1BodyData.html#a0eca67aecfc7cb4fd57fb131d6236763',1,'sl::BodyData::action_state()']]],
+  ['action_5fstates_1460',['action_states',['../classsl_1_1ObjectsBatch.html#aaec3c9f058133873e5a3ba137f3bc123',1,'sl::ObjectsBatch::action_states()'],['../classsl_1_1BodiesBatch.html#aaec3c9f058133873e5a3ba137f3bc123',1,'sl::BodiesBatch::action_states()']]],
+  ['adaptative_5fbitrate_1461',['adaptative_bitrate',['../structsl_1_1StreamingParameters.html#aac3b551ebce86fc029870e9d379751f1',1,'sl::StreamingParameters']]],
+  ['allow_5freduced_5fprecision_5finference_1462',['allow_reduced_precision_inference',['../structsl_1_1ObjectDetectionParameters.html#a780e7d3498243d9c78da0ca9e2672567',1,'sl::ObjectDetectionParameters::allow_reduced_precision_inference()'],['../structsl_1_1BodyTrackingParameters.html#a780e7d3498243d9c78da0ca9e2672567',1,'sl::BodyTrackingParameters::allow_reduced_precision_inference()']]],
+  ['allowed_5frange_1463',['allowed_range',['../structsl_1_1SpatialMappingParameters.html#a59b4b69ce903af5261840592ee0eae48',1,'sl::SpatialMappingParameters']]],
+  ['allowed_5fresolution_1464',['allowed_resolution',['../structsl_1_1SpatialMappingParameters.html#af3ed6d21e5e23a02741f8a854e8142f8',1,'sl::SpatialMappingParameters']]],
+  ['altitude_1465',['altitude',['../classsl_1_1LatLng.html#a2b13d276aee0d9fd646c8fa3647e869b',1,'sl::LatLng::altitude()'],['../classsl_1_1GNSSData.html#a2b13d276aee0d9fd646c8fa3647e869b',1,'sl::GNSSData::altitude()']]],
+  ['altitude_5fstd_1466',['altitude_std',['../classsl_1_1GNSSData.html#a60ec3d11d1a57f2ae707f0722643c15d',1,'sl::GNSSData']]],
+  ['angular_5fvelocity_1467',['angular_velocity',['../structsl_1_1SensorsData_1_1IMUData.html#a1be3775ebe92b45ab2472ee7a36cab81',1,'sl::SensorsData::IMUData']]],
+  ['angular_5fvelocity_5fcovariance_1468',['angular_velocity_covariance',['../structsl_1_1SensorsData_1_1IMUData.html#adbf2ea6ca0d1ebdc1a688c380f805337',1,'sl::SensorsData::IMUData']]],
+  ['angular_5fvelocity_5funcalibrated_1469',['angular_velocity_uncalibrated',['../structsl_1_1SensorsData_1_1IMUData.html#afb09c5ae0e5bd33bef74ac1c69f81a28',1,'sl::SensorsData::IMUData']]],
+  ['area_5ffile_5fpath_1470',['area_file_path',['../structsl_1_1PositionalTrackingParameters.html#a5732d2a19ac924dbdfd3e7a8ff162ca6',1,'sl::PositionalTrackingParameters']]],
+  ['async_5fgrab_5fcamera_5frecovery_1471',['async_grab_camera_recovery',['../structsl_1_1InitParameters.html#a8110a28bc2df2010f8a0b0bcbc225f90',1,'sl::InitParameters']]],
+  ['auto_5fapply_1472',['auto_apply',['../structsl_1_1RegionOfInterestParameters.html#a1eaa9b0683feabc44baa811b7ebf415f',1,'sl::RegionOfInterestParameters']]],
+  ['average_5fcompression_5fratio_1473',['average_compression_ratio',['../structsl_1_1RecordingStatus.html#ad6c3f2ca54068a9b181ff307930d924f',1,'sl::RecordingStatus']]],
+  ['average_5fcompression_5ftime_1474',['average_compression_time',['../structsl_1_1RecordingStatus.html#abfdb6f2267771fcb6a2fc4a968443ef9',1,'sl::RecordingStatus']]]
+];

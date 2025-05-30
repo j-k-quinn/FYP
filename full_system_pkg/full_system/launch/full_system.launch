@@ -1,0 +1,21 @@
+<launch>
+  <!-- Start joystick driver -->
+  <node pkg="joy" type="joy_node" name="joy_node" />
+
+  <!-- Run custom Python controller -->
+  <node pkg="rosaria" type="controller.py" name="controller" output="screen" />
+
+
+  <!-- Launch RPLiDAR -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <!-- Publish static transform for ZED2i -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="lidar_tf_pub"
+        args="0.15 0 0.27 0 0 0 1 base_link laser" />
+    
+  <!-- Launch RViz for visualization -->
+  <include file="$(find p3dx_description)/launch/rviz.launch" />
+
+  <node pkg="rviz" type="rviz" name="rviz" />
+
+</launch>

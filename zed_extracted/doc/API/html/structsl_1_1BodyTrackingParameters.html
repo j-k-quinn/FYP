@@ -1,0 +1,547 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>BodyTrackingParameters Struct Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1BodyTrackingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1BodyTrackingParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">BodyTrackingParameters Struct Reference<div class="ingroups"><a class="el" href="group__Body__group.html">Body Tracking Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Structure containing a set of parameters for the body tracking module.  
+ <a href="structsl_1_1BodyTrackingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a47df51d005efc0a32df7f0a7cc877df1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a47df51d005efc0a32df7f0a7cc877df1">BodyTrackingParameters</a> (bool image_sync_=true, bool enable_tracking_=true, bool enable_segmentation_=false, <a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f">BODY_TRACKING_MODEL</a> <a class="el" href="structsl_1_1BodyTrackingParameters.html#aceea79cb88063405541442a7bf25abe2">detection_model</a>=<a class="el" href="namespacesl.html#ga9714cbebb0c371ae37f1cac57661029faaf93babd15089d9b16389fda641ae399">BODY_TRACKING_MODEL::HUMAN_BODY_ACCURATE</a>, bool enable_body_fitting_=false, float max_range_=-1.f, <a class="el" href="group__Body__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a> body_format_=<a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41bab0fd0573c626fcd55b70d4547328ad7d">BODY_FORMAT::BODY_18</a>, <a class="el" href="group__Body__group.html#gaf262844253453d93e56b25d19d78717d">BODY_KEYPOINTS_SELECTION</a> <a class="el" href="structsl_1_1BodyTrackingParameters.html#a0f9665816dcaecf5fc04b9366cbebf9c">body_selection</a>=<a class="el" href="namespacesl.html#gaf262844253453d93e56b25d19d78717daba7de5bc6888294e5884b024a4c894f1">BODY_KEYPOINTS_SELECTION::FULL</a>, float <a class="el" href="structsl_1_1BodyTrackingParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">prediction_timeout_s</a>=0.2f, bool <a class="el" href="structsl_1_1BodyTrackingParameters.html#a780e7d3498243d9c78da0ca9e2672567">allow_reduced_precision_inference</a>=false, unsigned int instance_id=0)</td></tr>
+<tr class="memdesc:a47df51d005efc0a32df7f0a7cc877df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="structsl_1_1BodyTrackingParameters.html#a47df51d005efc0a32df7f0a7cc877df1">More...</a><br /></td></tr>
+<tr class="separator:a47df51d005efc0a32df7f0a7cc877df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29df768e719a3f259f305da371c26e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#ad29df768e719a3f259f305da371c26e9">operator==</a> (const <a class="el" href="structsl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:ad29df768e719a3f259f305da371c26e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135737d6e811140d3dd4c547ca5f9c8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a135737d6e811140d3dd4c547ca5f9c8d">operator!=</a> (const <a class="el" href="structsl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> &amp;param1) const</td></tr>
+<tr class="separator:a135737d6e811140d3dd4c547ca5f9c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a064d66315a3621be00e58e2a8c0a5a6e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a064d66315a3621be00e58e2a8c0a5a6e">instance_module_id</a> = 0</td></tr>
+<tr class="memdesc:a064d66315a3621be00e58e2a8c0a5a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the module instance.  <a href="structsl_1_1BodyTrackingParameters.html#a064d66315a3621be00e58e2a8c0a5a6e">More...</a><br /></td></tr>
+<tr class="separator:a064d66315a3621be00e58e2a8c0a5a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e7be8ef1449d88408234151642e3b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a51e7be8ef1449d88408234151642e3b4">image_sync</a> = true</td></tr>
+<tr class="memdesc:a51e7be8ef1449d88408234151642e3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body tracking is synchronized to the image or runs in a separate thread.  <a href="structsl_1_1BodyTrackingParameters.html#a51e7be8ef1449d88408234151642e3b4">More...</a><br /></td></tr>
+<tr class="separator:a51e7be8ef1449d88408234151642e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a3ad4edec34c2c727581ec6299e6fc6b7">enable_tracking</a> = true</td></tr>
+<tr class="memdesc:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body tracking system includes body/person tracking capabilities across a sequence of images.  <a href="structsl_1_1BodyTrackingParameters.html#a3ad4edec34c2c727581ec6299e6fc6b7">More...</a><br /></td></tr>
+<tr class="separator:a3ad4edec34c2c727581ec6299e6fc6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bdd339eb1e7b6f4a6d27d57ba320e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a96bdd339eb1e7b6f4a6d27d57ba320e1">enable_segmentation</a> = false</td></tr>
+<tr class="memdesc:a96bdd339eb1e7b6f4a6d27d57ba320e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the body/person masks will be computed.  <a href="structsl_1_1BodyTrackingParameters.html#a96bdd339eb1e7b6f4a6d27d57ba320e1">More...</a><br /></td></tr>
+<tr class="separator:a96bdd339eb1e7b6f4a6d27d57ba320e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceea79cb88063405541442a7bf25abe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f">BODY_TRACKING_MODEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#aceea79cb88063405541442a7bf25abe2">detection_model</a> = <a class="el" href="namespacesl.html#ga9714cbebb0c371ae37f1cac57661029faaf93babd15089d9b16389fda641ae399">BODY_TRACKING_MODEL::HUMAN_BODY_ACCURATE</a></td></tr>
+<tr class="memdesc:aceea79cb88063405541442a7bf25abe2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f" title="Lists available models for the body tracking module.">sl::BODY_TRACKING_MODEL</a> to use.  <a href="structsl_1_1BodyTrackingParameters.html#aceea79cb88063405541442a7bf25abe2">More...</a><br /></td></tr>
+<tr class="separator:aceea79cb88063405541442a7bf25abe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4e565a76adb69e7d2bffeb24aa0368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#abe4e565a76adb69e7d2bffeb24aa0368">enable_body_fitting</a> = false</td></tr>
+<tr class="memdesc:abe4e565a76adb69e7d2bffeb24aa0368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to apply the body fitting.  <a href="structsl_1_1BodyTrackingParameters.html#abe4e565a76adb69e7d2bffeb24aa0368">More...</a><br /></td></tr>
+<tr class="separator:abe4e565a76adb69e7d2bffeb24aa0368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d831559bc3766b6fb718cf4c482e3fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Body__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a5d831559bc3766b6fb718cf4c482e3fc">body_format</a> = <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41bab0fd0573c626fcd55b70d4547328ad7d">BODY_FORMAT::BODY_18</a></td></tr>
+<tr class="memdesc:a5d831559bc3766b6fb718cf4c482e3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Body format to be outputted by the ZED SDK with <a class="el" href="classsl_1_1Camera.html#a9c708574bfe456add853adc5c569957f" title="Retrieves body tracking data from the body tracking module.">sl::Camera.retrieveBodies()</a>.  <a href="structsl_1_1BodyTrackingParameters.html#a5d831559bc3766b6fb718cf4c482e3fc">More...</a><br /></td></tr>
+<tr class="separator:a5d831559bc3766b6fb718cf4c482e3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9665816dcaecf5fc04b9366cbebf9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Body__group.html#gaf262844253453d93e56b25d19d78717d">BODY_KEYPOINTS_SELECTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a0f9665816dcaecf5fc04b9366cbebf9c">body_selection</a> = <a class="el" href="namespacesl.html#gaf262844253453d93e56b25d19d78717daba7de5bc6888294e5884b024a4c894f1">BODY_KEYPOINTS_SELECTION::FULL</a></td></tr>
+<tr class="memdesc:a0f9665816dcaecf5fc04b9366cbebf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selection of keypoints to outputted by the ZED SDK with <a class="el" href="classsl_1_1Camera.html#a9c708574bfe456add853adc5c569957f" title="Retrieves body tracking data from the body tracking module.">sl::Camera.retrieveBodies()</a>.  <a href="structsl_1_1BodyTrackingParameters.html#a0f9665816dcaecf5fc04b9366cbebf9c">More...</a><br /></td></tr>
+<tr class="separator:a0f9665816dcaecf5fc04b9366cbebf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539ecba1d7ca20797a31d7ca06eb3884"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a539ecba1d7ca20797a31d7ca06eb3884">max_range</a> = -1.f</td></tr>
+<tr class="memdesc:a539ecba1d7ca20797a31d7ca06eb3884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper depth range for detections.  <a href="structsl_1_1BodyTrackingParameters.html#a539ecba1d7ca20797a31d7ca06eb3884">More...</a><br /></td></tr>
+<tr class="separator:a539ecba1d7ca20797a31d7ca06eb3884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">prediction_timeout_s</a></td></tr>
+<tr class="memdesc:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prediction duration of the ZED SDK when an object is not detected anymore before switching its state to <a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">sl::OBJECT_TRACKING_STATE::SEARCHING</a>.  <a href="structsl_1_1BodyTrackingParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">More...</a><br /></td></tr>
+<tr class="separator:ab3a1cb3093fff4f80f6b57ed6cf0ebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780e7d3498243d9c78da0ca9e2672567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1BodyTrackingParameters.html#a780e7d3498243d9c78da0ca9e2672567">allow_reduced_precision_inference</a></td></tr>
+<tr class="memdesc:a780e7d3498243d9c78da0ca9e2672567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to allow inference to run at a lower precision to improve runtime and memory usage.  <a href="structsl_1_1BodyTrackingParameters.html#a780e7d3498243d9c78da0ca9e2672567">More...</a><br /></td></tr>
+<tr class="separator:a780e7d3498243d9c78da0ca9e2672567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure containing a set of parameters for the body tracking module. </p>
+<p>The default constructor sets all parameters to their default settings.</p>
+<dl class="section note"><dt>Note</dt><dd>Parameters can be adjusted by the user. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="a47df51d005efc0a32df7f0a7cc877df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47df51d005efc0a32df7f0a7cc877df1">&#9670;&nbsp;</a></span>BodyTrackingParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>image_sync_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_tracking_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_segmentation_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f">BODY_TRACKING_MODEL</a>&#160;</td>
+          <td class="paramname"><em>detection_model</em> = <code><a class="el" href="namespacesl.html#ga9714cbebb0c371ae37f1cac57661029faaf93babd15089d9b16389fda641ae399">BODY_TRACKING_MODEL::HUMAN_BODY_ACCURATE</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_body_fitting_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_range_</em> = <code>-1.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Body__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a>&#160;</td>
+          <td class="paramname"><em>body_format_</em> = <code><a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41bab0fd0573c626fcd55b70d4547328ad7d">BODY_FORMAT::BODY_18</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Body__group.html#gaf262844253453d93e56b25d19d78717d">BODY_KEYPOINTS_SELECTION</a>&#160;</td>
+          <td class="paramname"><em>body_selection</em> = <code><a class="el" href="namespacesl.html#gaf262844253453d93e56b25d19d78717daba7de5bc6888294e5884b024a4c894f1">BODY_KEYPOINTS_SELECTION::FULL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>prediction_timeout_s</em> = <code>0.2f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow_reduced_precision_inference</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>instance_id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>All the parameters are set to their default values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="ad29df768e719a3f259f305da371c26e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29df768e719a3f259f305da371c26e9">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator == </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1BodyTrackingParameters.html" title="Structure containing a set of parameters for the body tracking module.">BodyTrackingParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are identical </dd></dl>
+
+</div>
+</div>
+<a id="a135737d6e811140d3dd4c547ca5f9c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135737d6e811140d3dd4c547ca5f9c8d">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1BodyTrackingParameters.html">BodyTrackingParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comparison operator != </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1BodyTrackingParameters.html" title="Structure containing a set of parameters for the body tracking module.">BodyTrackingParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are different </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a064d66315a3621be00e58e2a8c0a5a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a064d66315a3621be00e58e2a8c0a5a6e">&#9670;&nbsp;</a></span>instance_module_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int instance_module_id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Id of the module instance. </p>
+<p>This is used to identify which body tracking module instance is used. </p>
+
+</div>
+</div>
+<a id="a51e7be8ef1449d88408234151642e3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e7be8ef1449d88408234151642e3b4">&#9670;&nbsp;</a></span>image_sync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool image_sync = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body tracking is synchronized to the image or runs in a separate thread. </p>
+<p>If set to true, the detection is run on every <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera.grab()</a>. <br  />
+ Otherwise, the thread runs at its own speed, which can lead to new detection once in a while. </p>
+
+</div>
+</div>
+<a id="a3ad4edec34c2c727581ec6299e6fc6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad4edec34c2c727581ec6299e6fc6b7">&#9670;&nbsp;</a></span>enable_tracking</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_tracking = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body tracking system includes body/person tracking capabilities across a sequence of images. </p>
+
+</div>
+</div>
+<a id="a96bdd339eb1e7b6f4a6d27d57ba320e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bdd339eb1e7b6f4a6d27d57ba320e1">&#9670;&nbsp;</a></span>enable_segmentation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_segmentation = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the body/person masks will be computed. </p>
+
+</div>
+</div>
+<a id="aceea79cb88063405541442a7bf25abe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceea79cb88063405541442a7bf25abe2">&#9670;&nbsp;</a></span>detection_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f">BODY_TRACKING_MODEL</a> detection_model = <a class="el" href="namespacesl.html#ga9714cbebb0c371ae37f1cac57661029faaf93babd15089d9b16389fda641ae399">BODY_TRACKING_MODEL::HUMAN_BODY_ACCURATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__Body__group.html#ga9714cbebb0c371ae37f1cac57661029f" title="Lists available models for the body tracking module.">sl::BODY_TRACKING_MODEL</a> to use. </p>
+
+</div>
+</div>
+<a id="abe4e565a76adb69e7d2bffeb24aa0368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4e565a76adb69e7d2bffeb24aa0368">&#9670;&nbsp;</a></span>enable_body_fitting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_body_fitting = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to apply the body fitting. </p>
+
+</div>
+</div>
+<a id="a5d831559bc3766b6fb718cf4c482e3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d831559bc3766b6fb718cf4c482e3fc">&#9670;&nbsp;</a></span>body_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Body__group.html#ga375807d6ff35199b9b48346de7a5d41b">BODY_FORMAT</a> body_format = <a class="el" href="namespacesl.html#ga375807d6ff35199b9b48346de7a5d41bab0fd0573c626fcd55b70d4547328ad7d">BODY_FORMAT::BODY_18</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Body format to be outputted by the ZED SDK with <a class="el" href="classsl_1_1Camera.html#a9c708574bfe456add853adc5c569957f" title="Retrieves body tracking data from the body tracking module.">sl::Camera.retrieveBodies()</a>. </p>
+
+</div>
+</div>
+<a id="a0f9665816dcaecf5fc04b9366cbebf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9665816dcaecf5fc04b9366cbebf9c">&#9670;&nbsp;</a></span>body_selection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Body__group.html#gaf262844253453d93e56b25d19d78717d">BODY_KEYPOINTS_SELECTION</a> body_selection = <a class="el" href="namespacesl.html#gaf262844253453d93e56b25d19d78717daba7de5bc6888294e5884b024a4c894f1">BODY_KEYPOINTS_SELECTION::FULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selection of keypoints to outputted by the ZED SDK with <a class="el" href="classsl_1_1Camera.html#a9c708574bfe456add853adc5c569957f" title="Retrieves body tracking data from the body tracking module.">sl::Camera.retrieveBodies()</a>. </p>
+
+</div>
+</div>
+<a id="a539ecba1d7ca20797a31d7ca06eb3884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539ecba1d7ca20797a31d7ca06eb3884">&#9670;&nbsp;</a></span>max_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float max_range = -1.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Upper depth range for detections. </p>
+<p>Default: -1.f (value set in <a class="el" href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c" title="Maximum depth distance to be returned, measured in the sl::UNIT defined in coordinate_units.">sl::InitParameters.depth_maximum_distance</a>) </p><dl class="section note"><dt>Note</dt><dd>The value cannot be greater than <a class="el" href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c" title="Maximum depth distance to be returned, measured in the sl::UNIT defined in coordinate_units.">sl::InitParameters.depth_maximum_distance</a> and its unit is defined in <a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421" title="Unit of spatial data (depth, point cloud, tracking, mesh, etc.) for retrieval.">sl::InitParameters.coordinate_units</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ab3a1cb3093fff4f80f6b57ed6cf0ebd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">&#9670;&nbsp;</a></span>prediction_timeout_s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float prediction_timeout_s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prediction duration of the ZED SDK when an object is not detected anymore before switching its state to <a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">sl::OBJECT_TRACKING_STATE::SEARCHING</a>. </p>
+<p>It prevents the jittering of the object state when there is a short misdetection. <br  />
+ The user can define their own prediction time duration. </p><dl class="section note"><dt>Note</dt><dd>During this time, the object will have <a class="el" href="group__Object__group.html#ga43eecfa6fb832a9e5d86bb5e5007b2fa">sl::OBJECT_TRACKING_STATE::OK</a> state even if it is not detected. </dd>
+<dd>
+The duration is expressed in seconds. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="structsl_1_1BodyTrackingParameters.html#ab3a1cb3093fff4f80f6b57ed6cf0ebd1">prediction_timeout_s</a> will be clamped to 1 second as the prediction is getting worse with time. </dd>
+<dd>
+Setting this parameter to 0 disables the ZED SDK predictions. </dd></dl>
+
+</div>
+</div>
+<a id="a780e7d3498243d9c78da0ca9e2672567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780e7d3498243d9c78da0ca9e2672567">&#9670;&nbsp;</a></span>allow_reduced_precision_inference</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allow_reduced_precision_inference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to allow inference to run at a lower precision to improve runtime and memory usage. </p>
+<p>It might increase the initial optimization time and could include downloading calibration data or calibration cache and slightly reduce the accuracy. </p><dl class="section note"><dt>Note</dt><dd>The fp16 is automatically enabled if the GPU is compatible and provides a speed up of almost x2 and reduce memory usage by almost half, no precision loss. </dd>
+<dd>
+This setting allow int8 precision which can speed up by another x2 factor (compared to fp16, or x4 compared to fp32) and half the fp16 memory usage, however some accuracy could be lost. </dd>
+<dd>
+The accuracy loss should not exceed 1-2% on the compatible models. </dd>
+<dd>
+The current compatible models are all <a class="el" href="group__Object__group.html#gaf90fcebb970fc56cb9963d1a8b91a8d1">sl::AI_MODELS::HUMAN_BODY_XXXX</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

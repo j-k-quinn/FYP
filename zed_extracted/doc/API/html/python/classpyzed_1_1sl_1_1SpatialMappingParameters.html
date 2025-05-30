@@ -1,0 +1,796 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>SpatialMappingParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:15"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:15" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classpyzed_1_1sl_1_1SpatialMappingParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="classpyzed_1_1sl_1_1SpatialMappingParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">SpatialMappingParameters Class Reference<div class="ingroups"><a class="el" href="group__SpatialMapping__group.html">Spatial Mapping Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class containing a set of parameters for the spatial mapping module.  
+ <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac4e9efff0e12b54713f35bd69a81fb6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html">SpatialMappingParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac4e9efff0e12b54713f35bd69a81fb6e">__cinit__</a> (self, resolution=MAPPING_RESOLUTION.MEDIUM, mapping_range=MAPPING_RANGE.AUTO, <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a6c9edba978bec1312aefd66949947314">max_memory_usage</a>=2048, <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6">save_texture</a>=False, <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a729c1fbb5bb768e84dbe8788ecda7cc1">use_chunk_only</a>=False, <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a904446bd2fd4d591df61f1b2a38366a7">reverse_vertex_order</a>=False, <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9258c1915a96f1c1e48cfcf27ffbbe36">map_type</a>=SPATIAL_MAP_TYPE.MESH)</td></tr>
+<tr class="memdesc:ac4e9efff0e12b54713f35bd69a81fb6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac4e9efff0e12b54713f35bd69a81fb6e">More...</a><br /></td></tr>
+<tr class="separator:ac4e9efff0e12b54713f35bd69a81fb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4da0587c0e8e9e9e95f458e7dcfe74"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c4da0587c0e8e9e9e95f458e7dcfe74">set_resolution</a> (self, resolution=MAPPING_RESOLUTION.HIGH)</td></tr>
+<tr class="memdesc:a4c4da0587c0e8e9e9e95f458e7dcfe74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resolution to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a> preset.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c4da0587c0e8e9e9e95f458e7dcfe74">More...</a><br /></td></tr>
+<tr class="separator:a4c4da0587c0e8e9e9e95f458e7dcfe74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bb1fa333b48384af3213d0b27a50b9"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a45bb1fa333b48384af3213d0b27a50b9">set_range</a> (self, mapping_range=MAPPING_RANGE.AUTO)</td></tr>
+<tr class="memdesc:a45bb1fa333b48384af3213d0b27a50b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the range to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html" title="Lists the spatial mapping depth range presets.">sl.MAPPING_RANGE</a> preset.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a45bb1fa333b48384af3213d0b27a50b9">More...</a><br /></td></tr>
+<tr class="separator:a45bb1fa333b48384af3213d0b27a50b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9831bb7bf70a65ab8d4573f31296e677"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9831bb7bf70a65ab8d4573f31296e677">get_range_preset</a> (self, mapping_range=MAPPING_RANGE.AUTO)</td></tr>
+<tr class="memdesc:a9831bb7bf70a65ab8d4573f31296e677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value corresponding to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html" title="Lists the spatial mapping depth range presets.">sl.MAPPING_RANGE</a> preset in meters.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9831bb7bf70a65ab8d4573f31296e677">More...</a><br /></td></tr>
+<tr class="separator:a9831bb7bf70a65ab8d4573f31296e677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59913253ab2762e01ca2cf97ea4ada1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac59913253ab2762e01ca2cf97ea4ada1">get_resolution_preset</a> (self, resolution=MAPPING_RESOLUTION.HIGH)</td></tr>
+<tr class="memdesc:ac59913253ab2762e01ca2cf97ea4ada1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value corresponding to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a> preset in meters.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac59913253ab2762e01ca2cf97ea4ada1">More...</a><br /></td></tr>
+<tr class="separator:ac59913253ab2762e01ca2cf97ea4ada1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9133968d852a251f1a3f27b76d12cd4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ad9133968d852a251f1a3f27b76d12cd4">get_recommended_range</a> (self, resolution, <a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a> py_cam)</td></tr>
+<tr class="memdesc:ad9133968d852a251f1a3f27b76d12cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended maximum depth value corresponding to a resolution.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ad9133968d852a251f1a3f27b76d12cd4">More...</a><br /></td></tr>
+<tr class="separator:ad9133968d852a251f1a3f27b76d12cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9258c1915a96f1c1e48cfcf27ffbbe36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html">SPATIAL_MAP_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9258c1915a96f1c1e48cfcf27ffbbe36">map_type</a> (self)</td></tr>
+<tr class="memdesc:a9258c1915a96f1c1e48cfcf27ffbbe36"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of spatial map to be created.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9258c1915a96f1c1e48cfcf27ffbbe36">More...</a><br /></td></tr>
+<tr class="separator:a9258c1915a96f1c1e48cfcf27ffbbe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9edba978bec1312aefd66949947314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a6c9edba978bec1312aefd66949947314">max_memory_usage</a> (self)</td></tr>
+<tr class="memdesc:a6c9edba978bec1312aefd66949947314"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum CPU memory (in MB) allocated for the meshing process.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a6c9edba978bec1312aefd66949947314">More...</a><br /></td></tr>
+<tr class="separator:a6c9edba978bec1312aefd66949947314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee79e642741895378407b5d3c2344e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6">save_texture</a> (self)</td></tr>
+<tr class="memdesc:abee79e642741895378407b5d3c2344e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to save the texture.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6">More...</a><br /></td></tr>
+<tr class="separator:abee79e642741895378407b5d3c2344e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729c1fbb5bb768e84dbe8788ecda7cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a729c1fbb5bb768e84dbe8788ecda7cc1">use_chunk_only</a> (self)</td></tr>
+<tr class="memdesc:a729c1fbb5bb768e84dbe8788ecda7cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to only use chunks.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a729c1fbb5bb768e84dbe8788ecda7cc1">More...</a><br /></td></tr>
+<tr class="separator:a729c1fbb5bb768e84dbe8788ecda7cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904446bd2fd4d591df61f1b2a38366a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a904446bd2fd4d591df61f1b2a38366a7">reverse_vertex_order</a> (self)</td></tr>
+<tr class="memdesc:a904446bd2fd4d591df61f1b2a38366a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to inverse the order of the vertices of the triangles.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a904446bd2fd4d591df61f1b2a38366a7">More...</a><br /></td></tr>
+<tr class="separator:a904446bd2fd4d591df61f1b2a38366a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098e85c25e0e653f0841fa790cd06427"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a098e85c25e0e653f0841fa790cd06427">allowed_range</a> (self)</td></tr>
+<tr class="memdesc:a098e85c25e0e653f0841fa790cd06427"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum depth allowed by spatial mapping:  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a098e85c25e0e653f0841fa790cd06427">More...</a><br /></td></tr>
+<tr class="separator:a098e85c25e0e653f0841fa790cd06427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818220d3753d1ac2247b6973a8dc6e9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a818220d3753d1ac2247b6973a8dc6e9c">range_meter</a> (self)</td></tr>
+<tr class="memdesc:a818220d3753d1ac2247b6973a8dc6e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth range in meters.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a818220d3753d1ac2247b6973a8dc6e9c">More...</a><br /></td></tr>
+<tr class="separator:a818220d3753d1ac2247b6973a8dc6e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41878dfa2f12f9c2a7d804e970e5f7e0"><td class="memItemLeft" align="right" valign="top">np.array[float]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a41878dfa2f12f9c2a7d804e970e5f7e0">allowed_resolution</a> (self)</td></tr>
+<tr class="memdesc:a41878dfa2f12f9c2a7d804e970e5f7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolution allowed by the spatial mapping:  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a41878dfa2f12f9c2a7d804e970e5f7e0">More...</a><br /></td></tr>
+<tr class="separator:a41878dfa2f12f9c2a7d804e970e5f7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313be67d293798779803ce6a6489dd45"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a313be67d293798779803ce6a6489dd45">resolution_meter</a> (self)</td></tr>
+<tr class="memdesc:a313be67d293798779803ce6a6489dd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial mapping resolution in meters.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a313be67d293798779803ce6a6489dd45">More...</a><br /></td></tr>
+<tr class="separator:a313be67d293798779803ce6a6489dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c21c59342959592e8d2a98645fb90ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c21c59342959592e8d2a98645fb90ac">stability_counter</a> (self)</td></tr>
+<tr class="memdesc:a4c21c59342959592e8d2a98645fb90ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the integration rate of the current depth into the mapping process.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c21c59342959592e8d2a98645fb90ac">More...</a><br /></td></tr>
+<tr class="separator:a4c21c59342959592e8d2a98645fb90ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cceb9290a18e3bed482ea001006354"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab6cceb9290a18e3bed482ea001006354">save</a> (self, str filename)</td></tr>
+<tr class="memdesc:ab6cceb9290a18e3bed482ea001006354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current set of parameters into a file to be reloaded with the <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4">load()</a> method.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab6cceb9290a18e3bed482ea001006354">More...</a><br /></td></tr>
+<tr class="separator:ab6cceb9290a18e3bed482ea001006354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1928a387e47fd3bb77aa5b8d48ee1e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4">load</a> (self, str filename)</td></tr>
+<tr class="memdesc:ab1928a387e47fd3bb77aa5b8d48ee1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a set of parameters from the values contained in a previously <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab6cceb9290a18e3bed482ea001006354">saved</a> file.  <a href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4">More...</a><br /></td></tr>
+<tr class="separator:ab1928a387e47fd3bb77aa5b8d48ee1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class containing a set of parameters for the spatial mapping module. </p>
+<p>The default constructor sets all parameters to their default settings. </p><dl class="section note"><dt>Note</dt><dd>Parameters can be adjusted by the user. </dd></dl>
+</div><h2 class="groupheader">Functions</h2>
+<a id="ac4e9efff0e12b54713f35bd69a81fb6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e9efff0e12b54713f35bd69a81fb6e">&#9670;&nbsp;</a></span>__cinit__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html">SpatialMappingParameters</a> __cinit__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>resolution</em> = <code>MAPPING_RESOLUTION.MEDIUM</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mapping_range</em> = <code>MAPPING_RANGE.AUTO</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_memory_usage</em> = <code>2048</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>save_texture</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>use_chunk_only</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>reverse_vertex_order</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>map_type</em> = <code>SPATIAL_MAP_TYPE.MESH</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>Sets all parameters to their default and optimized values. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html">MAPPING_RESOLUTION</a> </td></tr>
+    <tr><td class="paramname">mapping_range</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html">MAPPING_RANGE</a> </td></tr>
+    <tr><td class="paramname">max_memory_usage</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a6c9edba978bec1312aefd66949947314">max_memory_usage</a> </td></tr>
+    <tr><td class="paramname">save_texture</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6">save_texture</a> </td></tr>
+    <tr><td class="paramname">use_chunk_only</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a729c1fbb5bb768e84dbe8788ecda7cc1">use_chunk_only</a> </td></tr>
+    <tr><td class="paramname">reverse_vertex_order</td><td>: Activates <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a904446bd2fd4d591df61f1b2a38366a7">reverse_vertex_order</a> </td></tr>
+    <tr><td class="paramname">map_type</td><td>: Chosen <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9258c1915a96f1c1e48cfcf27ffbbe36">map_type</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line">params = sl.SpatialMappingParameters(resolution=sl.MAPPING_RESOLUTION.HIGH)</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a4c4da0587c0e8e9e9e95f458e7dcfe74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c4da0587c0e8e9e9e95f458e7dcfe74">&#9670;&nbsp;</a></span>set_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None set_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>resolution</em> = <code>MAPPING_RESOLUTION.HIGH</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the resolution to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a> preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>The desired <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a>. Default: <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html">sl.MAPPING_RESOLUTION.HIGH</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45bb1fa333b48384af3213d0b27a50b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bb1fa333b48384af3213d0b27a50b9">&#9670;&nbsp;</a></span>set_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None set_range </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mapping_range</em> = <code>MAPPING_RANGE.AUTO</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the range to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html" title="Lists the spatial mapping depth range presets.">sl.MAPPING_RANGE</a> preset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapping_range</td><td>The desired <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html">sl.MAPPING_RANGE</a>. Default: <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html">sl.MAPPING_RANGE::AUTO</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9831bb7bf70a65ab8d4573f31296e677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9831bb7bf70a65ab8d4573f31296e677">&#9670;&nbsp;</a></span>get_range_preset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float get_range_preset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mapping_range</em> = <code>MAPPING_RANGE.AUTO</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value corresponding to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html" title="Lists the spatial mapping depth range presets.">sl.MAPPING_RANGE</a> preset in meters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapping_range</td><td>The desired <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html">sl.MAPPING_RANGE</a>. Default: <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RANGE.html">sl.MAPPING_RANGE::AUTO</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of <b>mapping_range</b> in meters. </dd></dl>
+
+</div>
+</div>
+<a id="ac59913253ab2762e01ca2cf97ea4ada1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59913253ab2762e01ca2cf97ea4ada1">&#9670;&nbsp;</a></span>get_resolution_preset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float get_resolution_preset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>resolution</em> = <code>MAPPING_RESOLUTION.HIGH</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value corresponding to a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a> preset in meters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>The desired <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a>. Default: <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html">sl.MAPPING_RESOLUTION.HIGH</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of <b>resolution</b> in meters. </dd></dl>
+
+</div>
+</div>
+<a id="ad9133968d852a251f1a3f27b76d12cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9133968d852a251f1a3f27b76d12cd4">&#9670;&nbsp;</a></span>get_recommended_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float get_recommended_range </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpyzed_1_1sl_1_1Camera.html">Camera</a>&#160;</td>
+          <td class="paramname"><em>py_cam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the recommended maximum depth value corresponding to a resolution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolution</td><td>: The desired resolution, either defined by a <a class="el" href="classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html" title="Lists the spatial mapping resolution presets.">sl.MAPPING_RESOLUTION</a> preset or a resolution value in meters. </td></tr>
+    <tr><td class="paramname">py_cam</td><td>: The <a class="el" href="classpyzed_1_1sl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl.Camera</a> object which will run the spatial mapping. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum value of depth in meters. </dd></dl>
+
+</div>
+</div>
+<a id="a9258c1915a96f1c1e48cfcf27ffbbe36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9258c1915a96f1c1e48cfcf27ffbbe36">&#9670;&nbsp;</a></span>map_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html">SPATIAL_MAP_TYPE</a> map_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type of spatial map to be created. </p>
+<p>This dictates the format that will be used for the mapping (e.g. mesh, point cloud). <br  />
+ See <a class="el" href="classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html">sl.SPATIAL_MAP_TYPE</a>. </p>
+
+</div>
+</div>
+<a id="a6c9edba978bec1312aefd66949947314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9edba978bec1312aefd66949947314">&#9670;&nbsp;</a></span>max_memory_usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int max_memory_usage </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum CPU memory (in MB) allocated for the meshing process. </p>
+<p>Default: 2048 </p>
+
+</div>
+</div>
+<a id="abee79e642741895378407b5d3c2344e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee79e642741895378407b5d3c2344e6">&#9670;&nbsp;</a></span>save_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool save_texture </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to save the texture. </p>
+<p>If set to true, you will be able to apply the texture to your mesh after it is created. <br  />
+ Default: False </p><dl class="section note"><dt>Note</dt><dd>This option will consume more memory. </dd>
+<dd>
+This option is only available for <a class="el" href="classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html">sl.SPATIAL_MAP_TYPE.MESH</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a729c1fbb5bb768e84dbe8788ecda7cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729c1fbb5bb768e84dbe8788ecda7cc1">&#9670;&nbsp;</a></span>use_chunk_only()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool use_chunk_only </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to only use chunks. </p>
+<p>If set to False, you will ensure consistency between the mesh and its inner chunk data. <br  />
+ Default: False </p><dl class="section note"><dt>Note</dt><dd>Updating the mesh is time-consuming. </dd>
+<dd>
+Setting this to True results in better performance. </dd></dl>
+
+</div>
+</div>
+<a id="a904446bd2fd4d591df61f1b2a38366a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904446bd2fd4d591df61f1b2a38366a7">&#9670;&nbsp;</a></span>reverse_vertex_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool reverse_vertex_order </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to inverse the order of the vertices of the triangles. </p>
+<p>If your display process does not handle front and back face culling, you can use this to correct it. <br  />
+ Default: False </p><dl class="section note"><dt>Note</dt><dd>This option is only available for <a class="el" href="classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html">sl.SPATIAL_MAP_TYPE.MESH</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a098e85c25e0e653f0841fa790cd06427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098e85c25e0e653f0841fa790cd06427">&#9670;&nbsp;</a></span>allowed_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] allowed_range </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum depth allowed by spatial mapping: </p>
+<ul>
+<li><b>allowed_range.first</b> is the minimum value allowed</li>
+<li><b>allowed_range.second</b> is the maximum value allowed </li>
+</ul>
+
+</div>
+</div>
+<a id="a818220d3753d1ac2247b6973a8dc6e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818220d3753d1ac2247b6973a8dc6e9c">&#9670;&nbsp;</a></span>range_meter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float range_meter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Depth range in meters. </p>
+<p>Can be different from the value set by <a class="el" href="classpyzed_1_1sl_1_1InitParameters.html#a7e4187448be7073690d3d0577ecfb5aa" title="Maximum depth distance to be returned, measured in the sl.UNIT defined in coordinate_units.">sl.InitParameters.depth_maximum_distance</a>. </p><dl class="section note"><dt>Note</dt><dd>Set to 0 by default. In this case, the range is computed from <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a313be67d293798779803ce6a6489dd45">resolution_meter</a> and from the current internal parameters to fit your application. </dd></dl>
+
+</div>
+</div>
+<a id="a41878dfa2f12f9c2a7d804e970e5f7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41878dfa2f12f9c2a7d804e970e5f7e0">&#9670;&nbsp;</a></span>allowed_resolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.array[float] allowed_resolution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The resolution allowed by the spatial mapping: </p>
+<ul>
+<li><b>allowed_resolution.first</b> is the minimum value allowed</li>
+<li><b>allowed_resolution.second</b> is the maximum value allowed </li>
+</ul>
+
+</div>
+</div>
+<a id="a313be67d293798779803ce6a6489dd45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313be67d293798779803ce6a6489dd45">&#9670;&nbsp;</a></span>resolution_meter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> float resolution_meter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spatial mapping resolution in meters. </p>
+<p>Default: 0.05 </p><dl class="section note"><dt>Note</dt><dd>It should fit <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#a41878dfa2f12f9c2a7d804e970e5f7e0">allowed_resolution</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4c21c59342959592e8d2a98645fb90ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c21c59342959592e8d2a98645fb90ac">&#9670;&nbsp;</a></span>stability_counter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int stability_counter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control the integration rate of the current depth into the mapping process. </p>
+<p>This parameter controls how many times a stable 3D points should be seen before it is integrated into the spatial mapping. <br  />
+ Default: 0 (this will define the stability counter based on the mesh resolution, the higher the resolution, the higher the stability counter) </p>
+
+</div>
+</div>
+<a id="ab6cceb9290a18e3bed482ea001006354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cceb9290a18e3bed482ea001006354">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current set of parameters into a file to be reloaded with the <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4">load()</a> method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Name of the file which will be created to store the parameters (extension '.yml' will be added if not set). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully saved, otherwise False. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>For security reasons, the file must not already exist. </dd>
+<dd>
+In case a file already exists, the method will return False and existing file will not be updated. </dd></dl>
+
+</div>
+</div>
+<a id="ab1928a387e47fd3bb77aa5b8d48ee1e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1928a387e47fd3bb77aa5b8d48ee1e4">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a set of parameters from the values contained in a previously <a class="el" href="classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab6cceb9290a18e3bed482ea001006354">saved</a> file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Path to the file from which the parameters will be loaded (extension '.yml' will be added at the end of the filename if not detected). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully loaded, otherwise False. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

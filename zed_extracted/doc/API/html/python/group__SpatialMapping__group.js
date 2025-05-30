@@ -1,0 +1,106 @@
+var group__SpatialMapping__group =
+[
+    [ "AREA_EXPORTING_STATE", "classpyzed_1_1sl_1_1AREA__EXPORTING__STATE.html", null ],
+    [ "SPATIAL_MAPPING_STATE", "classpyzed_1_1sl_1_1SPATIAL__MAPPING__STATE.html", null ],
+    [ "PlaneDetectionParameters", "classpyzed_1_1sl_1_1PlaneDetectionParameters.html", [
+      [ "__cinit__", "classpyzed_1_1sl_1_1PlaneDetectionParameters.html#aada42b0abb7712d700b83aff5c13d6ba", null ],
+      [ "max_distance_threshold", "classpyzed_1_1sl_1_1PlaneDetectionParameters.html#aa81b22c36a124f9bdccf97817aa29b23", null ],
+      [ "normal_similarity_threshold", "classpyzed_1_1sl_1_1PlaneDetectionParameters.html#ad55369b29e41fcfd3dca2613e9fc7ca6", null ]
+    ] ],
+    [ "MESH_FILE_FORMAT", "classpyzed_1_1sl_1_1MESH__FILE__FORMAT.html", null ],
+    [ "MESH_TEXTURE_FORMAT", "classpyzed_1_1sl_1_1MESH__TEXTURE__FORMAT.html", null ],
+    [ "MESH_FILTER", "classpyzed_1_1sl_1_1MESH__FILTER.html", null ],
+    [ "PLANE_TYPE", "classpyzed_1_1sl_1_1PLANE__TYPE.html", null ],
+    [ "MeshFilterParameters", "classpyzed_1_1sl_1_1MeshFilterParameters.html", [
+      [ "set", "classpyzed_1_1sl_1_1MeshFilterParameters.html#aa5921d5d32402e390534953fedb375b8", null ],
+      [ "save", "classpyzed_1_1sl_1_1MeshFilterParameters.html#ab6cceb9290a18e3bed482ea001006354", null ],
+      [ "load", "classpyzed_1_1sl_1_1MeshFilterParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4", null ]
+    ] ],
+    [ "PointCloudChunk", "classpyzed_1_1sl_1_1PointCloudChunk.html", [
+      [ "vertices", "classpyzed_1_1sl_1_1PointCloudChunk.html#abe82146c95d8130a3ec5d2c2ec19238e", null ],
+      [ "normals", "classpyzed_1_1sl_1_1PointCloudChunk.html#afc545f89fd6281a18ffc87b5de3f16ff", null ],
+      [ "timestamp", "classpyzed_1_1sl_1_1PointCloudChunk.html#aae7c223991650ee589913fd9e05d9b15", null ],
+      [ "barycenter", "classpyzed_1_1sl_1_1PointCloudChunk.html#a0337b966a4605242667fc8c95366fc9f", null ],
+      [ "has_been_updated", "classpyzed_1_1sl_1_1PointCloudChunk.html#a4759d8f95a2582c0908c25190977c285", null ],
+      [ "clear", "classpyzed_1_1sl_1_1PointCloudChunk.html#a7f2c317a1231e6d32b3fc81a6413a907", null ]
+    ] ],
+    [ "Chunk", "classpyzed_1_1sl_1_1Chunk.html", [
+      [ "vertices", "classpyzed_1_1sl_1_1Chunk.html#abe82146c95d8130a3ec5d2c2ec19238e", null ],
+      [ "triangles", "classpyzed_1_1sl_1_1Chunk.html#a39e08e7d09d07f16f910e8abf918569a", null ],
+      [ "normals", "classpyzed_1_1sl_1_1Chunk.html#afc545f89fd6281a18ffc87b5de3f16ff", null ],
+      [ "colors", "classpyzed_1_1sl_1_1Chunk.html#a9cb1d1938bc913fe641640d09be1ab39", null ],
+      [ "uv", "classpyzed_1_1sl_1_1Chunk.html#a96eea98eddcf70f32d0dfed324c30635", null ],
+      [ "timestamp", "classpyzed_1_1sl_1_1Chunk.html#aae7c223991650ee589913fd9e05d9b15", null ],
+      [ "barycenter", "classpyzed_1_1sl_1_1Chunk.html#a0337b966a4605242667fc8c95366fc9f", null ],
+      [ "has_been_updated", "classpyzed_1_1sl_1_1Chunk.html#a4759d8f95a2582c0908c25190977c285", null ],
+      [ "clear", "classpyzed_1_1sl_1_1Chunk.html#a7f2c317a1231e6d32b3fc81a6413a907", null ]
+    ] ],
+    [ "FusedPointCloud", "classpyzed_1_1sl_1_1FusedPointCloud.html", [
+      [ "chunks", "classpyzed_1_1sl_1_1FusedPointCloud.html#ac6c814ef65d51eda71ab0491c360068b", null ],
+      [ "__getitem__", "classpyzed_1_1sl_1_1FusedPointCloud.html#a7886ae304119dd06a54e8974ba24aa15", null ],
+      [ "vertices", "classpyzed_1_1sl_1_1FusedPointCloud.html#abe82146c95d8130a3ec5d2c2ec19238e", null ],
+      [ "normals", "classpyzed_1_1sl_1_1FusedPointCloud.html#afc545f89fd6281a18ffc87b5de3f16ff", null ],
+      [ "save", "classpyzed_1_1sl_1_1FusedPointCloud.html#a34ec056805eca2e957ba213f16b0632a", null ],
+      [ "load", "classpyzed_1_1sl_1_1FusedPointCloud.html#ab5c894b231c4ebca5928a42b26e4afff", null ],
+      [ "clear", "classpyzed_1_1sl_1_1FusedPointCloud.html#a7f2c317a1231e6d32b3fc81a6413a907", null ],
+      [ "update_from_chunklist", "classpyzed_1_1sl_1_1FusedPointCloud.html#a87c062a7214b5d8aaa6ddac3e5fa575a", null ],
+      [ "get_number_of_points", "classpyzed_1_1sl_1_1FusedPointCloud.html#a5239ceed2b3cc8a5fe708136e6d54615", null ]
+    ] ],
+    [ "Mesh", "classpyzed_1_1sl_1_1Mesh.html", [
+      [ "chunks", "classpyzed_1_1sl_1_1Mesh.html#adc4a809cf75fb1da9254770ab56d2c73", null ],
+      [ "__getitem__", "classpyzed_1_1sl_1_1Mesh.html#ab49faff75dd3e4e1faf0692652cb1104", null ],
+      [ "filter", "classpyzed_1_1sl_1_1Mesh.html#a469c54fc99ebbb4bd87999a2325314c2", null ],
+      [ "apply_texture", "classpyzed_1_1sl_1_1Mesh.html#a0c36362ec52a5733136fa2f1ec4410d7", null ],
+      [ "save", "classpyzed_1_1sl_1_1Mesh.html#a34ec056805eca2e957ba213f16b0632a", null ],
+      [ "load", "classpyzed_1_1sl_1_1Mesh.html#ad6a3b60b2beb3e11fe6b4bc6446f52ec", null ],
+      [ "clear", "classpyzed_1_1sl_1_1Mesh.html#a7f2c317a1231e6d32b3fc81a6413a907", null ],
+      [ "vertices", "classpyzed_1_1sl_1_1Mesh.html#abe82146c95d8130a3ec5d2c2ec19238e", null ],
+      [ "triangles", "classpyzed_1_1sl_1_1Mesh.html#a39e08e7d09d07f16f910e8abf918569a", null ],
+      [ "normals", "classpyzed_1_1sl_1_1Mesh.html#afc545f89fd6281a18ffc87b5de3f16ff", null ],
+      [ "colors", "classpyzed_1_1sl_1_1Mesh.html#a9cb1d1938bc913fe641640d09be1ab39", null ],
+      [ "uv", "classpyzed_1_1sl_1_1Mesh.html#a96eea98eddcf70f32d0dfed324c30635", null ],
+      [ "texture", "classpyzed_1_1sl_1_1Mesh.html#ac4cec181fcdd3dc6784576e7a87dd387", null ],
+      [ "get_number_of_triangles", "classpyzed_1_1sl_1_1Mesh.html#a505e328059667a46ba885c652dd7ac04", null ],
+      [ "get_boundaries", "classpyzed_1_1sl_1_1Mesh.html#a9f60d32143aed4947e0938b66c9cf446", null ],
+      [ "merge_chunks", "classpyzed_1_1sl_1_1Mesh.html#aefa3f9d2b482561d880fc287fc46b881", null ],
+      [ "get_gravity_estimate", "classpyzed_1_1sl_1_1Mesh.html#a31222c082516560339ce8bfbeb500622", null ],
+      [ "get_visible_list", "classpyzed_1_1sl_1_1Mesh.html#abac8b4b5c734020edbe81a0db7fdc075", null ],
+      [ "get_surrounding_list", "classpyzed_1_1sl_1_1Mesh.html#a96dd66a8db52f3b5083026d294f7ea47", null ],
+      [ "update_mesh_from_chunklist", "classpyzed_1_1sl_1_1Mesh.html#a0a12e45fabb6d5a74fcf875c6642ca7e", null ]
+    ] ],
+    [ "Plane", "classpyzed_1_1sl_1_1Plane.html", [
+      [ "type", "classpyzed_1_1sl_1_1Plane.html#aa7263a9fc57132e3239dd9bf7bd4e2fb", null ],
+      [ "get_normal", "classpyzed_1_1sl_1_1Plane.html#ac98ee19b8355a465b483589002373643", null ],
+      [ "get_center", "classpyzed_1_1sl_1_1Plane.html#af7d98b8f5372531dfee1491eaf8ae947", null ],
+      [ "get_pose", "classpyzed_1_1sl_1_1Plane.html#af86cdb1a197f1b4aaa37089796458e5d", null ],
+      [ "get_extents", "classpyzed_1_1sl_1_1Plane.html#a8b6d5d369049aa616da9c896e819c64f", null ],
+      [ "get_plane_equation", "classpyzed_1_1sl_1_1Plane.html#a18d400386b26691c38a220edb9626382", null ],
+      [ "get_bounds", "classpyzed_1_1sl_1_1Plane.html#a686a545cc4d5e846e6e9448da05b171e", null ],
+      [ "extract_mesh", "classpyzed_1_1sl_1_1Plane.html#a90e5681d6d717fa287183d7d8e163050", null ],
+      [ "get_closest_distance", "classpyzed_1_1sl_1_1Plane.html#a766f76903805fa08afcb13ca7813ca1d", null ],
+      [ "clear", "classpyzed_1_1sl_1_1Plane.html#a7f2c317a1231e6d32b3fc81a6413a907", null ]
+    ] ],
+    [ "MAPPING_RESOLUTION", "classpyzed_1_1sl_1_1MAPPING__RESOLUTION.html", null ],
+    [ "MAPPING_RANGE", "classpyzed_1_1sl_1_1MAPPING__RANGE.html", null ],
+    [ "SPATIAL_MAP_TYPE", "classpyzed_1_1sl_1_1SPATIAL__MAP__TYPE.html", null ],
+    [ "SpatialMappingParameters", "classpyzed_1_1sl_1_1SpatialMappingParameters.html", [
+      [ "__cinit__", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac4e9efff0e12b54713f35bd69a81fb6e", null ],
+      [ "set_resolution", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c4da0587c0e8e9e9e95f458e7dcfe74", null ],
+      [ "set_range", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a45bb1fa333b48384af3213d0b27a50b9", null ],
+      [ "get_range_preset", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9831bb7bf70a65ab8d4573f31296e677", null ],
+      [ "get_resolution_preset", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#ac59913253ab2762e01ca2cf97ea4ada1", null ],
+      [ "get_recommended_range", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#ad9133968d852a251f1a3f27b76d12cd4", null ],
+      [ "map_type", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a9258c1915a96f1c1e48cfcf27ffbbe36", null ],
+      [ "max_memory_usage", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a6c9edba978bec1312aefd66949947314", null ],
+      [ "save_texture", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#abee79e642741895378407b5d3c2344e6", null ],
+      [ "use_chunk_only", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a729c1fbb5bb768e84dbe8788ecda7cc1", null ],
+      [ "reverse_vertex_order", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a904446bd2fd4d591df61f1b2a38366a7", null ],
+      [ "allowed_range", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a098e85c25e0e653f0841fa790cd06427", null ],
+      [ "range_meter", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a818220d3753d1ac2247b6973a8dc6e9c", null ],
+      [ "allowed_resolution", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a41878dfa2f12f9c2a7d804e970e5f7e0", null ],
+      [ "resolution_meter", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a313be67d293798779803ce6a6489dd45", null ],
+      [ "stability_counter", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#a4c21c59342959592e8d2a98645fb90ac", null ],
+      [ "save", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab6cceb9290a18e3bed482ea001006354", null ],
+      [ "load", "classpyzed_1_1sl_1_1SpatialMappingParameters.html#ab1928a387e47fd3bb77aa5b8d48ee1e4", null ]
+    ] ]
+];

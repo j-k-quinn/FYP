@@ -38,4 +38,7 @@ work original in ucs-ros-pkg.
 	<material name="TopBlack">
 		<color rgba="0.038 0.038 0.038 1.0"/>
 	</material>
+	<material name="swivel">
+  		<color rgba="0.5 0.5 0.5 1"/>
+	</material>
 </robot>

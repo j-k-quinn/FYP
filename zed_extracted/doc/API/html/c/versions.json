@@ -1,0 +1,5 @@
+[
+  { "version": "latest", "label": "4.0 (Latest)" },
+  { "version": "3.X", "label": "3.X" },
+  { "version": "2.X", "label": "2.X" }
+]

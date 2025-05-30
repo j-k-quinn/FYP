@@ -24,6 +24,18 @@ This project is based on work by Tracy Davies, where it was in turn based on
 work original in ucs-ros-pkg.
  -->
 <robot name="pioneer3dx">
+  <material name="zed_mat">
+    <color rgba="0.8 0.8 0.8 0.8"/>
+  </material>
+  <material name="zedm_mat">
+    <color rgba="0 0 0 0.9"/>
+  </material>
+  <material name="zed2_mat">
+    <color rgba="0.25 0.25 0.25 0.99"/>
+  </material>
+  <material name="zed2i_mat">
+    <color rgba="0.25 0.25 0.25 0.99"/>
+  </material>
   <material name="SonarYellow">
     <color rgba="0.715 0.583 0.210 1.0"/>
   </material>
@@ -38,6 +50,9 @@ work original in ucs-ros-pkg.
   </material>
   <material name="TopBlack">
     <color rgba="0.038 0.038 0.038 1.0"/>
+  </material>
+  <material name="swivel">
+    <color rgba="0.5 0.5 0.5 1"/>
   </material>
   <!-- chassis -->
   <link name="base_link">
@@ -434,6 +449,83 @@ work original in ucs-ros-pkg.
     <origin rpy="0 0 0" xyz="-0.045 0 1.114"/>
     <parent link="base_link"/>
     <child link="upper_top_plate"/>
+  </joint>
+  <!-- Camera mounting point (the threaded screw hole in the bottom) -->
+  <link name="zed2i_base_link"/>
+  <joint name="zed2i_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="zed2i_base_link"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.05 0.0 1.094"/>
+  </joint>
+  <!-- Camera Center -->
+  <link name="zed2i_camera_center">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.01 0 0"/>
+      <geometry>
+        <mesh filename="package://p3dx_description/urdf/zed/meshes/zed2i.stl"/>
+      </geometry>
+      <material name="zed2i_mat"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://p3dx_description/urdf/zed/meshes/zed2i.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="zed2i_camera_center_joint" type="fixed">
+    <parent link="zed2i_base_link"/>
+    <child link="zed2i_camera_center"/>
+    <origin rpy="0 0.0 0" xyz="0 0 0.015"/>
+  </joint>
+  <!-- Left Camera -->
+  <link name="zed2i_left_camera_frame"/>
+  <joint name="zed2i_left_camera_joint" type="fixed">
+    <parent link="zed2i_camera_center"/>
+    <child link="zed2i_left_camera_frame"/>
+    <origin rpy="0 0 0" xyz="0 0.06 0"/>
+  </joint>
+  <link name="zed2i_left_camera_optical_frame"/>
+  <joint name="zed2i_left_camera_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="-0.01 0 0"/>
+    <parent link="zed2i_left_camera_frame"/>
+    <child link="zed2i_left_camera_optical_frame"/>
+  </joint>
+  <!-- Right Camera -->
+  <link name="zed2i_right_camera_frame"/>
+  <joint name="zed2i_right_camera_joint" type="fixed">
+    <parent link="zed2i_camera_center"/>
+    <child link="zed2i_right_camera_frame"/>
+    <origin rpy="0 0 0" xyz="0 -0.06 0"/>
+  </joint>
+  <link name="zed2i_right_camera_optical_frame"/>
+  <joint name="zed2i_right_camera_optical_joint" type="fixed">
+    <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="-0.01 0 0"/>
+    <parent link="zed2i_right_camera_frame"/>
+    <child link="zed2i_right_camera_optical_frame"/>
+  </joint>
+  <link name="zed2i_mag_link"/>
+  <joint name="zed2i_mag_joint" type="fixed">
+    <parent link="zed2i_camera_center"/>
+    <child link="zed2i_mag_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="zed2i_baro_link"/>
+  <joint name="zed2i_baro_joint" type="fixed">
+    <parent link="zed2i_camera_center"/>
+    <child link="zed2i_baro_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="zed2i_temp_left_link"/>
+  <joint name="zed2i_temp_left_joint" type="fixed">
+    <parent link="zed2i_left_camera_frame"/>
+    <child link="zed2i_temp_left_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="zed2i_temp_right_link"/>
+  <joint name="zed2i_temp_right_joint" type="fixed">
+    <parent link="zed2i_right_camera_frame"/>
+    <child link="zed2i_temp_right_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 </robot>
 

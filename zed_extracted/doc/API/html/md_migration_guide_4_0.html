@@ -1,0 +1,274 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>Programming Guidelines: How to move to ZED SDK 4.0 | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_migration_guide_4_0.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Programming Guidelines: How to move to ZED SDK 4.0 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>The ZED SDK v4.0 continues to follow the architecture of previous versions. With this major release, the ZED SDK now includes the following new modules:</p>
+<ul>
+<li>Multi-Camera Fusion</li>
+<li>Body Tracking</li>
+</ul>
+<p>Since there are a lot of changes from ZED SDK v3.8, this tutorial will help you migrate from version 3.8 to 4.0.</p>
+<h1><a class="anchor" id="autotoc_md590"></a>
+API Changes</h1>
+<h2><a class="anchor" id="autotoc_md591"></a>
+Overview</h2>
+<ul>
+<li>Added support for the new ZED X and ZED X Mini cameras.</li>
+<li>Added new camera models <code>MODEL::ZED_X</code> and <code>MODEL::ZED_XM</code>.</li>
+<li>Added new input type <code>INPUT_TYPE::GMSL</code> field to <code><a class="el" href="structsl_1_1DeviceProperties.html" title="Structure containing information about the properties of a camera.">sl::DeviceProperties</a></code> for GMSL cameras (support for GMSL cameras is only available on hosts with Nvidia Jetson SoC).</li>
+<li>Added <code>INPUT_TYPE input_type</code> field to <code><a class="el" href="structsl_1_1DeviceProperties.html" title="Structure containing information about the properties of a camera.">sl::DeviceProperties</a></code> struct.</li>
+<li>Adding an asynchronous camera recovery mechanism. If enabled and when the camera disconnect, the grab function will immediately return with a new <code>ERROR_CODE::CAMERA_REBOOTING</code> error code and will initiate a recovery function in a parallel thread. By default, the grab function is blocking and will only return once the camera connection has been restored (or if the time out is reached).<ul>
+<li>Added boolean <code>async_grab_camera_recovery</code> optional parameter to <code><a class="el" href="structsl_1_1InitParameters.html" title="Class containing the options used to initialize the sl::Camera object.">sl::InitParameters</a></code> to enable this behavior.</li>
+<li>Added <code>ERROR_CODE::CAMERA_REBOOTING</code> error code.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md592"></a>
+Modules</h1>
+<p><b>TODO: add new Samples and Tutorials for each module</b></p>
+<h2><a class="anchor" id="autotoc_md593"></a>
+Video</h2>
+<ul>
+<li><code>setFromCameraID</code> and <code>setFromCameraSerialNumber</code> methods from <code><a class="el" href="classsl_1_1InputType.html" title="Class defining the input type used in the ZED SDK.">sl::InputType</a></code> now take an optional <code>BUS_TYPE</code> to choose between <code>USB</code> or <code>GMSL</code> cameras. When unspecified, the method searches for available USB cameras <em>first</em>, then searches for GMSL.</li>
+<li>Added new methods <code>getInputType()</code>, <code>getInputConf()</code>, and <code>isInit()</code> for <code><a class="el" href="classsl_1_1InputType.html" title="Class defining the input type used in the ZED SDK.">sl::InputType</a></code>.</li>
+<li>Added a <code>scale</code> utility method to <code><a class="el" href="structsl_1_1CameraParameters.html" title="Structure containing the intrinsic parameters of a camera.">sl::CameraParameters</a></code> to easily convert camera intrinsic parameters for a given resolution.</li>
+<li>Added <code>RESOLUTION:HD1200</code> (1920x1200) and <code>RESOLUTION::SVGA</code> (960x600) resolutions for ZED X and ZED X Mini cameras.</li>
+<li>Added <code>RESOLUTION:AUTO</code> resolution which sets <code>RESOLUTION::HD720</code> resolution for USB cameras, and <code>RESOLUTION::HD1200</code> resolution for GMSL cameras.</li>
+<li>Added new parameters in <code>VIDEO_SETTINGS</code>:<ul>
+<li><code>EXPOSURE_TIME</code></li>
+<li><code>ANALOG_GAIN</code></li>
+<li><code>DIGITAL_GAIN</code></li>
+<li><code>AUTO_EXPOSURE_TIME_RANGE</code></li>
+<li><code>AUTO_ANALOG_GAIN_RANGE</code>: Defines the range of sensor gain in automatic control. Min/Max range between [1000 - 16000]mdB.</li>
+<li><code>AUTO_DIGITAL_GAIN_RANGE</code>: Defines the range of digital ISP gain in automatic control.</li>
+<li><code>EXPOSURE_COMPENSATION</code>: Exposure target compensation made after AE. Reduces the overall illumination by factor of F-stops. values range is <a href="mapped between [-2.0,2.0]">0 - 100</a>. Only available for GMSL-based cameras.</li>
+<li><code>DENOISING</code>: Defines the level of denoising applied on both left and right images. values range is [0-100]. Only available for GMSL-based cameras.</li>
+</ul>
+</li>
+<li><code>Camera::getCameraSettings</code> now returns an <code>ERROR_CODE</code> and uses a reference to retrieve the value.</li>
+<li><code>Camera::setCameraSettings</code> now returns an <code>ERROR_CODE</code> instead of <code>void</code>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md594"></a>
+Depth</h2>
+<ul>
+<li>Improved previous <code>NEURAL</code> depth mode which is now more robust to challenging situations such as low light, heavy compression, and textureless areas such as interior plain walls, overexposed areas, and exterior sky.</li>
+<li><code>SENSING_MODE</code> is now deprecated and not usable in the API. To get a full depth, the confidence threshold should be set to 100, all occlusions will be filled for the computer vision mode (PERF, QUALITY, and ULTRA), and NEURAL will be outputted as is. Please note that filling the occlusion (except on NEURAL) requires more computation and produces uncertain depth.</li>
+<li><code>confidence_threshold</code> in <code><a class="el" href="structsl_1_1RuntimeParameters.html" title="Structure containing parameters that defines the behavior of sl::Camera::grab().">sl::RuntimeParameters</a></code> is now set by default to 95 instead of 100 previously. Following the <code>SENSING_MODE</code> removal (see above), the default confidence is now set lower to remove the potential incorrect depth value that can produce trails behind objects, while keeping a relatively dense depth map.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md595"></a>
+Object Detection</h2>
+<p>Object detection models have been refactored to separate <em>object detection models</em> and <em>human body detection models</em> into two separate classes: <code>OBJECT_DETECTION_MODEL</code> and <code>BODY_TRACKING_MODEL</code> respectively.</p>
+<ul>
+<li>The new <code>OBJECT_DETECTION_MODEL</code> enum contains the following models:<ul>
+<li><code>MULTI_CLASS_BOX_FAST</code>: Any objects, bounding box based.</li>
+<li><code>MULTI_CLASS_BOX_MEDIUM</code>: Any objects, bounding box based, a compromise between accuracy and speed.</li>
+<li><code>MULTI_CLASS_BOX_ACCURATE</code>: Any objects, bounding box based, more accurate but slower than the base model.</li>
+<li><code>PERSON_HEAD_BOX_FAST</code>: Bounding Box detector specialized in person heads, particularly well suited for crowded environments, the person localization is also improved.</li>
+<li><code>PERSON_HEAD_BOX_ACCURATE</code>: Bounding Box detector specialized in person heads, particularly well suited for crowded environments, the person localization is also improved, more accurate but slower than the base model.</li>
+<li><code>CUSTOM_BOX_OBJECTS</code>: For external inference, using your own custom model and/or frameworks. This mode disables the internal inference engine, the 2D bounding box detection must be provided.</li>
+</ul>
+</li>
+<li>Added the possibility to use <b>multiple object detection models instances</b> at once using the <code>instance_id</code> parameter in <code><a class="el" href="structsl_1_1ObjectDetectionParameters.html" title="Structure containing a set of parameters for the object detection module.">sl::ObjectDetectionParameters</a></code> (and in related methods such as <code>Camera::getObjectDetectionParameters</code>, <code>Camera::disableObjectDetection</code>, …).</li>
+<li>Renamed <code>MULTI_CLASS_BOX</code> to <code>MULTI_CLASS_BOX_FAST</code> in <code>OBJECT_DETECTION_MODEL</code>.</li>
+<li>Renamed <code>PERSON_HEAD_BOX</code> to <code>PERSON_HEAD_BOX_FAST</code> in <code>OBJECT_DETECTION_MODEL</code>.</li>
+<li>Renamed <code>enable_mask_output</code> to <code>enable_segmentation</code> in <code><a class="el" href="structsl_1_1ObjectDetectionParameters.html" title="Structure containing a set of parameters for the object detection module.">sl::ObjectDetectionParameters</a></code>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md596"></a>
+Body Tracking</h2>
+<ul>
+<li><p class="startli">The new <code>BODY_TRACKING_MODEL</code> enum contains the following models:</p><ul>
+<li><code>HUMAN_BODY_FAST</code>: Keypoints based, specific to human skeleton, real-time performance even on Jetson or low-end GPU cards.</li>
+<li><code>HUMAN_BODY_MEDIUM</code>: Keypoints based, specific to human skeletons, compromise between accuracy and speed.</li>
+<li><code>HUMAN_BODY_ACCURATE</code>: Keypoints based, specific to human skeletons, state-of-the-art accuracy, requires powerful GPU.</li>
+</ul>
+<p class="startli">The model now depends both on the accuracy wanted both also the <code>BODY_FORMAT</code> (see below)</p>
+</li>
+<li>Changed <code>BODY_FORMAT</code> namings from <code>POSE_XX</code> to <code>BODY_XX</code>. The <code>POSE_18</code> and <code>POSE_34</code> formats have been renamed to <code>BODY_18</code> and <code>BODY_34</code> respectively.</li>
+<li>Added <b>two new human body formats</b> in <code>BODY_FORMAT</code>:<ul>
+<li><code>BODY_38</code>: Adds additional keypoints to <code>BODY_34</code>, specifically on the feet and hands. The body fitting now provides accurate orientations for the feet and hands.</li>
+<li><code>BODY_70</code>: Adds full hand keypoints to <code>BODY_38</code>, 4 keypoints per finger.</li>
+</ul>
+</li>
+<li>Added the possibility to use <b>multiple body tracking models</b> at once using the <code>instance_id</code> parameter in <code><a class="el" href="structsl_1_1BodyTrackingParameters.html" title="Structure containing a set of parameters for the body tracking module.">sl::BodyTrackingParameters</a></code> (and in related methods such as <code>Camera::getBodyTrackingParameters</code>, <code>Camera::disableBodyTracking</code>, …).</li>
+<li>Added a <code>BODY_KEYPOINTS_SELECTION</code> enum to filter keypoints and reduce computations for specific use cases. Currently available options include <code>BODY_KEYPOINTS_SELECTION::FULL</code> and <code>BODY_KEYPOINTS_SELECTION::UPPER_BODY</code>.</li>
+</ul>
+<p>Please refer to the <a href="https://www.stereolabs.com/docs/body-tracking/">body tracking documentation</a> for more information on the human body tracking models and formats.</p>
+<ul>
+<li>Analogous to object detection, body tracking objects now have their own methods and parameters exposed separately:<ul>
+<li>Added a new <code><a class="el" href="classsl_1_1BodyData.html" title="Class containing data of a detected body/person such as its bounding_box, id and its 3D position.">sl::BodyData</a></code> class which contains detection and tracking information on detected human bodies.</li>
+<li>Added a new <code>Camera::retrieveBodies</code> method to retrieve human body detection data after a <code>Camera::grab</code> call, similar to <code>Camera::retrieveObjects</code>.</li>
+<li>Added a new <code><a class="el" href="classsl_1_1Bodies.html" title="Class containing the results of the body tracking module.">sl::Bodies</a></code> class which is returned from <code>Camera::retrieveBodies</code>, similar to <code><a class="el" href="classsl_1_1Objects.html" title="Class containing the results of the object detection module.">sl::Objects</a></code>.</li>
+<li>Added a new <code><a class="el" href="structsl_1_1BodyTrackingParameters.html" title="Structure containing a set of parameters for the body tracking module.">sl::BodyTrackingParameters</a></code> and <code><a class="el" href="structsl_1_1BodyTrackingRuntimeParameters.html" title="Structure containing a set of runtime parameters for the body tracking module.">sl::BodyTrackingRuntimeParameters</a></code> classes which define all of the parameters related to body tracking.</li>
+</ul>
+</li>
+<li>Renamed <code>BODY_PARTS</code> to <code>BODY_18_PARTS</code>.</li>
+<li>Renamed <code>BODY_PARTS_POSE_34</code> to <code>BODY_34_PARTS</code>.</li>
+<li>Added <code>BODY_38_PARTS</code> and <code>BODY_70_PARTS</code> which list all keypoints for new body formats.</li>
+<li>Renamed <code>BODY_BONES</code> to <code>BODY_18_BONES</code>.</li>
+<li>Renamed <code>BODY_BONES_POSE_34</code> to <code>BODY_34_BONES</code>.</li>
+<li>Added <code>BODY_38_BONES</code> and <code>BODY_70_BONES</code> bones containers for new body formats.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md597"></a>
+Multi-Camera Fusion</h2>
+<p>Added <code><a class="el" href="classsl_1_1Fusion.html" title="Holds Fusion process data and functions.">sl::Fusion</a></code> API in a new header <code>sl/Fusion.hpp</code>.</p>
+<p>For more information about how to use the ZED SDK’s Fusion API, please take a look at our blog post and tutorials.</p>
+<h2><a class="anchor" id="autotoc_md598"></a>
+GNSS Fusion</h2>
+<ul>
+<li>Added a <code>GNSSData</code> struct containing information about GNSS position</li>
+<li>Added structures <code>ECEF</code>, <code>LatLng</code>, <code>UTM</code> for different GPS/GNSS position formats </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->

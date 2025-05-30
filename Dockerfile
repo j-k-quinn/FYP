@@ -1,4 +1,4 @@
-FROM personalroboticsimperial/prl:noetic-cuda117
+FROM personalroboticsimperial/prl:jetson2004-cuda114-noetic-zed40
 SHELL ["/bin/bash", "-c"]
  
 # Some useful packages
@@ -19,8 +19,9 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y --no-install-rec
 # Upgrade pip and install Python packages
 RUN python3 -m pip install numpy opencv-python pyopengl requests
  
-# Install this to get libncuvid.so.1
-RUN apt install -y libnvidia-decode-470
+
+# Install YOLOv8
+RUN pip install ultralytics
 
 ####################################################################################################
 ##################################### BUILDING ARIA FROM SOURCE  ###################################
@@ -36,18 +37,21 @@ RUN git clone https://github.com/moshulu/aria-legacy/ && \
 ####################################################################################################
 ############################################# ZED SDK ##############################################
 ####################################################################################################
- 
+
+# Create a non-root user for SDK installation
+RUN useradd -m zeduser && echo "zeduser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Change to that user, download and install SDK
+USER zeduser
+WORKDIR /home/zeduser
+
+# Download and install the ZED SDK for Jetson
+COPY zed_extracted/ /usr/local/zed/
+
+# Switch back to root
+USER root
+
 WORKDIR /zed
- 
-# Download and install the ZED SDK
-RUN wget -q -O ZED_SDK_Linux_Ubuntu20.run https://download.stereolabs.com/zedsdk/4.1/cu118/ubuntu20 && \
-    chmod +x ZED_SDK_Linux_Ubuntu20.run
- 
-RUN ./ZED_SDK_Linux_Ubuntu20.run --nodiskspace -- silent
- 
-RUN ln -sf /lib/x86_64-linux-gnu/libusb-1.0.so.0 /usr/lib/x86_64-linux-gnu/libusb-1.0.so  && \
-    rm ZED_SDK_Linux_Ubuntu20.run && \
-    rm -rf /var/lib/apt/lists/*
  
 # Install the ZED Python API
 RUN cd /usr/local/zed && \
@@ -56,11 +60,6 @@ RUN cd /usr/local/zed && \
     python3 -m pip install *.whl && \
     rm *.whl
     
-# Fix library paths for USB
-# Create symbolic link for libcuda.so.1
-# RUN ln -s /usr/local/cuda-11.7/compat/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so.1 && \
-#     ln -s /usr/local/cuda-11.7/compat/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
- 
 # Create ZED directory to avoid runtime issues
 RUN mkdir -p /root/Documents/ZED/
  
@@ -69,55 +68,39 @@ RUN mkdir -p /root/Documents/ZED/
 ####################################################################################################
  
 WORKDIR /root/ros_ws/
-RUN mkdir src && source /opt/ros/noetic/setup.bash && catkin init && catkin build
+RUN mkdir -p src && source /opt/ros/noetic/setup.bash && catkin init 
  
- 
-# RUN DEBIAN_FRONTEND=noninteractive && \
-#     apt-get install -y libaria-dev
  
 RUN cd src && \
-    git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git && \
-    cd ..
- 
+    [ ! -d "zed-ros-wrapper" ] && git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git || echo "zed-ros-wrapper already exists"
+
+# Cleanly replace the values while preserving indentation
+# RUN sed -i 's/^\([[:space:]]*publish_tf:\).*/\1 false/' /root/ros_ws/src/zed-ros-wrapper/zed_wrapper/params/common.yaml && \
+#     sed -i 's/^\([[:space:]]*publish_map_tf:\).*/\1 false/' /root/ros_ws/src/zed-ros-wrapper/zed_wrapper/params/common.yaml
+
+# RUN python3 -c "import yaml; yaml.safe_load(open('/root/ros_ws/src/zed-ros-wrapper/zed_wrapper/params/common.yaml'))"
+
 RUN DEBIAN_FRONTEND=noninteractive apt update
  
-#16
+
 RUN apt update && apt install -y ros-noetic-diagnostic-updater ros-noetic-image-transport-plugins && \ 
     . /opt/ros/noetic/setup.bash && \ 
     rosdep update && \ 
     rosdep install --from-paths src --ignore-src -r -y
 
-# RUN . /opt/ros/noetic/setup.sh && \
-#    rosdep install --from-paths src --ignore-src -r -y
-# RUN DEBIAN_FRONTEND=noninteractive apt update
- 
-# 17
+
 RUN source /opt/ros/noetic/setup.sh && \
     apt-get update && apt-get install -y libblas-dev liblapack-dev libatlas-base-dev
 
-# 18
+
 RUN catkin config --cmake-args -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined" && \
     catkin build zed_wrapper
  
-# 19
+
 RUN catkin build -DCMAKE_BUILD_TYPE=Release && \
     source ./devel/setup.bash
  
-# RUN cd src && git clone --recurse https://github.com/stereolabs/zed-ros-wrapper.git
-# RUN apt update && \
-#     cd .. && \
-#     source devel/setup.bash && DEBIAN_FRONTEND=noninteractive rosdep install --from-paths src --ignore-src -r -y
-# RUN python3 -m pip install -U pip && python3 -m pip install opencv-contrib-python
- 
-# RUN git clone https://github.com/stereolabs/zed-ros-examples.git
-# RUN apt update && DEBIAN_FRONTEND=noninteractive rosdep install --from-paths . --ignore-src -r -y
-# RUN catkin build -DCMAKE_BUILD_TYPE=Release
- 
- 
-# RUN source devel/setup.bash && \
-#     catkin config --cmake-args -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined" && \
-#     catkin build zed_wrapper
- 
+
 
 ####################################################################################################
 ###################################### ROS WORKSPACE & ROSARIA #####################################
@@ -142,6 +125,12 @@ RUN apt-get update && \
     apt-get install -y \
     ros-noetic-rviz \
     ros-noetic-joy
+
+# Install TF2 tools needed for static_transform_publisher
+RUN apt-get update && \
+    apt-get install -y \
+    ros-noetic-tf2-ros \
+    ros-noetic-tf2-tools
  
 
 # Build the ROS workspace
@@ -200,17 +189,12 @@ RUN echo 'catkin_install_python(PROGRAMS scripts/publisher.py scripts/subscriber
     echo ' DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})' >> \ 
     /root/ros_ws/src/rosaria/CMakeLists.txt
 
-# WORKDIR /root/ros_ws/
+COPY full_system_pkg/full_system /root/ros_ws/src/full_system
 
-# # RUN DEBIAN_FRONTEND=noninteractive && \
-# #     apt-get install -y libaria-dev
+# Rebuild to include full_system package
+WORKDIR /root/ros_ws
+RUN source /opt/ros/noetic/setup.bash && catkin build full_system
 
-# RUN cd src && \
-#     git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git && \
-#     cd ..
-
-# RUN DEBIAN_FRONTEND=noninteractive apt update
-# RUN rosdep install --from-paths src --ignore-src -r -y 
-
-# RUN catkin build -DCMAKE_BUILD_TYPE=Release && \
-#     source ./devel/setup.bash
+RUN source /opt/ros/noetic/setup.bash && \
+    source devel/setup.bash && \
+    rospack list | grep full_system

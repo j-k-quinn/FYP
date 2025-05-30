@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['magnetic_5ffield_5fc_1391',['magnetic_field_c',['../structSL__MagnetometerData.html#ad5c2780f14e5facd47b55ef727a30129',1,'SL_MagnetometerData']]],
+  ['magnetic_5ffield_5func_1392',['magnetic_field_unc',['../structSL__MagnetometerData.html#a230cb30a0c60f2df1797a2da5ad0b4c7',1,'SL_MagnetometerData']]],
+  ['magnetic_5fheading_1393',['magnetic_heading',['../structSL__MagnetometerData.html#a93047e77cddba5bad15db9589f7b330d',1,'SL_MagnetometerData']]],
+  ['magnetic_5fheading_5faccuracy_1394',['magnetic_heading_accuracy',['../structSL__MagnetometerData.html#a85bd8929a046c86fa0ee4aff0e82ff1d',1,'SL_MagnetometerData']]],
+  ['magnetic_5fheading_5fstate_1395',['magnetic_heading_state',['../structSL__MagnetometerData.html#a7fdcdf66319414bd62bf2f959b7cf92b',1,'SL_MagnetometerData']]],
+  ['magnetometer_1396',['magnetometer',['../structSL__SensorsData.html#a9483d45055db6da725ea440f2147447f',1,'SL_SensorsData']]],
+  ['magnetometer_5fparameters_1397',['magnetometer_parameters',['../structSL__SensorsConfiguration.html#a55382b18b65a4f4c961e9eda9e925ea8',1,'SL_SensorsConfiguration']]],
+  ['map_5ftype_1398',['map_type',['../structSL__SpatialMappingParameters.html#ae396f6458d4c039cf203660c51521763',1,'SL_SpatialMappingParameters']]],
+  ['mask_1399',['mask',['../structSL__BodyData.html#a8d28e8c25b3e5df66b63244c928557e2',1,'SL_BodyData::mask()'],['../structSL__ObjectData.html#aa13a22675c874f17789a19b502cc92d3',1,'SL_ObjectData::mask()']]],
+  ['max_5fdistance_5fthreshold_1400',['max_distance_threshold',['../structSL__PlaneDetectionParameters.html#a9158073cc00c5fd5d2681686afba6602',1,'SL_PlaneDetectionParameters']]],
+  ['max_5fmemory_5fusage_1401',['max_memory_usage',['../structSL__SpatialMappingParameters.html#a91f6132bd8f92a76a9b3c8ac3bed8b19',1,'SL_SpatialMappingParameters']]],
+  ['max_5frange_1402',['max_range',['../structSL__ObjectDetectionParameters.html#aeaa1a8b134cbfe56192fc2bb3bc49f5b',1,'SL_ObjectDetectionParameters::max_range()'],['../structSL__BodyTrackingParameters.html#aa51752e366704eceeb6d06a93838926c',1,'SL_BodyTrackingParameters::max_range()']]],
+  ['mean_5fcamera_5ffused_1403',['mean_camera_fused',['../structSL__FusionMetrics.html#aa0517a740fcee9714a15284ed5aa874f',1,'SL_FusionMetrics']]],
+  ['mean_5fstdev_5fbetween_5fcamera_1404',['mean_stdev_between_camera',['../structSL__FusionMetrics.html#a1523bb4f7814f57a71232cb83e89cb88',1,'SL_FusionMetrics']]],
+  ['minimum_5fkeypoints_5fthreshold_1405',['minimum_keypoints_threshold',['../structSL__BodyTrackingRuntimeParameters.html#ae2db8033d6cb31b696e432a7c8eb9831',1,'SL_BodyTrackingRuntimeParameters']]],
+  ['mode_1406',['mode',['../structSL__PositionalTrackingParameters.html#a66b20c1f10f3eb32ed35b1354630b7d4',1,'SL_PositionalTrackingParameters']]]
+];

@@ -1,0 +1,1160 @@
+<!-- HTML header for doxygen 1.8.7-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<meta name="robots" content="noindex, follow"/>
+        <meta name="generator" content="Doxygen 1.9.1"/>
+        <title>InitParameters Class Reference | API Reference | Stereolabs</title><!--END PROJECT_NAME (ZED SDK 4)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600,700">
+        <link href="tabs.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="custom.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <script type="text/javascript" src="dynsections.js?t=Tue Nov 14 2023 10:06:13"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+        <link href="stylesheet.css?t=Tue Nov 14 2023 10:06:13" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 58px;">
+                            <td id="projectlogo">
+                                <a href="https://www.stereolabs.com">
+                                    <img src="https://www.stereolabs.com/img/logo_stereolabs.svg" alt="Stereolabs logo" id="logo" height="35px" width="auto">
+                                </a>
+                            </td>
+                            <td class="nav-links">
+                                <nav>
+                                <ul class="horizontal unstyled clearfix">
+                                    <li>
+                                        <a href="https://www.stereolabs.com/docs/">Documentation</a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.stereolabs.com/docs/samples/">Samples</a>
+                                    </li>							
+                                    <li>
+                                        <a class="active" href="https://www.stereolabs.com/docs/api/">API Reference</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://support.stereolabs.com/hc/en-us/">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.stereolabs.com/developers/release/">Downloads</a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </td>
+                            <td><i class="mobile-navigation"></i></td>
+                            <!--<td id="projectlogo" >
+                                <a href="https://www.stereolabs.com/"> <img alt="Logo" src="logo_stereolabs.png" height="27"/> </a>
+                            </td>-->
+                            <!--<td style="padding-left: 0.4cm;">-->
+                                <!--<div id="projectname">--><!--ZED SDK 4-->
+                                    <!--<span id="projectnumber"> | ZED SDK 4.0.8</span>-->
+                                <!--</div>-->
+                                <!--BEGIN PROJECT_BRIEF<div id="projectbrief"></div><!--END PROJECT_BRIEF-->
+                            <!--</td>-->
+                            <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="navversion"></div>
+            </div>
+            <div id="subtitlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 28px;">
+                            <td id="subMenuCpp" class="nav-links nav-links-header nav-links-selected">
+                                <a href="https://www.stereolabs.com/docs/api/"  >C++</a>
+                            </td>
+                            <td id="subMenuPython" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/python/" >Python</a>
+                            </td>
+                            <td id="subMenuCSharp" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/csharp/" >C#</a>
+                            </td>
+                            <td id="subMenuC" class="nav-links nav-links-header">
+                                <a href="https://www.stereolabs.com/docs/api/c/" >C</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structsl_1_1InitParameters.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Functions</a> &#124;
+<a href="#pub-attribs">Attributes</a> &#124;
+<a href="structsl_1_1InitParameters-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">InitParameters Class Reference<div class="ingroups"><a class="el" href="group__Video__group.html">Video Module</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class containing the options used to initialize the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object.  
+ <a href="structsl_1_1InitParameters.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab916009e0c4a25125bca9231786e9f43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> (<a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> camera_resolution_=<a class="el" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828ae1f2d5134ed2543d38a0de9751cf75d9">RESOLUTION::AUTO</a>, int camera_fps_=0, bool svo_real_time_mode_=false, <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a> depth_mode_=<a class="el" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43af8b6b495ae37b7f4baa34a5c54bd2f6c">DEPTH_MODE::ULTRA</a>, <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a> coordinate_units_=<a class="el" href="namespacesl.html#gad78b29f5d18fc8990907a443246e88f0ac159f536301065a5deb61ef739ec3950">UNIT::MILLIMETER</a>, <a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2">COORDINATE_SYSTEM</a> coordinate_system_=<a class="el" href="namespacesl.html#ga1114207cbac18c1c0e4f77a6b36a8cb2a23a12f67f614b5518c7f1c2465bf95e3">COORDINATE_SYSTEM::IMAGE</a>, bool sdk_verbose_=false, int sdk_gpu_id_=-1, float depth_minimum_distance_=-1., float depth_maximum_distance_=-1., bool camera_disable_self_calib_=false, int camera_image_flip_=FLIP_MODE::AUTO, bool enable_right_side_measure_=false, <a class="el" href="classsl_1_1String.html">String</a> sdk_verbose_log_file_=<a class="el" href="classsl_1_1String.html">String</a>(), int depth_stabilization_=1, CUcontext sdk_cuda_ctx_=CUcontext(), <a class="el" href="classsl_1_1InputType.html">InputType</a> input_type=<a class="el" href="classsl_1_1InputType.html">InputType</a>(), <a class="el" href="classsl_1_1String.html">String</a> optional_settings_path_=<a class="el" href="classsl_1_1String.html">String</a>(), bool sensors_required_=false, bool enable_image_enhancement_=true, <a class="el" href="classsl_1_1String.html">String</a> optional_opencv_calibration_file_=<a class="el" href="classsl_1_1String.html">String</a>(), float open_timeout_sec_=5.0f, bool <a class="el" href="structsl_1_1InitParameters.html#a8110a28bc2df2010f8a0b0bcbc225f90">async_grab_camera_recovery</a>=false, float <a class="el" href="structsl_1_1InitParameters.html#a967f605a8580b99d0a6c3e9ab11b0578">grab_compute_capping_fps</a>=0, bool <a class="el" href="structsl_1_1InitParameters.html#aacb7af83a1b3941abdacd179cba7a554">enable_image_validity_check</a>=false)</td></tr>
+<tr class="memdesc:ab916009e0c4a25125bca9231786e9f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">More...</a><br /></td></tr>
+<tr class="separator:ab916009e0c4a25125bca9231786e9f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">save</a> (<a class="el" href="classsl_1_1String.html">String</a> filename)</td></tr>
+<tr class="memdesc:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current set of parameters into a file to be reloaded with the <a class="el" href="structsl_1_1InitParameters.html#a706f01ee88d8ba83113e49487f834eba">load()</a> method.  <a href="structsl_1_1InitParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">More...</a><br /></td></tr>
+<tr class="separator:af9cc1551df5fc5f6ba7d10f86a93df42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706f01ee88d8ba83113e49487f834eba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a706f01ee88d8ba83113e49487f834eba">load</a> (<a class="el" href="classsl_1_1String.html">String</a> filename)</td></tr>
+<tr class="memdesc:a706f01ee88d8ba83113e49487f834eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a set of parameters from the values contained in a previously <a class="el" href="structsl_1_1InitParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">saved</a> file.  <a href="structsl_1_1InitParameters.html#a706f01ee88d8ba83113e49487f834eba">More...</a><br /></td></tr>
+<tr class="separator:a706f01ee88d8ba83113e49487f834eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f12ead9fe3849b2495e39dfee2f3f88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a1f12ead9fe3849b2495e39dfee2f3f88">operator==</a> (const <a class="el" href="structsl_1_1InitParameters.html">InitParameters</a> &amp;param1) const</td></tr>
+<tr class="memdesc:a1f12ead9fe3849b2495e39dfee2f3f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator ==.  <a href="structsl_1_1InitParameters.html#a1f12ead9fe3849b2495e39dfee2f3f88">More...</a><br /></td></tr>
+<tr class="separator:a1f12ead9fe3849b2495e39dfee2f3f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeaf80350583a9c492339e5f6a0ce1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#afaeaf80350583a9c492339e5f6a0ce1b">operator!=</a> (const <a class="el" href="structsl_1_1InitParameters.html">InitParameters</a> &amp;param1) const</td></tr>
+<tr class="memdesc:afaeaf80350583a9c492339e5f6a0ce1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator !=.  <a href="structsl_1_1InitParameters.html#afaeaf80350583a9c492339e5f6a0ce1b">More...</a><br /></td></tr>
+<tr class="separator:afaeaf80350583a9c492339e5f6a0ce1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributes</h2></td></tr>
+<tr class="memitem:a760124c608fefd930b428910a52d929c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a760124c608fefd930b428910a52d929c">camera_resolution</a></td></tr>
+<tr class="memdesc:a760124c608fefd930b428910a52d929c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired camera resolution.  <a href="structsl_1_1InitParameters.html#a760124c608fefd930b428910a52d929c">More...</a><br /></td></tr>
+<tr class="separator:a760124c608fefd930b428910a52d929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aebd3c5eea7c24cfa15a96cbb2ec8aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a8aebd3c5eea7c24cfa15a96cbb2ec8aa">camera_fps</a></td></tr>
+<tr class="memdesc:a8aebd3c5eea7c24cfa15a96cbb2ec8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested camera frame rate.  <a href="structsl_1_1InitParameters.html#a8aebd3c5eea7c24cfa15a96cbb2ec8aa">More...</a><br /></td></tr>
+<tr class="separator:a8aebd3c5eea7c24cfa15a96cbb2ec8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b6f147ea846a05da9ddaa49e6873b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#af1b6f147ea846a05da9ddaa49e6873b1">camera_image_flip</a></td></tr>
+<tr class="memdesc:af1b6f147ea846a05da9ddaa49e6873b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if a flip of the images is needed.  <a href="structsl_1_1InitParameters.html#af1b6f147ea846a05da9ddaa49e6873b1">More...</a><br /></td></tr>
+<tr class="separator:af1b6f147ea846a05da9ddaa49e6873b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affeaa06cfc1d849e311e484ceb8edcc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#affeaa06cfc1d849e311e484ceb8edcc5">camera_disable_self_calib</a></td></tr>
+<tr class="memdesc:affeaa06cfc1d849e311e484ceb8edcc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if a flip of the images is needed.  <a href="structsl_1_1InitParameters.html#affeaa06cfc1d849e311e484ceb8edcc5">More...</a><br /></td></tr>
+<tr class="separator:affeaa06cfc1d849e311e484ceb8edcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d125168204424b0dae2c317ca8804af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a3d125168204424b0dae2c317ca8804af">enable_right_side_measure</a></td></tr>
+<tr class="memdesc:a3d125168204424b0dae2c317ca8804af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the measurement computation on the right images.  <a href="structsl_1_1InitParameters.html#a3d125168204424b0dae2c317ca8804af">More...</a><br /></td></tr>
+<tr class="separator:a3d125168204424b0dae2c317ca8804af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0759d9c02cf9cebb5e385637173fd4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#af0759d9c02cf9cebb5e385637173fd4a">svo_real_time_mode</a></td></tr>
+<tr class="memdesc:af0759d9c02cf9cebb5e385637173fd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines if <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object return the frame in real time mode.  <a href="structsl_1_1InitParameters.html#af0759d9c02cf9cebb5e385637173fd4a">More...</a><br /></td></tr>
+<tr class="separator:af0759d9c02cf9cebb5e385637173fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191b170713754cc337c00b5ebb5629fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a191b170713754cc337c00b5ebb5629fb">depth_mode</a></td></tr>
+<tr class="memdesc:a191b170713754cc337c00b5ebb5629fb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43" title="Lists available depth computation modes.">sl::DEPTH_MODE</a> to be used.  <a href="structsl_1_1InitParameters.html#a191b170713754cc337c00b5ebb5629fb">More...</a><br /></td></tr>
+<tr class="separator:a191b170713754cc337c00b5ebb5629fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fedf3f4c6eb7e39739b459903b51549"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a5fedf3f4c6eb7e39739b459903b51549">depth_stabilization</a></td></tr>
+<tr class="memdesc:a5fedf3f4c6eb7e39739b459903b51549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether the depth needs to be stabilized and to what extent.  <a href="structsl_1_1InitParameters.html#a5fedf3f4c6eb7e39739b459903b51549">More...</a><br /></td></tr>
+<tr class="separator:a5fedf3f4c6eb7e39739b459903b51549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115c93ba994ec7b5c853375d647a936e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a115c93ba994ec7b5c853375d647a936e">depth_minimum_distance</a></td></tr>
+<tr class="memdesc:a115c93ba994ec7b5c853375d647a936e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum depth distance to be returned, measured in the <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0" title="Lists available units for measures.">sl::UNIT</a> defined in <a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">coordinate_units</a>.  <a href="structsl_1_1InitParameters.html#a115c93ba994ec7b5c853375d647a936e">More...</a><br /></td></tr>
+<tr class="separator:a115c93ba994ec7b5c853375d647a936e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b096c7735548b12dc1225fd9c5c91c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c">depth_maximum_distance</a></td></tr>
+<tr class="memdesc:a44b096c7735548b12dc1225fd9c5c91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum depth distance to be returned, measured in the <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0" title="Lists available units for measures.">sl::UNIT</a> defined in <a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">coordinate_units</a>.  <a href="structsl_1_1InitParameters.html#a44b096c7735548b12dc1225fd9c5c91c">More...</a><br /></td></tr>
+<tr class="separator:a44b096c7735548b12dc1225fd9c5c91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cb1e715c1be19c591d21fa2591b421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">coordinate_units</a></td></tr>
+<tr class="memdesc:a75cb1e715c1be19c591d21fa2591b421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit of spatial data (depth, point cloud, tracking, mesh, etc.) for retrieval.  <a href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">More...</a><br /></td></tr>
+<tr class="separator:a75cb1e715c1be19c591d21fa2591b421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ec3b7ae3b97080fb3da772ad7b48e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2">COORDINATE_SYSTEM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a91ec3b7ae3b97080fb3da772ad7b48e3">coordinate_system</a></td></tr>
+<tr class="memdesc:a91ec3b7ae3b97080fb3da772ad7b48e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2" title="Lists available coordinates systems for positional tracking and 3D measures.">sl::COORDINATE_SYSTEM</a> to be used as reference for positional tracking, mesh, point clouds, etc.  <a href="structsl_1_1InitParameters.html#a91ec3b7ae3b97080fb3da772ad7b48e3">More...</a><br /></td></tr>
+<tr class="separator:a91ec3b7ae3b97080fb3da772ad7b48e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85c9adecd2c9c29a1b255889be1eeb4"><td class="memItemLeft" align="right" valign="top">CUdevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#ab85c9adecd2c9c29a1b255889be1eeb4">sdk_gpu_id</a></td></tr>
+<tr class="memdesc:ab85c9adecd2c9c29a1b255889be1eeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVIDIA graphics card to use.  <a href="structsl_1_1InitParameters.html#ab85c9adecd2c9c29a1b255889be1eeb4">More...</a><br /></td></tr>
+<tr class="separator:ab85c9adecd2c9c29a1b255889be1eeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c7dcfc144d4f5db148d8314decfae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3">sdk_verbose</a></td></tr>
+<tr class="memdesc:a27c7dcfc144d4f5db148d8314decfae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the ZED SDK verbose mode.  <a href="structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3">More...</a><br /></td></tr>
+<tr class="separator:a27c7dcfc144d4f5db148d8314decfae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47984f0dbeac572f4b4b58d69224b5a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a47984f0dbeac572f4b4b58d69224b5a1">sdk_verbose_log_file</a></td></tr>
+<tr class="memdesc:a47984f0dbeac572f4b4b58d69224b5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">File path to store the ZED SDK logs (if <a class="el" href="structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3">sdk_verbose</a> is enabled).  <a href="structsl_1_1InitParameters.html#a47984f0dbeac572f4b4b58d69224b5a1">More...</a><br /></td></tr>
+<tr class="separator:a47984f0dbeac572f4b4b58d69224b5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae684a455a5dc2e48a82b9aadc8c3ba53"><td class="memItemLeft" align="right" valign="top">CUcontext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#ae684a455a5dc2e48a82b9aadc8c3ba53">sdk_cuda_ctx</a></td></tr>
+<tr class="memdesc:ae684a455a5dc2e48a82b9aadc8c3ba53"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUcontext to be used.  <a href="structsl_1_1InitParameters.html#ae684a455a5dc2e48a82b9aadc8c3ba53">More...</a><br /></td></tr>
+<tr class="separator:ae684a455a5dc2e48a82b9aadc8c3ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038bdd9a6c90977959bc30164bdf7882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1InputType.html">InputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a038bdd9a6c90977959bc30164bdf7882">input</a></td></tr>
+<tr class="memdesc:a038bdd9a6c90977959bc30164bdf7882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the input source to initialize and open an <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object from.  <a href="structsl_1_1InitParameters.html#a038bdd9a6c90977959bc30164bdf7882">More...</a><br /></td></tr>
+<tr class="separator:a038bdd9a6c90977959bc30164bdf7882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8262e36d2d4872410f982a735b92294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#aa8262e36d2d4872410f982a735b92294">optional_settings_path</a></td></tr>
+<tr class="memdesc:aa8262e36d2d4872410f982a735b92294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional path where the ZED SDK has to search for the settings file (<em>SN&lt;XXXX&gt;.conf</em> file).  <a href="structsl_1_1InitParameters.html#aa8262e36d2d4872410f982a735b92294">More...</a><br /></td></tr>
+<tr class="separator:aa8262e36d2d4872410f982a735b92294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eab2753374ef3baec1d31960859ba19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a9eab2753374ef3baec1d31960859ba19">optional_opencv_calibration_file</a></td></tr>
+<tr class="memdesc:a9eab2753374ef3baec1d31960859ba19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional path where the ZED SDK can find a file containing the calibration information of the camera computed by OpenCV.  <a href="structsl_1_1InitParameters.html#a9eab2753374ef3baec1d31960859ba19">More...</a><br /></td></tr>
+<tr class="separator:a9eab2753374ef3baec1d31960859ba19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04accf33c33da2d139f8f6383efc6624"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a04accf33c33da2d139f8f6383efc6624">sensors_required</a></td></tr>
+<tr class="memdesc:a04accf33c33da2d139f8f6383efc6624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires the successful opening of the motion sensors before opening the camera.  <a href="structsl_1_1InitParameters.html#a04accf33c33da2d139f8f6383efc6624">More...</a><br /></td></tr>
+<tr class="separator:a04accf33c33da2d139f8f6383efc6624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d886c02fce4c6877146aa381d477001"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a1d886c02fce4c6877146aa381d477001">enable_image_enhancement</a></td></tr>
+<tr class="memdesc:a1d886c02fce4c6877146aa381d477001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Enhanced Contrast Technology, to improve image quality.  <a href="structsl_1_1InitParameters.html#a1d886c02fce4c6877146aa381d477001">More...</a><br /></td></tr>
+<tr class="separator:a1d886c02fce4c6877146aa381d477001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab667c008a8cb61d34325fda271a63f5d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#ab667c008a8cb61d34325fda271a63f5d">open_timeout_sec</a></td></tr>
+<tr class="memdesc:ab667c008a8cb61d34325fda271a63f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a timeout in seconds after which an error is reported if the <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960" title="Opens the ZED camera from the provided InitParameters.">sl::Camera::open()</a> method fails.  <a href="structsl_1_1InitParameters.html#ab667c008a8cb61d34325fda271a63f5d">More...</a><br /></td></tr>
+<tr class="separator:ab667c008a8cb61d34325fda271a63f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8110a28bc2df2010f8a0b0bcbc225f90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a8110a28bc2df2010f8a0b0bcbc225f90">async_grab_camera_recovery</a></td></tr>
+<tr class="memdesc:a8110a28bc2df2010f8a0b0bcbc225f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the behavior of the automatic camera recovery during <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> method call.  <a href="structsl_1_1InitParameters.html#a8110a28bc2df2010f8a0b0bcbc225f90">More...</a><br /></td></tr>
+<tr class="separator:a8110a28bc2df2010f8a0b0bcbc225f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967f605a8580b99d0a6c3e9ab11b0578"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#a967f605a8580b99d0a6c3e9ab11b0578">grab_compute_capping_fps</a></td></tr>
+<tr class="memdesc:a967f605a8580b99d0a6c3e9ab11b0578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a computation upper limit to the grab frequency.  <a href="structsl_1_1InitParameters.html#a967f605a8580b99d0a6c3e9ab11b0578">More...</a><br /></td></tr>
+<tr class="separator:a967f605a8580b99d0a6c3e9ab11b0578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb7af83a1b3941abdacd179cba7a554"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsl_1_1InitParameters.html#aacb7af83a1b3941abdacd179cba7a554">enable_image_validity_check</a></td></tr>
+<tr class="memdesc:aacb7af83a1b3941abdacd179cba7a554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the image validity verification.  <a href="structsl_1_1InitParameters.html#aacb7af83a1b3941abdacd179cba7a554">More...</a><br /></td></tr>
+<tr class="separator:aacb7af83a1b3941abdacd179cba7a554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class containing the options used to initialize the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object. </p>
+<p>This class allows you to select multiple parameters for the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> such as the selected camera, resolution, depth mode, coordinate system, and units of measurement. <br  />
+ Once filled with the desired options, it should be passed to the <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960" title="Opens the ZED camera from the provided InitParameters.">sl::Camera.open()</a> method.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sl/Camera.hpp&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacesl.html">sl</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
+<div class="line">    <a class="code" href="structsl_1_1InitParameters.html#ad8bd9afbbd7af19d996da80e9d25890d">Camera</a> zed; <span class="comment">// Create a ZED camera object</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">    init_params.sdk_verbose = <span class="keyword">false</span>; <span class="comment">// Disable verbose mode</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Use the camera in LIVE mode</span></div>
+<div class="line">    init_params.camera_resolution = <a class="code" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b">RESOLUTION::HD1080</a>; <span class="comment">// Use HD1080 video mode</span></div>
+<div class="line">    init_params.camera_fps = 30; <span class="comment">// Set fps at 30</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Or use the camera in SVO (offline) mode</span></div>
+<div class="line">    <span class="comment">//init_params.input.setFromSVOFile(&quot;xxxx.svo&quot;);</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Or use the camera in STREAM mode</span></div>
+<div class="line">    <span class="comment">//init_params.input.setFromStream(&quot;192.168.1.12&quot;,30000);</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Other parameters are left to their default values</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Open the camera</span></div>
+<div class="line">    <a class="code" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a> err = zed.open(init_params);</div>
+<div class="line">    <span class="keywordflow">if</span> (err != <a class="code" href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">ERROR_CODE::SUCCESS</a>)</div>
+<div class="line">        exit(-1);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Close the camera</span></div>
+<div class="line">    zed.close();</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__Core__group_html_ga4db9ee29f2ff83c71567c12f6bfbf28c"><div class="ttname"><a href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">sl::ERROR_CODE</a></div><div class="ttdeci">ERROR_CODE</div><div class="ttdoc">Lists error codes in the ZED SDK.</div><div class="ttdef"><b>Definition:</b> types.hpp:436</div></div>
+<div class="ttc" id="anamespacesl_html"><div class="ttname"><a href="namespacesl.html">sl</a></div><div class="ttdef"><b>Definition:</b> defines.hpp:58</div></div>
+<div class="ttc" id="anamespacesl_html_ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c"><div class="ttname"><a href="namespacesl.html#ga4db9ee29f2ff83c71567c12f6bfbf28cad0749aaba8b833466dfcbb0428e4f89c">sl::ERROR_CODE::SUCCESS</a></div><div class="ttdeci">@ SUCCESS</div></div>
+<div class="ttc" id="anamespacesl_html_gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b"><div class="ttname"><a href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828aebf416754b5b57c91ce22b025015031b">sl::RESOLUTION::HD1080</a></div><div class="ttdeci">@ HD1080</div></div>
+<div class="ttc" id="astructsl_1_1InitParameters_html_ab916009e0c4a25125bca9231786e9f43"><div class="ttname"><a href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">sl::InitParameters::InitParameters</a></div><div class="ttdeci">InitParameters(RESOLUTION camera_resolution_=RESOLUTION::AUTO, int camera_fps_=0, bool svo_real_time_mode_=false, DEPTH_MODE depth_mode_=DEPTH_MODE::ULTRA, UNIT coordinate_units_=UNIT::MILLIMETER, COORDINATE_SYSTEM coordinate_system_=COORDINATE_SYSTEM::IMAGE, bool sdk_verbose_=false, int sdk_gpu_id_=-1, float depth_minimum_distance_=-1., float depth_maximum_distance_=-1., bool camera_disable_self_calib_=false, int camera_image_flip_=FLIP_MODE::AUTO, bool enable_right_side_measure_=false, String sdk_verbose_log_file_=String(), int depth_stabilization_=1, CUcontext sdk_cuda_ctx_=CUcontext(), InputType input_type=InputType(), String optional_settings_path_=String(), bool sensors_required_=false, bool enable_image_enhancement_=true, String optional_opencv_calibration_file_=String(), float open_timeout_sec_=5.0f, bool async_grab_camera_recovery=false, float grab_compute_capping_fps=0, bool enable_image_validity_check=false)</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="astructsl_1_1InitParameters_html_ad8bd9afbbd7af19d996da80e9d25890d"><div class="ttname"><a href="structsl_1_1InitParameters.html#ad8bd9afbbd7af19d996da80e9d25890d">sl::InitParameters::Camera</a></div><div class="ttdeci">friend class Camera</div><div class="ttdef"><b>Definition:</b> Camera.hpp:65</div></div>
+</div><!-- fragment --><p>With its default values, it opens the camera in live mode at <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION::HD720</a> (or <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION::HD1200</a> for the ZED X/X Mini) and sets the depth mode to <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">sl::DEPTH_MODE::ULTRA</a> (or <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">sl::DEPTH_MODE::PERFORMANCE</a> on Jetson). <br  />
+ You can customize it to fit your application. </p><dl class="section note"><dt>Note</dt><dd>The parameters can also be saved and reloaded using its <a class="el" href="structsl_1_1InitParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">save()</a> and <a class="el" href="structsl_1_1InitParameters.html#a706f01ee88d8ba83113e49487f834eba">load()</a> methods. </dd></dl>
+</div><h2 class="groupheader">Constructor and Destructor</h2>
+<a id="ab916009e0c4a25125bca9231786e9f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab916009e0c4a25125bca9231786e9f43">&#9670;&nbsp;</a></span>InitParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsl_1_1InitParameters.html">InitParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a>&#160;</td>
+          <td class="paramname"><em>camera_resolution_</em> = <code><a class="el" href="namespacesl.html#gabd0374c748530a64a72872c43b2cc828ae1f2d5134ed2543d38a0de9751cf75d9">RESOLUTION::AUTO</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>camera_fps_</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>svo_real_time_mode_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a>&#160;</td>
+          <td class="paramname"><em>depth_mode_</em> = <code><a class="el" href="namespacesl.html#ga8d542017c9b012a19a15d46be9b7fa43af8b6b495ae37b7f4baa34a5c54bd2f6c">DEPTH_MODE::ULTRA</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a>&#160;</td>
+          <td class="paramname"><em>coordinate_units_</em> = <code><a class="el" href="namespacesl.html#gad78b29f5d18fc8990907a443246e88f0ac159f536301065a5deb61ef739ec3950">UNIT::MILLIMETER</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2">COORDINATE_SYSTEM</a>&#160;</td>
+          <td class="paramname"><em>coordinate_system_</em> = <code><a class="el" href="namespacesl.html#ga1114207cbac18c1c0e4f77a6b36a8cb2a23a12f67f614b5518c7f1c2465bf95e3">COORDINATE_SYSTEM::IMAGE</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sdk_verbose_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sdk_gpu_id_</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth_minimum_distance_</em> = <code>-1.</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depth_maximum_distance_</em> = <code>-1.</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>camera_disable_self_calib_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>camera_image_flip_</em> = <code>FLIP_MODE::AUTO</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_right_side_measure_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>sdk_verbose_log_file_</em> = <code><a class="el" href="classsl_1_1String.html">String</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth_stabilization_</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CUcontext&#160;</td>
+          <td class="paramname"><em>sdk_cuda_ctx_</em> = <code>CUcontext()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1InputType.html">InputType</a>&#160;</td>
+          <td class="paramname"><em>input_type</em> = <code><a class="el" href="classsl_1_1InputType.html">InputType</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>optional_settings_path_</em> = <code><a class="el" href="classsl_1_1String.html">String</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sensors_required_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_image_enhancement_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>optional_opencv_calibration_file_</em> = <code><a class="el" href="classsl_1_1String.html">String</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>open_timeout_sec_</em> = <code>5.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>async_grab_camera_recovery</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>grab_compute_capping_fps</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable_image_validity_check</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>All the parameters are set to their default and optimized values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Functions</h2>
+<a id="af9cc1551df5fc5f6ba7d10f86a93df42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cc1551df5fc5f6ba7d10f86a93df42">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the current set of parameters into a file to be reloaded with the <a class="el" href="structsl_1_1InitParameters.html#a706f01ee88d8ba83113e49487f834eba">load()</a> method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Name of the file which will be created to store the parameters (extension '.yml' will be added if not set). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if file was successfully saved, otherwise false. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>For security reason, the file must not exist. </dd>
+<dd>
+In case a file already exists, the method will return false and existing file will not be updated.</dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1; <span class="comment">// Enable verbose mode</span></div>
+<div class="line">init_params.input.setFromSVOFile(<span class="stringliteral">&quot;/path/to/file.svo&quot;</span>); <span class="comment">// Selects the and SVO file to be read</span></div>
+<div class="line">init_params.save(<span class="stringliteral">&quot;initParameters.yml&quot;</span>); <span class="comment">// Export the parameters into a file</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a706f01ee88d8ba83113e49487f834eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706f01ee88d8ba83113e49487f834eba">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsl_1_1String.html">String</a>&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a set of parameters from the values contained in a previously <a class="el" href="structsl_1_1InitParameters.html#af9cc1551df5fc5f6ba7d10f86a93df42">saved</a> file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>: Path to the file from which the parameters will be loaded (extension '.yml' will be added at the end of the filename if not set). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully loaded, otherwise false.</dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.load(<span class="stringliteral">&quot;initParameters.yml&quot;</span>); <span class="comment">// Load the init_params from a previously exported file</span></div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>As the <a class="el" href="structsl_1_1InitParameters.html" title="Class containing the options used to initialize the sl::Camera object.">InitParameters</a> files can be easily modified manually (using a text editor) this function allows you to test various settings without re-compiling your application. </dd></dl>
+
+</div>
+</div>
+<a id="a1f12ead9fe3849b2495e39dfee2f3f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f12ead9fe3849b2495e39dfee2f3f88">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1InitParameters.html">InitParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comparison operator ==. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1InitParameters.html" title="Class containing the options used to initialize the sl::Camera object.">InitParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are identical </dd></dl>
+
+</div>
+</div>
+<a id="afaeaf80350583a9c492339e5f6a0ce1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaeaf80350583a9c492339e5f6a0ce1b">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsl_1_1InitParameters.html">InitParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>param1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comparison operator !=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structsl_1_1InitParameters.html" title="Class containing the options used to initialize the sl::Camera object.">InitParameters</a></td><td>to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two struct are different </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variables</h2>
+<a id="a760124c608fefd930b428910a52d929c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760124c608fefd930b428910a52d929c">&#9670;&nbsp;</a></span>camera_resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">RESOLUTION</a> camera_resolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desired camera resolution. </p>
+<dl class="section note"><dt>Note</dt><dd>Small resolutions offer higher framerate and lower computation time. </dd>
+<dd>
+In most situations, <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION::HD720</a> at 60 FPS is the best balance between image quality and framerate.</dd></dl>
+<p>Default: </p><ul>
+<li>
+ZED X/X Mini: <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION::HD1200</a> </li>
+<li>
+other cameras: <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828">sl::RESOLUTION::HD720</a></li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Available resolutions are listed here: <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828" title="Lists available resolutions.">sl::RESOLUTION</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a8aebd3c5eea7c24cfa15a96cbb2ec8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aebd3c5eea7c24cfa15a96cbb2ec8aa">&#9670;&nbsp;</a></span>camera_fps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int camera_fps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requested camera frame rate. </p>
+<p>If set to 0, the highest FPS of the specified <a class="el" href="structsl_1_1InitParameters.html#a760124c608fefd930b428910a52d929c">camera_resolution</a> will be used. <br  />
+ Default: 0 <br  />
+<br  />
+ See <a class="el" href="group__Video__group.html#gabd0374c748530a64a72872c43b2cc828" title="Lists available resolutions.">sl::RESOLUTION</a> for a list of supported frame rates. </p><dl class="section note"><dt>Note</dt><dd>If the requested <a class="el" href="structsl_1_1InitParameters.html#a8aebd3c5eea7c24cfa15a96cbb2ec8aa">camera_fps</a> is unsupported, the closest available FPS will be used. </dd></dl>
+
+</div>
+</div>
+<a id="af1b6f147ea846a05da9ddaa49e6873b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b6f147ea846a05da9ddaa49e6873b1">&#9670;&nbsp;</a></span>camera_image_flip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int camera_image_flip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if a flip of the images is needed. </p>
+<p>If you are using the camera upside down, setting this parameter to <a class="el" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">sl::FLIP_MODE::ON</a> will cancel its rotation. <br  />
+ The images will be horizontally flipped. <br  />
+ Default: <a class="el" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6">sl::FLIP_MODE::AUTO</a> </p><dl class="section note"><dt>Note</dt><dd>From ZED SDK 3.2 a new <a class="el" href="group__Video__group.html#gafe09520beed3f2eba620708468d0eca6" title="Lists possible flip modes of the camera.">sl::FLIP_MODE</a> enum was introduced to add the automatic flip mode detection based on the IMU gravity detection. </dd>
+<dd>
+This does not work on <a class="el" href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887">sl::MODEL::ZED</a> cameras since they do not have the necessary sensors. </dd></dl>
+
+</div>
+</div>
+<a id="affeaa06cfc1d849e311e484ceb8edcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affeaa06cfc1d849e311e484ceb8edcc5">&#9670;&nbsp;</a></span>camera_disable_self_calib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool camera_disable_self_calib</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if a flip of the images is needed. </p>
+<p>At initialization, <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> runs a self-calibration process that corrects small offsets from the device's factory calibration. <br  />
+ A drawback is that calibration parameters will slightly change from one (live) run to another, which can be an issue for repeatability. <br  />
+ If set to true, self-calibration will be disabled and calibration parameters won't be optimized, raw calibration parameters from the configuration file will be used. <br  />
+ Default: false </p><dl class="section note"><dt>Note</dt><dd>In most situations, self calibration should remain enabled. </dd>
+<dd>
+You can also trigger the self-calibration at anytime after <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960" title="Opens the ZED camera from the provided InitParameters.">sl::Camera::open()</a> by calling <a class="el" href="classsl_1_1Camera.html#a9b3fe9c4ee983ca8fd836d603e681cce" title="Perform a new self-calibration process.">sl::Camera::updateSelfCalibration()</a>, even if this parameter is set to true. </dd></dl>
+
+</div>
+</div>
+<a id="a3d125168204424b0dae2c317ca8804af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d125168204424b0dae2c317ca8804af">&#9670;&nbsp;</a></span>enable_right_side_measure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_right_side_measure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the measurement computation on the right images. </p>
+<p>By default, the ZED SDK only computes a single depth map, aligned with the left camera image. <br  />
+ This parameter allows you to enable <a class="el" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">sl::MEASURE::DEPTH_RIGHT</a> and other <a class="el" href="group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">sl::MEASURE::XXX_RIGHT</a> at the cost of additional computation time. <br  />
+ For example, mixed reality pass-through applications require one depth map per eye, so this parameter can be activated. <br  />
+ Default: false </p>
+
+</div>
+</div>
+<a id="af0759d9c02cf9cebb5e385637173fd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0759d9c02cf9cebb5e385637173fd4a">&#9670;&nbsp;</a></span>svo_real_time_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool svo_real_time_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines if <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object return the frame in real time mode. </p>
+<p>When playing back an SVO file, each call to <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> will extract a new frame and use it. <br  />
+ However, it ignores the real capture rate of the images saved in the SVO file. <br  />
+ Enabling this parameter will bring the SDK closer to a real simulation when playing back a file by using the images' timestamps. <br  />
+ Default: false </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> will return an error when trying to play too fast, and frames will be dropped when playing too slowly. </dd></dl>
+
+</div>
+</div>
+<a id="a191b170713754cc337c00b5ebb5629fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191b170713754cc337c00b5ebb5629fb">&#9670;&nbsp;</a></span>depth_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">DEPTH_MODE</a> depth_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43" title="Lists available depth computation modes.">sl::DEPTH_MODE</a> to be used. </p>
+<p>The ZED SDK offers several <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43" title="Lists available depth computation modes.">sl::DEPTH_MODE</a>, offering various levels of performance and accuracy. <br  />
+ This parameter allows you to set the <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43" title="Lists available depth computation modes.">sl::DEPTH_MODE</a> that best matches your needs. <br  />
+ Default: <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43">sl::DEPTH_MODE::PERFORMANCE</a> </p><dl class="section note"><dt>Note</dt><dd>Available depth mode are listed here: <a class="el" href="group__Depth__group.html#ga8d542017c9b012a19a15d46be9b7fa43" title="Lists available depth computation modes.">sl::DEPTH_MODE</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a5fedf3f4c6eb7e39739b459903b51549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fedf3f4c6eb7e39739b459903b51549">&#9670;&nbsp;</a></span>depth_stabilization</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int depth_stabilization</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines whether the depth needs to be stabilized and to what extent. </p>
+<p>Regions of generated depth map can oscillate from one frame to another. <br  />
+ These oscillations result from a lack of texture (too homogeneous) on an object and by image noise. <br  />
+ This parameter controls a stabilization filter that reduces these oscillations. <br  />
+ In the range [0-100]: </p><ul>
+<li>
+0 disable the depth stabilization (raw depth will be return) </li>
+<li>
+stabilization smoothness is linear from 1 to 100</li>
+</ul>
+<p>Default: 1</p>
+<dl class="section note"><dt>Note</dt><dd>The stabilization uses the positional tracking to increase its accuracy, so the positional tracking module will be enabled automatically when set to a value different from 0. </dd>
+<dd>
+Note that calling <a class="el" href="classsl_1_1Camera.html#a7989ae783fae435abfdf48feaf147f44" title="Initializes and starts the positional tracking processes.">sl::Camera::enablePositionalTracking()</a> with your own parameters afterwards is still possible. </dd></dl>
+
+</div>
+</div>
+<a id="a115c93ba994ec7b5c853375d647a936e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115c93ba994ec7b5c853375d647a936e">&#9670;&nbsp;</a></span>depth_minimum_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float depth_minimum_distance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimum depth distance to be returned, measured in the <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0" title="Lists available units for measures.">sl::UNIT</a> defined in <a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">coordinate_units</a>. </p>
+<p>This parameter allows you to specify the minimum depth value (from the camera) that will be computed.</p>
+<p><br  />
+ In stereovision (the depth technology used by the camera), looking for closer depth values can have a slight impact on performance and memory consumption. <br  />
+ On most modern GPUs, performance impact will be low. However, the impact of memory footprint will be visible. <br  />
+ In cases of limited computation power, increasing this value can provide better performance. <br  />
+ Default: -1 (corresponding values are available <a href="https://www.stereolabs.com/docs/depth-sensing/depth-settings#depth-range">here</a>)</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="structsl_1_1InitParameters.html#a115c93ba994ec7b5c853375d647a936e">depth_minimum_distance</a> value cannot be greater than 3 meters. </dd>
+<dd>
+0 will imply that <a class="el" href="structsl_1_1InitParameters.html#a115c93ba994ec7b5c853375d647a936e">depth_minimum_distance</a> is set to the minimum depth possible for each camera (those values are available <a href="https://www.stereolabs.com/docs/depth-sensing/depth-settings#depth-range">here</a>). </dd></dl>
+
+</div>
+</div>
+<a id="a44b096c7735548b12dc1225fd9c5c91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b096c7735548b12dc1225fd9c5c91c">&#9670;&nbsp;</a></span>depth_maximum_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float depth_maximum_distance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum depth distance to be returned, measured in the <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0" title="Lists available units for measures.">sl::UNIT</a> defined in <a class="el" href="structsl_1_1InitParameters.html#a75cb1e715c1be19c591d21fa2591b421">coordinate_units</a>. </p>
+<p>When estimating the depth, the ZED SDK uses this upper limit to turn higher values into <a class="el" href="namespacesl.html#ae2b31140a18cf3fe9081dbfb4ca1b808">sl::TOO_FAR</a> ones. </p><dl class="section note"><dt>Note</dt><dd>Changing this value has no impact on performance and doesn't affect the positional tracking nor the spatial mapping. </dd>
+<dd>
+It only change values the depth, point cloud and normals. </dd></dl>
+
+</div>
+</div>
+<a id="a75cb1e715c1be19c591d21fa2591b421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cb1e715c1be19c591d21fa2591b421">&#9670;&nbsp;</a></span>coordinate_units</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">UNIT</a> coordinate_units</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unit of spatial data (depth, point cloud, tracking, mesh, etc.) for retrieval. </p>
+<p>Default: <a class="el" href="group__Core__group.html#gad78b29f5d18fc8990907a443246e88f0">sl::UNIT::MILLIMETER</a> </p>
+
+</div>
+</div>
+<a id="a91ec3b7ae3b97080fb3da772ad7b48e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ec3b7ae3b97080fb3da772ad7b48e3">&#9670;&nbsp;</a></span>coordinate_system</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2">COORDINATE_SYSTEM</a> coordinate_system</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2" title="Lists available coordinates systems for positional tracking and 3D measures.">sl::COORDINATE_SYSTEM</a> to be used as reference for positional tracking, mesh, point clouds, etc. </p>
+<p>This parameter allows you to select the <a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2" title="Lists available coordinates systems for positional tracking and 3D measures.">sl::COORDINATE_SYSTEM</a> used by the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object to return its measures. <br  />
+ This defines the order and the direction of the axis of the coordinate system. <br  />
+ Default: <a class="el" href="group__Core__group.html#ga1114207cbac18c1c0e4f77a6b36a8cb2">sl::COORDINATE_SYSTEM::IMAGE</a> </p>
+
+</div>
+</div>
+<a id="ab85c9adecd2c9c29a1b255889be1eeb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85c9adecd2c9c29a1b255889be1eeb4">&#9670;&nbsp;</a></span>sdk_gpu_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUdevice sdk_gpu_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVIDIA graphics card to use. </p>
+<p>By default the SDK will use the most powerful NVIDIA graphics card found. <br  />
+ However, when running several applications, or using several cameras at the same time, splitting the load over available GPUs can be useful. <br  />
+ This parameter allows you to select the GPU used by the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> using an ID from 0 to n-1 GPUs in your PC. <br  />
+ Default: -1 </p><dl class="section note"><dt>Note</dt><dd>A non-positive value will search for all CUDA capable devices and select the most powerful. </dd></dl>
+
+</div>
+</div>
+<a id="a27c7dcfc144d4f5db148d8314decfae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c7dcfc144d4f5db148d8314decfae3">&#9670;&nbsp;</a></span>sdk_verbose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sdk_verbose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the ZED SDK verbose mode. </p>
+<p>This parameter allows you to enable the verbosity of the ZED SDK to get a variety of runtime information in the console. <br  />
+ When developing an application, enabling verbose (<code><a class="el" href="structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3">sdk_verbose</a> &gt;= 1</code>) mode can help you understand the current ZED SDK behavior. <br  />
+ However, this might not be desirable in a shipped version. <br  />
+ Default: 0 (no verbose message) </p><dl class="section note"><dt>Note</dt><dd>The verbose messages can also be exported into a log file. </dd>
+<dd>
+See <a class="el" href="structsl_1_1InitParameters.html#a47984f0dbeac572f4b4b58d69224b5a1">sdk_verbose_log_file</a> for more. </dd></dl>
+
+</div>
+</div>
+<a id="a47984f0dbeac572f4b4b58d69224b5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47984f0dbeac572f4b4b58d69224b5a1">&#9670;&nbsp;</a></span>sdk_verbose_log_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> sdk_verbose_log_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File path to store the ZED SDK logs (if <a class="el" href="structsl_1_1InitParameters.html#a27c7dcfc144d4f5db148d8314decfae3">sdk_verbose</a> is enabled). </p>
+<p>The file will be created if it does not exist. <br  />
+ Default: ""</p>
+<dl class="section note"><dt>Note</dt><dd>Setting this parameter to any value will redirect all standard output print calls of the entire program. </dd>
+<dd>
+This means that your own standard output print calls will be redirected to the log file. </dd>
+<dd>
+This parameter can be particularly useful for creating a log system, and with Unreal or Unity applications that don't provide a standard console output. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The log file won't be cleared after successive executions of the application. </dd>
+<dd>
+This means that it can grow indefinitely if not cleared. </dd></dl>
+
+</div>
+</div>
+<a id="ae684a455a5dc2e48a82b9aadc8c3ba53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae684a455a5dc2e48a82b9aadc8c3ba53">&#9670;&nbsp;</a></span>sdk_cuda_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUcontext sdk_cuda_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CUcontext to be used. </p>
+<p>If your application uses another CUDA-capable library, giving its CUDA context to the ZED SDK can be useful when sharing GPU memories. <br  />
+ This parameter allows you to set the CUDA context to be used by the ZED SDK. <br  />
+ Leaving this parameter empty asks the SDK to create its own context. <br  />
+ Default: (empty)</p>
+<dl class="section note"><dt>Note</dt><dd>When creating you own CUDA context, you have to define the device you will use. Do not forget to also specify it on <a class="el" href="structsl_1_1InitParameters.html#ab85c9adecd2c9c29a1b255889be1eeb4">sdk_gpu_id</a>. </dd>
+<dd>
+<b>On Jetson</b>, you have to set the flag CU_CTX_SCHED_YIELD, during CUDA context creation. </dd>
+<dd>
+You can also let the SDK create its own context, and use <a class="el" href="classsl_1_1Camera.html#a77cf61f5049f2202d2101c304a81d554" title="Gets the Camera-created CUDA context for sharing it with other CUDA-capable libraries.">sl::Camera::getCUDAContext()</a> to use it. </dd></dl>
+
+</div>
+</div>
+<a id="a038bdd9a6c90977959bc30164bdf7882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038bdd9a6c90977959bc30164bdf7882">&#9670;&nbsp;</a></span>input</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1InputType.html">InputType</a> input</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the input source to initialize and open an <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object from. </p>
+<p>The SDK can handle different input types:</p><ul>
+<li>Select a camera by its ID (<em>/dev/videoX</em> on Linux, and 0 to N cameras connected on Windows) <div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1; <span class="comment">// Enable verbose mode</span></div>
+<div class="line">init_params.input.setFromCameraID(0); <span class="comment">// Selects the camera with ID = 0</span></div>
+</div><!-- fragment --></li>
+<li>Select a camera by its serial number <div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1; <span class="comment">// Enable verbose mode</span></div>
+<div class="line">init_params.input.setFromSerialNumber(1010); <span class="comment">// Selects the camera with serial number = 1010</span></div>
+</div><!-- fragment --></li>
+<li>Open a recorded sequence in the SVO file format <div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1; <span class="comment">// Enable verbose mode</span></div>
+<div class="line">init_params.input.setFromSVOFile(<span class="stringliteral">&quot;/path/to/file.svo&quot;</span>); <span class="comment">// Selects the and SVO file to be read</span></div>
+</div><!-- fragment --></li>
+<li>Open a streaming camera from its IP address and port <div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">init_params.sdk_verbose = 1; <span class="comment">// Enable verbose mode</span></div>
+<div class="line">init_params.input.setFromStream(<span class="stringliteral">&quot;192.168.1.42&quot;</span>); <span class="comment">// Selects the IP address of the streaming camera. A second optional parameter is available for port selection.</span></div>
+</div><!-- fragment --></li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Available cameras and their id/serial number can be listed using <a class="el" href="classsl_1_1Camera.html#a1768d383f5e78746f58eda9d2c60b33e" title="List all the connected devices with their associated information.">sl::Camera::getDeviceList()</a> and <a class="el" href="classsl_1_1Camera.html#ad2c14b929abf579ad3bc7f62270bc39a" title="List all the streaming devices with their associated information.">sl::Camera::getStreamingDeviceList()</a>. </dd>
+<dd>
+Each <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> will create its own memory (CPU and GPU), therefore the number of cameras used at the same time can be limited by the configuration of your computer (GPU/CPU memory and capabilities).</dd></dl>
+<p>Default : (empty) </p><dl class="section note"><dt>Note</dt><dd>See <a class="el" href="classsl_1_1InputType.html" title="Class defining the input type used in the ZED SDK.">sl::InputType</a> for complementary information. </dd></dl>
+
+</div>
+</div>
+<a id="aa8262e36d2d4872410f982a735b92294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8262e36d2d4872410f982a735b92294">&#9670;&nbsp;</a></span>optional_settings_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> optional_settings_path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional path where the ZED SDK has to search for the settings file (<em>SN&lt;XXXX&gt;.conf</em> file). </p>
+<p>This file contains the calibration information of the camera. <br  />
+ Default: ""</p>
+<dl class="section note"><dt>Note</dt><dd>The settings file will be searched in the default directory: <ul>
+<li>
+<b>Linux</b>: <em>/usr/local/zed/settings/</em> </li>
+<li>
+<b>Windows</b>: <em>C:/ProgramData/stereolabs/settings</em></li>
+</ul>
+</dd>
+<dd>
+If a path is specified and no file has been found, the ZED SDK will search the settings file in the default directory. </dd>
+<dd>
+An automatic download of the settings file (through <b>ZED Explorer</b> or the installer) will still download the files on the default path.</dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="structsl_1_1InitParameters.html#ab916009e0c4a25125bca9231786e9f43">InitParameters</a> init_params; <span class="comment">// Set initial parameters</span></div>
+<div class="line">std::string home = getenv(<span class="stringliteral">&quot;HOME&quot;</span>); <span class="comment">// Get /home/user as string using getenv()</span></div>
+<div class="line">std::string path = home + <span class="stringliteral">&quot;/Documents/settings/&quot;</span>; <span class="comment">// Assuming /home/&lt;user&gt;/Documents/settings/SNXXXX.conf exists. Otherwise, it will be searched in /usr/local/zed/settings/</span></div>
+<div class="line">init_params.optional_settings_path = <a class="code" href="classsl_1_1String.html">sl::String</a>(path.c_str());</div>
+<div class="ttc" id="aclasssl_1_1String_html"><div class="ttname"><a href="classsl_1_1String.html">sl::String</a></div><div class="ttdoc">Class defining a string.</div><div class="ttdef"><b>Definition:</b> types.hpp:145</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a9eab2753374ef3baec1d31960859ba19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eab2753374ef3baec1d31960859ba19">&#9670;&nbsp;</a></span>optional_opencv_calibration_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1String.html">String</a> optional_opencv_calibration_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional path where the ZED SDK can find a file containing the calibration information of the camera computed by OpenCV. </p>
+<dl class="section note"><dt>Note</dt><dd>Using this will disable the factory calibration of the camera. </dd>
+<dd>
+The file must be in a XML/YAML/JSON formatting provided by OpenCV. </dd>
+<dd>
+It also must contain the following keys: Size, K_LEFT (intrinsic left), K_RIGHT (intrinsic right), D_LEFT (distortion left), D_RIGHT (distortion right), R (extrinsic rotation), T (extrinsic translation). </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Erroneous calibration values can lead to poor accuracy in all ZED SDK modules. </dd></dl>
+
+</div>
+</div>
+<a id="a04accf33c33da2d139f8f6383efc6624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04accf33c33da2d139f8f6383efc6624">&#9670;&nbsp;</a></span>sensors_required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sensors_required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requires the successful opening of the motion sensors before opening the camera. </p>
+<p>Default: false.</p>
+<dl class="section note"><dt>Note</dt><dd>If set to false, the ZED SDK will try to <b>open and use</b> the IMU (second USB device on USB2.0) and will open the camera successfully even if the sensors failed to open.</dd></dl>
+<p>This can be used for example when using a USB3.0 only extension cable (some fiber extension for example). </p><dl class="section note"><dt>Note</dt><dd>This parameter only impacts the LIVE mode. </dd>
+<dd>
+If set to true, <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960" title="Opens the ZED camera from the provided InitParameters.">sl::Camera::open()</a> will fail if the sensors cannot be opened. </dd>
+<dd>
+This parameter should be used when the IMU data must be available, such as object detection module or when the gravity is needed.</dd></dl>
+<p><br  />
+</p><dl class="section note"><dt>Note</dt><dd>This setting is not taken into account for <a class="el" href="group__Video__group.html#gaa29851790d3e528f42f539334e6e5887">sl::MODEL::ZED</a> camera since it does not include sensors. </dd></dl>
+
+</div>
+</div>
+<a id="a1d886c02fce4c6877146aa381d477001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d886c02fce4c6877146aa381d477001">&#9670;&nbsp;</a></span>enable_image_enhancement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_image_enhancement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the Enhanced Contrast Technology, to improve image quality. </p>
+<p>Default: true.</p>
+<p><br  />
+ If set to true, image enhancement will be activated in camera ISP. Otherwise, the image will not be enhanced by the IPS. </p><dl class="section note"><dt>Note</dt><dd>This only works for firmware version starting from 1523 and up. </dd></dl>
+
+</div>
+</div>
+<a id="ab667c008a8cb61d34325fda271a63f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab667c008a8cb61d34325fda271a63f5d">&#9670;&nbsp;</a></span>open_timeout_sec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float open_timeout_sec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a timeout in seconds after which an error is reported if the <a class="el" href="classsl_1_1Camera.html#aca7edc89436bf249865791d6a4907960" title="Opens the ZED camera from the provided InitParameters.">sl::Camera::open()</a> method fails. </p>
+<p>Set to '-1' to try to open the camera endlessly without returning error in case of failure. <br  />
+ Set to '0' to return error in case of failure at the first attempt. <br  />
+ Default: 5.0 </p><dl class="section note"><dt>Note</dt><dd>This parameter only impacts the LIVE mode. </dd></dl>
+
+</div>
+</div>
+<a id="a8110a28bc2df2010f8a0b0bcbc225f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8110a28bc2df2010f8a0b0bcbc225f90">&#9670;&nbsp;</a></span>async_grab_camera_recovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool async_grab_camera_recovery</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define the behavior of the automatic camera recovery during <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> method call. </p>
+<p>When async is enabled and there's an issue with the communication with the <a class="el" href="classsl_1_1Camera.html" title="This class serves as the primary interface between the camera and the various features provided by th...">sl::Camera</a> object, <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> will exit after a short period and return the <a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">sl::ERROR_CODE::CAMERA_REBOOTING</a> warning. <br  />
+ The recovery will run in the background until the correct communication is restored. <br  />
+ When <a class="el" href="structsl_1_1InitParameters.html#a8110a28bc2df2010f8a0b0bcbc225f90">async_grab_camera_recovery</a> is false, the <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> method is blocking and will return only once the camera communication is restored or the timeout is reached. <br  />
+ Default: false </p>
+
+</div>
+</div>
+<a id="a967f605a8580b99d0a6c3e9ab11b0578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967f605a8580b99d0a6c3e9ab11b0578">&#9670;&nbsp;</a></span>grab_compute_capping_fps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float grab_compute_capping_fps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a computation upper limit to the grab frequency. </p>
+<p>This can be useful to get a known constant fixed rate or limit the computation load while keeping a short exposure time by setting a high camera capture framerate. <br  />
+ The value should be inferior to the <a class="el" href="structsl_1_1InitParameters.html#a8aebd3c5eea7c24cfa15a96cbb2ec8aa" title="Requested camera frame rate.">sl::InitParameters.camera_fps</a> and strictly positive. </p><dl class="section note"><dt>Note</dt><dd>It has no effect when reading an SVO file.</dd></dl>
+<p>This is an upper limit and won't make a difference if the computation is slower than the desired compute capping FPS. </p><dl class="section note"><dt>Note</dt><dd>Internally the <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera::grab()</a> method always tries to get the latest available image while respecting the desired FPS as much as possible. </dd></dl>
+
+</div>
+</div>
+<a id="aacb7af83a1b3941abdacd179cba7a554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb7af83a1b3941abdacd179cba7a554">&#9670;&nbsp;</a></span>enable_image_validity_check</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool enable_image_validity_check</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable the image validity verification. </p>
+<p>This will perform additional verification on the image to identify corrupted data. This verification is done in the <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera.grab()</a> method and requires some computations. <br  />
+ If an issue is found, the <a class="el" href="classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b" title="This method will grab the latest images from the camera, rectify them, and compute the measurements b...">sl::Camera.grab()</a> method will output a warning as <a class="el" href="group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">sl::ERROR_CODE::CORRUPTED_FRAME</a>. <br  />
+ This version doesn't detect frame tearing currently. <br  />
+ Default: false (disabled) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

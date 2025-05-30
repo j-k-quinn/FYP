@@ -25,6 +25,7 @@ work original in ucs-ros-pkg.
 	<!-- <xacro:include filename="$(find p3dx_description)/urdf/pioneer3dx.gazebo" /> -->
 	<!-- import the pioneer 3dx's wheels -->
 	<xacro:include filename="$(find p3dx_description)/urdf/pioneer3dx_wheel.xacro" />
+	<xacro:include filename="$(find p3dx_description)/urdf/zed/zed_macro.urdf.xacro" />
 
 	<material name="SonarYellow">
 		<color rgba="0.715 0.583 0.210 1.0"/>
@@ -40,6 +41,9 @@ work original in ucs-ros-pkg.
 	</material>
 	<material name="TopBlack">
 		<color rgba="0.038 0.038 0.038 1.0"/>
+	</material>
+	<material name="swivel">
+  		<color rgba="0.5 0.5 0.5 1"/>
 	</material>
 
 	<!-- chassis -->
@@ -290,4 +294,7 @@ work original in ucs-ros-pkg.
 		<parent link="base_link" />
 		<child link="upper_top_plate" />
 	</joint>
+	<xacro:zed_camera name="zed2i" model="zed2i" parent="base_link"> 
+		<origin xyz="0.05 0.0 1.094" rpy="0.0 0.0 0.0"/>
+	</xacro:zed_camera>
 </robot>
