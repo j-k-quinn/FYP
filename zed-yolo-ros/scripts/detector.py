@@ -81,6 +81,7 @@ def torch_thread(model_name, img_size, conf_thres=0.2, iou_thres=0.45):
     model_path = models_path+model_name+'.pt'
     model_labels_path = models_path+model_name+'_labels.txt'
 
+<<<<<<< HEAD
     # Check if the model does not exists
     if not os.path.isfile(model_path):
         print("Model not found, downloading it...")
@@ -136,6 +137,7 @@ def ros_wrapper(objects):
         obj_msg.sublabel = repr(obj.id)
         obj_msg.instance_id = obj.id
         obj_msg.confidence = obj.confidence
+<<<<<<< HEAD
         pos = obj.position
         obj_msg.position = [pos[0], pos[1], pos[2]]
         pos_cov = obj.position_covariance
@@ -233,6 +235,7 @@ def main():
     # positional_tracking_parameters.set_as_static = True
     zed.enable_positional_tracking(positional_tracking_parameters)
 
+                    
     obj_param = sl.ObjectDetectionParameters()
     obj_param.detection_model = sl.OBJECT_DETECTION_MODEL.CUSTOM_BOX_OBJECTS
     obj_param.enable_tracking = True

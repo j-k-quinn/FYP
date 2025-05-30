@@ -5,6 +5,7 @@ from sensor_msgs.msg import Joy
 from std_msgs.msg import Bool
 
 emergency_stop= False
+
  
 # Scaling factors for linear and angular movement
 l_scale = 1.0  # Linear speed scaling factor

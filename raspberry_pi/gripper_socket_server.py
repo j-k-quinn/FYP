@@ -48,7 +48,10 @@ def start_server():
                         # Move to z position first (assuming pick_object_at_z moves to z)
                         gripper.pick_object_at_z(z, close_width)
 
-                   else:
+                        conn.sendall(b"grip_done\n")
+                        print("[PI] Sent confirmation: grip_done")
+
+                    else:
                         print("[PI] Z out of range. Ignoring.")
 
                 except Exception as e:

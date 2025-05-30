@@ -75,6 +75,7 @@ RUN cd src && \
     [ ! -d "zed-ros-wrapper" ] && git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git || echo "zed-ros-wrapper already exists"
 
 # Cleanly replace the values while preserving indentation
+
 # RUN sed -i 's/^\([[:space:]]*publish_tf:\).*/\1 false/' /root/ros_ws/src/zed-ros-wrapper/zed_wrapper/params/common.yaml && \
 #     sed -i 's/^\([[:space:]]*publish_map_tf:\).*/\1 false/' /root/ros_ws/src/zed-ros-wrapper/zed_wrapper/params/common.yaml
 
