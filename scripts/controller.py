@@ -16,10 +16,7 @@ def joy_callback(data):
     global emergency_stop
 
     # Emergency stop toggle (example: button 6 = Back)
-    if data.buttons[1] == 1:  # Button pressed
-        emergency_stop = True
-    else:
-        emergency_stop = False
+    emergency_stop = False
 
     twist = Twist()
  

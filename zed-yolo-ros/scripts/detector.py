@@ -9,6 +9,7 @@ import argparse
 import torch
 import cv2
 import pyzed.sl as sl
+import time
 from ultralytics import YOLO
 
 from threading import Lock, Thread
@@ -21,6 +22,9 @@ import tf2_ros
 import tf2_geometry_msgs
 from geometry_msgs.msg import PointStamped
 from std_msgs.msg import Float32MultiArray
+from sensor_msgs.msg import Joy
+from sensor_msgs.msg import LaserScan
+import math
 
 lock = Lock()
 run_signal = False
@@ -29,6 +33,24 @@ class_names = []
 
 CAMERA_NAME = "zed2i"
 processed_ids = set()
+
+joystick_state = {
+    "left_pressed": False,
+    "right_pressed": False,
+    "last_offset": 0
+}
+
+selection_state = {
+    "active": False,
+    "last_update_time": 0,
+    "selected_idx": 0
+}
+
+latest_scan = None
+
+def scan_callback(scan_msg):
+    global latest_scan
+    latest_scan = scan_msg
 
 def xywh2abcd(xywh):
     output = np.zeros((4, 2))
@@ -81,7 +103,6 @@ def torch_thread(model_name, img_size, conf_thres=0.2, iou_thres=0.45):
     model_path = models_path+model_name+'.pt'
     model_labels_path = models_path+model_name+'_labels.txt'
 
-<<<<<<< HEAD
     # Check if the model does not exists
     if not os.path.isfile(model_path):
         print("Model not found, downloading it...")
@@ -137,7 +158,7 @@ def ros_wrapper(objects):
         obj_msg.sublabel = repr(obj.id)
         obj_msg.instance_id = obj.id
         obj_msg.confidence = obj.confidence
-<<<<<<< HEAD
+
         pos = obj.position
         obj_msg.position = [pos[0], pos[1], pos[2]]
         pos_cov = obj.position_covariance
@@ -187,9 +208,134 @@ def local_to_base_link_transform(msg, tfBuffer):
         print("Failed to transform object from local to base_link frame")
     return msg
 
+def get_reachable_objects(objects, gripper_width):
+    """
+    Return only objects whose bounding box width is ≤ gripper_width × 2
+    """
+    threshold = gripper_width * 2.2
+    reachable = []
+    for obj in objects:
+        if len(obj.bounding_box_3d.corners) >= 2:
+            x0 = obj.bounding_box_3d.corners[0].kp[0]
+            x1 = obj.bounding_box_3d.corners[1].kp[0]
+            box_width = abs(x1 - x0)
+            if box_width <= threshold:
+                reachable.append(obj)
+    return reachable
+
+def publish_object_target(obj, target_pub):
+    x, y, z = obj.position
+    rospy.loginfo(f"[DETECTION] x={x:.2f}, y={y:.2f}, z={z:.2f}, id={obj.instance_id}")
+
+    yaw = 0.0  # No rotation tracking yet
+    with open("/tmp/robot_pose.txt", "w") as f:
+        f.write(f"{-x},{-y},{yaw}")
+    rospy.loginfo("[POSE] Saved relative return position.")
+
+    processed_ids.add(obj.instance_id)
+
+    # Try to calculate width from bounding box
+    width_cm = 5.5  # Default fallback
+    if len(obj.bounding_box_3d.corners) >= 2:
+        x0 = obj.bounding_box_3d.corners[0].kp[0]
+        x1 = obj.bounding_box_3d.corners[1].kp[0]
+        detected_width = abs(x1 - x0) * 100  # meters to cm
+
+        if detected_width <= 12.5:
+            width_cm = detected_width * 0.75
+            rospy.loginfo(f"[DETECTION] Using detected width: {width_cm:.2f} cm")
+        else:
+            rospy.logwarn(f"[DETECTION] Detected width {detected_width:.2f} cm too large, using default 5.5 cm")
+
+    # Publish x, y, z, width
+    msg = Float32MultiArray()
+    msg.data = [x, y, z, width_cm]
+    target_pub.publish(msg)
+
+    with open("/tmp/last_z.txt", "w") as f:
+        f.write(str(z))
+
+def publish_object_target_pending(obj, target_pub):
+    global pending_obj_id
+
+    x, y, z = obj.position
+    rospy.loginfo(f"[DETECTION] x={x:.2f}, y={y:.2f}, z={z:.2f}, id={obj.instance_id}")
+
+    yaw = 0.0
+    with open("/tmp/robot_pose.txt", "w") as f:
+        f.write(f"{-x},{-y},{yaw}")
+    rospy.loginfo("[POSE] Saved relative return position.")
+
+    # Only set pending, don't mark as processed
+    pending_obj_id = obj.instance_id
+
+    if len(obj.bounding_box_3d.corners) >= 2:
+        x0 = obj.bounding_box_3d.corners[0].kp[0]
+        x1 = obj.bounding_box_3d.corners[1].kp[0]
+        detected_width = abs(x1 - x0) * 100
+        if detected_width <= 12.5:
+            width_cm = detected_width
+            rospy.loginfo(f"[DETECTION] Using detected width: {width_cm:.2f} cm")
+        else:
+            rospy.logwarn(f"[DETECTION] Detected width {detected_width:.2f} cm too large—using 5.5 cm")
+            width_cm = 5.5
+    else:
+        width_cm = 5.5
+
+    msg = Float32MultiArray()
+    msg.data = [x, y, z, width_cm]
+    target_pub.publish(msg)
+
+    with open("/tmp/last_z.txt", "w") as f:
+        f.write(str(z))
+
+previous_buttons = [0] * 12  # Global
+
+def joy_callback(data):
+    global previous_buttons
+
+    # Detect rising edge (pressed now, wasn't before)
+    joystick_state["left_pressed"] = data.buttons[0] == 1 and previous_buttons[0] == 0
+    joystick_state["right_pressed"] = data.buttons[1] == 1 and previous_buttons[1] == 0
+
+    previous_buttons = data.buttons
+
+def is_object_reachable_by_lidar(obj, scan):
+    if scan is None:
+        rospy.logwarn("[SCENARIO 4] No LIDAR data yet.")
+        return True  # Allow by default if no scan
+
+    x, y = obj.position[0], obj.position[1]
+    distance = math.hypot(x, y)
+    angle = math.atan2(y, x)
+
+    index = int((angle - scan.angle_min) / scan.angle_increment)
+
+    if 0 <= index < len(scan.ranges):
+        lidar_distance = scan.ranges[index]
+
+        # Log for debug
+        rospy.loginfo(f"[LIDAR] Object at angle {math.degrees(angle):.1f}° → index {index}, "
+                      f"LIDAR={lidar_distance:.2f}m, Object={distance:.2f}m")
+
+        # If object is further than box (i.e., less than LIDAR reading), allow
+        if distance < lidar_distance - 0.1:
+            return True
+        else:
+            rospy.logwarn(f"[LIDAR] Object blocked at {distance:.2f}m vs LIDAR {lidar_distance:.2f}m")
+            return False
+    else:
+        rospy.logwarn(f"[LIDAR] Angle index {index} out of range for scan")
+        return True
+
+# Holds the object we’ve most recently asked the robot to pick,
+# but not yet confirmed by the gripper.
+pending_obj_id = None
 
 def main():
-    global image_net, exit_signal, run_signal, detections, class_names
+    global image_net, exit_signal, run_signal, detections, class_names, selection_state
+
+    GRIPPER_OPEN_MAX_M = 0.125  # Max open width in meters (from gripper script)
 
     # Define ROS publisher 
     pub_l = rospy.Publisher(CAMERA_NAME+'/od_yolo', zed_msgs.ObjectsStamped, queue_size=50)
@@ -200,6 +346,9 @@ def main():
     tfBuffer = tf2_ros.Buffer()
     listener = tf2_ros.TransformListener(tfBuffer)
     br = tf2_ros.TransformBroadcaster()
+
+    rospy.Subscriber("joy", Joy, joy_callback)
+    rospy.Subscriber("/scan", LaserScan, scan_callback)
 
     capture_thread = Thread(target=torch_thread, kwargs={'model_name': opt.model_name, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
     capture_thread.start()
@@ -269,32 +418,118 @@ def main():
                 # ros_msg = ros_wrapper(objects)
                 ros_msg = ros_wrapper(objects)
                 ros_msg = local_to_base_link_transform(ros_msg, tfBuffer)
- 
-                for obj in ros_msg.objects:
-                    if obj.label == "teddy bear" and obj.instance_id not in processed_ids:  # object of interest
-                        x, y, z = obj.position
-                        rospy.loginfo(f"[DETECTION] x={x:.2f}, y={y:.2f}, z={z:.2f}, id={obj.instance_id}")
- 
-                        yaw = 0.0  # No rotation tracking yet
-                        with open("/tmp/robot_pose.txt", "w") as f:
-                            f.write(f"{-x},{-y},{yaw}")
-                        rospy.loginfo("[POSE] Saved relative return position.")
+                
+                if opt.scenario == 1:
+                    for obj in ros_msg.objects:
+                        if obj.label == "bottle" and obj.instance_id not in processed_ids:
+                            publish_object_target(obj, target_pub)
+                            break
 
-                        processed_ids.add(obj.instance_id)
+                elif opt.scenario == 2:
+                    # Get all objects that are grabbable based on width
+                    filtered_objects = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]]
+                    grabbable_objects = get_reachable_objects(filtered_objects, gripper_width=GRIPPER_OPEN_MAX_M)
+                    grabbable_objects.sort(key=lambda o: -o.position[1])
 
-                        # Publish x, y, z to /object_target
-                        msg = Float32MultiArray()
-                        msg.data = [x, y, z]
-                        target_pub.publish(msg)
- 
-                        # Optionally store z for later
-                        with open("/tmp/last_z.txt", "w") as f:
-                            f.write(str(z))
- 
-                        break  # Only publish first matching object
+                    rospy.loginfo(f"[DEBUG] Found {len(grabbable_objects)} graspable objects:")
+                    for i, obj in enumerate(grabbable_objects):
+                        if len(obj.bounding_box_3d.corners) >= 2:
+                            x0 = obj.bounding_box_3d.corners[0].kp[0]
+                            x1 = obj.bounding_box_3d.corners[1].kp[0]
+                            width = abs(x1 - x0)
+                            rospy.loginfo(f"  [{i}] Label: {obj.label}, Width: {width:.3f} m, Pos: ({obj.position[0]:.2f}, {obj.position[1]:.2f})")
+
+                    if len(grabbable_objects) >= 2:
+                        selected_obj = None
+                        if joystick_state["left_pressed"]:
+                            selected_obj = grabbable_objects[0]
+                        elif joystick_state["right_pressed"]:
+                            selected_obj = grabbable_objects[1]
+
+                        if selected_obj and selected_obj.instance_id not in processed_ids:
+                            publish_object_target(selected_obj, target_pub)
+
+                elif opt.scenario == 3:
+                    reachable = get_reachable_objects(
+                        [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]],
+                        gripper_width=GRIPPER_OPEN_MAX_M
+                    )
+                    if not reachable:
+                        continue
+
+                    # Sort left-to-right (Y axis), flip if needed
+                    reachable.sort(key=lambda o: -o.position[1])  # or use .position[0] depending on axis
+
+                    # Ensure selected_idx stays in bounds
+                    max_index = len(reachable) - 1
+                    selected_idx = selection_state["selected_idx"]
+
+                    # Update selection on button press
+                    if joystick_state["right_pressed"]:
+                        if selected_idx < max_index:
+                            selected_idx += 1
+                            rospy.loginfo(f"[SELECTION] → Selected object: {reachable[selected_idx].label}")
+                        else:
+                            # Already at rightmost, just reprint
+                            rospy.loginfo(f"[SELECTION] → Still at rightmost object: {reachable[selected_idx].label}")
+                        selection_state["last_update_time"] = time.time()
+                        selection_state["active"] = True
+
+                    elif joystick_state["left_pressed"]:
+                        if selected_idx > 0:
+                            selected_idx -= 1
+                            rospy.loginfo(f"[SELECTION] ← Selected object: {reachable[selected_idx].label}")
+                        else:
+                            # Already at leftmost, just reprint
+                            rospy.loginfo(f"[SELECTION] ← Still at leftmost object: {reachable[selected_idx].label}")
+                        selection_state["last_update_time"] = time.time()
+                        selection_state["active"] = True
+
+                    # Update selected index
+                    selection_state["selected_idx"] = selected_idx
+
+                    # Check for auto-confirmation timeout
+                    if selection_state["active"]:
+                        elapsed = time.time() - selection_state["last_update_time"]
+                        if elapsed > 5:  # 5 second wait for confirmation
+                            selected_obj = reachable[selected_idx]
+                            if selected_obj.instance_id not in processed_ids:
+                                rospy.loginfo(f"[SELECTION] No input after 5s. Grabbing: {selected_obj.label}")
+                                publish_object_target_pending(selected_obj, target_pub)
+                                processed_ids.add(selected_obj.instance_id)
+                                selection_state["active"] = False  # Reset state
+
+                elif opt.scenario == 4:
+                    filtered = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]]
+                    grabbable = get_reachable_objects(filtered, GRIPPER_OPEN_MAX_M)
+                    rospy.loginfo("[SCENARIO 4] Grabbable objects before LIDAR filtering:")
+                    for obj in grabbable:
+                        label = obj.label
+                        pos = obj.position
+                        rospy.loginfo(f" - {label} at (x={pos[0]:.2f}, y={pos[1]:.2f})")
+
+                    valid = [obj for obj in grabbable if is_object_reachable_by_lidar(obj, latest_scan)]
+
+                    rospy.loginfo("[SCENARIO 4] Grabbable objects after LIDAR filtering:")
+                    for obj in valid:
+                        rospy.loginfo(f" - {obj.label} at (x={obj.position[0]:.2f}, y={obj.position[1]:.2f})")
+
+                    rospy.loginfo(f"[SCENARIO 4] Found {len(valid)} objects not blocked by LIDAR")
+                    
+                    for obj in valid:
+                        if obj.instance_id not in processed_ids:
+                            publish_object_target(obj, target_pub)
+                            break
+
+                # Reset joystick states after processing
+                joystick_state["left_pressed"] = False
+                joystick_state["right_pressed"] = False
+                
 
                 pub_l.publish(ros_msg)
                 pub_g.publish(local_to_base_link_transform(ros_msg, tfBuffer))
+
+
     except KeyboardInterrupt:
         rospy.loginfo("Shutdown signal received (Ctrl+C)")
     finally:
@@ -313,6 +548,7 @@ if __name__ == '__main__':
     parser.add_argument('--svo', type=str, default=None, help='optional svo file')
     parser.add_argument('--img_size', type=int, default=416, help='inference size (pixels)')
     parser.add_argument('--conf_thres', type=float, default=0.4, help='object confidence threshold')
+    parser.add_argument('--scenario', type=int, default=1, help='Scenario number to run (1-5)')
     opt = parser.parse_args()
 
     with torch.no_grad():
