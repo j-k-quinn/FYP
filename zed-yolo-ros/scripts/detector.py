@@ -33,6 +33,7 @@ class_names = []
 
 CAMERA_NAME = "zed2i"
 processed_ids = set()
+blocked_ids = set()
 
 joystick_state = {
     "left_pressed": False,
@@ -47,6 +48,9 @@ selection_state = {
 }
 
 latest_scan = None
+
+MIN_GRIPPER_HEIGHT_M = 0.25  # 25 cm
+MAX_GRIPPER_HEIGHT_M = 0.77  # 77 c
 
 def scan_callback(scan_msg):
     global latest_scan
@@ -242,7 +246,7 @@ def publish_object_target(obj, target_pub):
         detected_width = abs(x1 - x0) * 100  # meters to cm
 
         if detected_width <= 12.5:
-            width_cm = detected_width * 0.75
+            width_cm = detected_width * 0.6
             rospy.loginfo(f"[DETECTION] Using detected width: {width_cm:.2f} cm")
         else:
             rospy.logwarn(f"[DETECTION] Detected width {detected_width:.2f} cm too large, using default 5.5 cm")
@@ -427,7 +431,7 @@ def main():
 
                 elif opt.scenario == 2:
                     # Get all objects that are grabbable based on width
-                    filtered_objects = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]]
+                    filtered_objects = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair", "mouse", "laptop", "person"]]
                     grabbable_objects = get_reachable_objects(filtered_objects, gripper_width=GRIPPER_OPEN_MAX_M)
                     grabbable_objects.sort(key=lambda o: -o.position[1])
 
@@ -451,7 +455,7 @@ def main():
 
                 elif opt.scenario == 3:
                     reachable = get_reachable_objects(
-                        [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]],
+                        [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair", "mouse", "laptop", "person"]],
                         gripper_width=GRIPPER_OPEN_MAX_M
                     )
                     if not reachable:
@@ -500,7 +504,7 @@ def main():
                                 selection_state["active"] = False  # Reset state
 
                 elif opt.scenario == 4:
-                    filtered = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]]
+                    filtered = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair", "mouse", "laptop", "person"]]
                     grabbable = get_reachable_objects(filtered, GRIPPER_OPEN_MAX_M)
                     rospy.loginfo("[SCENARIO 4] Grabbable objects before LIDAR filtering:")
                     for obj in grabbable:
@@ -508,8 +512,17 @@ def main():
                         pos = obj.position
                         rospy.loginfo(f" - {label} at (x={pos[0]:.2f}, y={pos[1]:.2f})")
 
-                    valid = [obj for obj in grabbable if is_object_reachable_by_lidar(obj, latest_scan)]
+                    valid = []
+                    for obj in grabbable:
+                        if obj.instance_id in blocked_ids:
+                            continue  # Already blocked
 
+                        if is_object_reachable_by_lidar(obj, latest_scan):
+                            valid.append(obj)
+                        else:
+                            rospy.logwarn(f"[SCENARIO 4] Blocking object ID {obj.instance_id} due to LIDAR")
+                            blocked_ids.add(obj.instance_id)
+                    
                     rospy.loginfo("[SCENARIO 4] Grabbable objects after LIDAR filtering:")
                     for obj in valid:
                         rospy.loginfo(f" - {obj.label} at (x={obj.position[0]:.2f}, y={obj.position[1]:.2f})")
@@ -520,6 +533,112 @@ def main():
                         if obj.instance_id not in processed_ids:
                             publish_object_target(obj, target_pub)
                             break
+
+                elif opt.scenario == 5:
+                    filtered = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair"]]
+                    grabbable = get_reachable_objects(filtered, GRIPPER_OPEN_MAX_M)
+
+                    rospy.loginfo("[SCENARIO 5] Grabbable objects before LIDAR and height filtering:")
+                    for obj in grabbable:
+                        label = obj.label
+                        pos = obj.position
+                        rospy.loginfo(f" - {label} at (x={pos[0]:.2f}, y={pos[1]:.2f}, z={pos[2]:.2f})")
+
+                    valid = []
+                    for obj in grabbable:
+                        z = obj.position[2]
+                        if obj.instance_id in blocked_ids:
+                            continue  # Already blocked from before
+
+                        # Check height bounds
+                        if z < MIN_GRIPPER_HEIGHT_M or z > MAX_GRIPPER_HEIGHT_M:
+                            rospy.logwarn(f"[SCENARIO 5] Object ID {obj.instance_id} blocked by height: z={z:.2f}m")
+                            blocked_ids.add(obj.instance_id)
+                            continue
+
+                        # Check LIDAR reachability
+                        if is_object_reachable_by_lidar(obj, latest_scan):
+                            valid.append(obj)
+                        else:
+                            rospy.logwarn(f"[SCENARIO 5] Blocking object ID {obj.instance_id} due to LIDAR")
+                            blocked_ids.add(obj.instance_id)
+
+                    rospy.loginfo("[SCENARIO 5] Grabbable objects after filtering:")
+                    for obj in valid:
+                        rospy.loginfo(f" - {obj.label} at (x={obj.position[0]:.2f}, y={obj.position[1]:.2f}, z={obj.position[2]:.2f})")
+
+                    rospy.loginfo(f"[SCENARIO 5] Found {len(valid)} objects not blocked by LIDAR or height")
+
+                    for obj in valid:
+                        if obj.instance_id not in processed_ids:
+                            publish_object_target(obj, target_pub)
+                            break
+
+                elif opt.scenario == 6:
+                    filtered = [obj for obj in ros_msg.objects if obj.label not in ["tv", "chair", "mouse", "laptop", "person"]]
+                    grabbable = get_reachable_objects(filtered, gripper_width=GRIPPER_OPEN_MAX_M)
+
+                    rospy.loginfo("[SCENARIO 6] Grabbable objects before LIDAR & height filtering:")
+                    for obj in grabbable:
+                        label = obj.label
+                        pos = obj.position
+                        rospy.loginfo(f" - {label} at (x={pos[0]:.2f}, y={pos[1]:.2f}, z={pos[2]:.2f})")
+
+                    valid = []
+                    for obj in grabbable:
+                        z = obj.position[2]
+                        if obj.instance_id in blocked_ids:
+                            continue
+                        if z < MIN_GRIPPER_HEIGHT_M or z > MAX_GRIPPER_HEIGHT_M:
+                            rospy.logwarn(f"[SCENARIO 6] Blocking {obj.label} due to height {z:.2f}m")
+                            blocked_ids.add(obj.instance_id)
+                            continue
+                        if is_object_reachable_by_lidar(obj, latest_scan):
+                            valid.append(obj)
+                        else:
+                            rospy.logwarn(f"[SCENARIO 6] Blocking {obj.label} due to LIDAR occlusion")
+                            blocked_ids.add(obj.instance_id)
+
+                    if not valid:
+                        continue
+
+                    rospy.loginfo("[SCENARIO 6] Valid objects after LIDAR + height filtering:")
+                    for obj in valid:
+                        rospy.loginfo(f" - {obj.label} at (x={obj.position[0]:.2f}, y={obj.position[1]:.2f}, z={obj.position[2]:.2f})")
+
+                    valid.sort(key=lambda o: -o.position[1])
+                    max_index = len(valid) - 1
+                    selected_idx = selection_state["selected_idx"]
+
+                    if joystick_state["right_pressed"]:
+                        if selected_idx < max_index:
+                            selected_idx += 1
+                            rospy.loginfo(f"[SELECTION] → Selected object: {valid[selected_idx].label}")
+                        else:
+                            rospy.loginfo(f"[SELECTION] → Still at rightmost: {valid[selected_idx].label}")
+                        selection_state["last_update_time"] = time.time()
+                        selection_state["active"] = True
+
+                    elif joystick_state["left_pressed"]:
+                        if selected_idx > 0:
+                            selected_idx -= 1
+                            rospy.loginfo(f"[SELECTION] ← Selected object: {valid[selected_idx].label}")
+                        else:
+                            rospy.loginfo(f"[SELECTION] ← Still at leftmost: {valid[selected_idx].label}")
+                        selection_state["last_update_time"] = time.time()
+                        selection_state["active"] = True
+
+                    selection_state["selected_idx"] = selected_idx
+
+                    if selection_state["active"]:
+                        elapsed = time.time() - selection_state["last_update_time"]
+                        if elapsed > 5:
+                            selected_obj = valid[selected_idx]
+                            if selected_obj.instance_id not in processed_ids:
+                                rospy.loginfo(f"[SELECTION] No input after 5s. Grabbing: {selected_obj.label}")
+                                publish_object_target_pending(selected_obj, target_pub)
+                                processed_ids.add(selected_obj.instance_id)
+                                selection_state["active"] = False
 
                 # Reset joystick states after processing
                 joystick_state["left_pressed"] = False
