@@ -25,10 +25,10 @@ class GripperWrapper:
         self.current_open = self.open_max  # current gripper open width in cm
 
         # Speed in cm per second
-        self.speed_up = 52 / 19   # lift speed up
-        self.speed_down = 52 / 12 # lift speed down
-        self.speed_open = 12.5 / 5     # gripper opening speed
-        self.speed_close = 12.5 / 4.5  # gripper closing speed
+        self.speed_up = 52 / 19.58   # lift speed up
+        self.speed_down = 52 / 12.66 # lift speed down
+        self.speed_open = 12.5 / 5.54     # gripper opening speed
+        self.speed_close = 12.5 / 4.12  # gripper closing speed
 
     def cm_to_time(self, delta_cm, direction):
         if direction == "down":
